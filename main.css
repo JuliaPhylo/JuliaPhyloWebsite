@@ -1,0 +1,598 @@
+/* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+html {
+    box-sizing: border-box
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit
+}
+
+/* parts of the CSS file are extracted from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block
+}
+
+progress {
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],
+template {
+    display: none
+}
+
+/* a {
+    background-color: transparent
+} */
+
+a:active,
+a:hover {
+    outline-width: 0
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b,
+strong {
+    font-weight: bolder
+}
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -0.25em
+}
+
+sup {
+    top: -0.5em
+}
+
+figure {
+    margin: 1em 40px
+}
+
+img {
+    border-style: none
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+button,
+input,
+select,
+textarea,
+optgroup {
+    font: inherit;
+    margin: 0
+}
+
+optgroup {
+    font-weight: bold
+}
+
+button,
+input {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox],
+[type=radio] {
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+/* End extract */
+html,
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5
+}
+
+html {
+    overflow-x: hidden
+}
+
+h1 {
+    font-size: 36px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 24px
+}
+
+h4 {
+    font-size: 20px
+}
+
+h5 {
+    font-size: 18px
+}
+
+h6 {
+    font-size: 16px
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0
+}
+
+a {
+    color: inherit
+}
+
+.w3-btn,
+.w3-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.w3-btn:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.w3-btn,
+.w3-button {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.w3-bar {
+    width: 100%;
+    overflow: hidden
+}
+
+.w3-bar .w3-bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0
+}
+
+.w3-bar .w3-button {
+    white-space: normal
+}
+
+.w3-content,
+.w3-auto {
+    margin-left: 5%;
+    margin-right: auto
+}
+
+.w3-content {
+    max-width: 100%
+}
+
+.w3-auto {
+    max-width: 1140px
+}
+
+.w3-container:after,
+.w3-container:before,
+.w3-panel:after,
+.w3-panel:before,
+.w3-row:after,
+.w3-row:before,
+.w3-row-padding:after,
+.w3-row-padding:before,
+.w3-cell-row:before,
+.w3-cell-row:after,
+.w3-clear:after,
+.w3-clear:before,
+.w3-bar:before,
+.w3-bar:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.w3-row-padding,
+.w3-row-padding > .w3-half,
+.w3-row-padding > .w3-third,
+.w3-row-padding > .w3-twothird,
+.w3-row-padding > .w3-threequarter,
+.w3-row-padding > .w3-quarter,
+.w3-row-padding > .w3-col {
+    padding: 0 8px
+}
+
+.w3-container,
+.w3-panel {
+    padding: 0.01em 16px
+}
+
+.w3-panel {
+    margin-top: 16px;
+    margin-bottom: 16px
+}
+
+.w3-card,
+.w3-card-2 {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+}
+
+.w3-large {
+    font-size: 18px !important
+}
+
+.w3-jumbo {
+    font-size: 64px !important
+}
+
+.w3-left-align {
+    text-align: left !important
+}
+
+.w3-center {
+    text-align: center !important
+}
+
+.w3-margin {
+    margin: 16px !important
+}
+
+.w3-padding-large {
+    padding: 12px 24px !important
+}
+
+.w3-padding-64 {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important
+}
+
+.w3-right {
+    float: right !important
+}
+
+.w3-button:hover {
+    color: #000 !important;
+    background-color: #ccc !important
+}
+
+.w3-red,
+.w3-hover-red:hover {
+    color: black !important;
+    /* background-color: black;  */
+}
+
+.w3-white,
+.w3-hover-white:hover {
+    color: #000 !important;
+    background-color: #fff !important
+}
+
+.w3-light-grey,
+.w3-hover-light-grey:hover,
+.w3-light-gray,
+.w3-hover-light-gray:hover {
+    color: #000 !important;
+    background-color: #f1f1f1 !important
+}
+
+.w3-text-red,
+.w3-hover-text-red:hover {
+    color: #f44336 !important
+}
+
+.w3-text-grey,
+.w3-hover-text-grey:hover,
+.w3-text-gray,
+.w3-hover-text-gray:hover {
+    color: #757575 !important
+}
+
+/* Custom classes used in HTML */
+.package-link{
+    color: #000;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    /* width: 50%; */
+    display: inline;
+}
+
+.packages-container {
+    display: flex;
+    gap: 20px; /* Space between the boxes */
+    justify-content: center; /* Center the boxes by default */
+    flex-wrap: wrap; /* Allow wrapping if screen size is small */
+    margin: 0 auto;/* Centering*/
+}
+
+.packages-container a {
+    /* flex: 1; Flexible width */
+    max-width: 32%; /* Ensure a max width */
+    min-width: 280px; /* Prevent the boxes from shrinking too much */
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: #FAFAFA;  
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Ensures equal height */
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+}
+.box:hover{
+    transform: translateY(-4px); /* Slight lift effect */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+}
+
+.box-text {
+    flex-grow: 1; /*Allows content to fill the space*/
+    text-decoration: none;
+    color: black;
+}
+
+.pkg-img {
+    max-width: 60%; /* Prevents image from being too large */
+    height: auto;
+    object-fit: contain; /* Maintains aspect ratio */
+}
+
+.pkg-text {
+    font-size: 1.75rem;
+    font-weight: bold;
+    word-wrap: break-word;
+    overflow-wrap:break-word;
+}
+
+.box-text{
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.pkg-img{
+    width: 60%;
+    height: 60%;
+}
+
+.top-container{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    /* text-align: center; */
+    width: 90%; /* Adjusted width for smaller size */
+    margin: 0 auto; /* Center the container */
+}
+
+.top-package{
+    color: black;
+    text-decoration: none;
+    align-items: center;
+}
+
+.top-img{
+    width: 40%;
+    height: 40%;
+    margin-right: 42%;
+}
+
+.pkg-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.top-text{
+    font-size: 1rem;
+}
+
+@media (max-width:600px) {
+    .w3-hide-small {
+        display: none !important
+    }
+}
+
+@media (min-width:993px) {
+    .w3-hide-large {
+        display: none !important
+    }
+}
+
+@media (max-width:992px) and (min-width:601px) {
+    .w3-hide-medium {
+        display: none !important
+    }
+}
+
+.w3-top,
+.w3-bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 1
+}
+
+.w3-top {
+    top: 0;
+    background-color: white;
+    opacity: 1
+}
+/* Center when fewer than 3 packages */
+@media (max-width: 800px) {
+    .packages-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .packages-container a {
+        max-width: 80%; 
+    }
+    .pkg-text {
+        font-size: 1.25rem;
+    }
+
+}
