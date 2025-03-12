@@ -86,30 +86,44 @@
   <div id="section2" class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
       <div class="w3-twothird">
-        <h1>Community</h1>
-        <p class="w3-text-grey">Abide by <a target="_blank" href="https://julialang.org/community/standards/">Community
-            Guidelines</a> </p>
-        <p>For package Specific questions <a target="_blank" href="https://github.com/JuliaPhylo">GitHub</a></p>
-        <p> For Julia and Phylogeny related questions use the <a target="_blank"
-            href="https://discourse.julialang.org/search?q=phylo">Julia Discourse Forum</a></p>
-        <p>Join our Google Groups Conversation For more General Questions on JuliaPhylo:
-          <a target="_blank"
-            href="https://groups.google.com/g/phylonetworks-users">https://groups.google.com/g/phylonetworks-users</a>
-        </p>
-
-        <p>Join the Phylo channel on <a href="https://julialang.org/slack/">Julia's Slack</a></p>
-
+      <h1>Community</h1>
+      <p>Please connect with us or get involved! Everyone is welcome. To do so:</p>
+      <ul>
+      <li class="w3-text-grey">Abide by
+        <a href="https://julialang.org/community/standards/">Community Guidelines</a>
+      </li>
+      <li>If you have a question or want to report an issue about a specific
+        package, the best way is by open a github "issue" on that package
+        github repository.
+      </li>
+      <li>For inquiries about Julia in general, many answers to common
+        questions are on the
+        <a href="https://discourse.julialang.org/">Julia Discourse</a>
+        forum, and new questions can be poster there.<br>
+        This forum also has phylogenetics-related discussions,
+        e.g. search for <a href="https://discourse.julialang.org/search?q=phylo">"phylo"</a>
+      </li>
+      <li>Join our google group for more general questions on JuliaPhylo:
+        <a href="https://groups.google.com/g/phylonetworks-users">phylonetworks-users</a>
+      </li>
+      <li>Join the &num;phylo channel on the
+        <a href="https://julialang.org/slack/">Julia Language Slack</a>
+        workspace.
+      </li>
+      </ul>
       </div>
-
     </div>
   </div>
+
   <!-- Packages Section -->
   <div id="section3" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
     <div class="w3-content">
       <!-- <div class="w3-twothird"> -->
       <h1>Packages</h1>
-      <p class="w3-text-grey pkg-intro">There are a variety of packages bult by the JuliaPhylo team. Most of them rely
-        on the PhyloNetworks package</p>
+      <p class="w3-text-grey pkg-intro">
+        There are a variety of Julia packages built by JuliaPhylo contributors.
+        Most of them rely on the core PhyloNetworks package.
+      </p>
       <br>
       <br>
       <div class="top-container">
@@ -183,71 +197,93 @@
               <h1 class="pkg-text">PhyloTraits</h1>
             </div>
             <br>
-            <p class="box-text">A package for trait evolution along phylogenies.
+            <p class="box-text">
+              PhyloTraits is a package for trait evolution along phylogenies.
               <br>
               <br>
               PhyloTraits provides functions for simulating and analyzing the evolution of both continuous and discrete
               traits
               along phylogenies, including phylogenetic networks. PhyloTraits enables researchers to test various
               hypotheses of trait evolution by
-              fitting many models to character data on a phylogeny. This package also allows users to estimate of rates
-              of evolution, ancestral states,
+              fitting many models to character data on a phylogeny.
+              This package also allows users to estimate rates of evolution,
+              ancestral states,
               and assess the correlation between multiple traits.
             </p>
 
           </section>
         </a>
 
-        <!-- tile 3 -->
-        <a href="https://github.com/JuliaPhylo/PhyloCoalSimulations.jl" target="_blank" class="package-link"
-          id="PhyloCoalSimulations-section">
-          <section class="box">
-            <div class="pkg-header">
-              <h1 class="pkg-text">PhyloCoalSimulations</h1>
-            </div>
-            <br>
-            <p class="box-text">PhyloCoalSimulations is a Julia package to simulate phylogenies under the coalescent.
-              It implements the network multi-species coalescent model with possible inheritance correlation</p>
-          </section>
-        </a>
+    <!-- tile 3 -->
+    <a href="https://github.com/JuliaPhylo/PhyloCoalSimulations.jl" target="_blank" class="package-link"
+    id="PhyloCoalSimulations-section">
+    <section class="box">
+      <div class="pkg-header">
+        <h1 class="pkg-text">PhyloCoalSimulations</h1>
       </div>
-
       <br>
-      <!-- Secod Row -->
-      <div class="packages-container">
+      <p class="box-text">PhyloCoalSimulations is a package to simulate phylogenies under the coalescent.
+        It implements the network multi-species coalescent model with possible inheritance correlation</p>
+    </section>
+    </a>
 
-        <!-- tile 1 -->
-        <a href="https://github.com/JuliaPhylo/PhyloGaussianBeliefProp.jl" target="_blank" class="package-link"
-          id="PhyloGaussianBeliefProp-section">
-          <section class="box">
-            <div class="pkg-header">
-              <h1 class="pkg-text">PhyloGaussianBeliefProp</h1>
-            </div>
-            <br>
-            <p class="box-text">A package for the analysis of Gaussian models on phylogenetic networks and admixture
-              graphs using belief propagation (aka message passing).</p>
-          </section>
-        </a>
-
-        <!-- tile 2 -->
-        <a href="https://github.com/JuliaPhylo/PhyloPlots.jl" target="_blank" class="package-link"
-          id="PhyloPlots-section">
-          <section class="box">
-            <div class="pkg-header">
-              <h1 class="pkg-text">PhyloPlots</h1>
-            </div>
-            <br>
-            <p class="box-text">PhyloPlots has utilities to plot tree and network objects from PhyloNetworks through R
-              via RCall.</p>
-          </section>
-        </a>
-
-      </div>
-
-
-
-    </div>
   </div>
+
+  <br>
+  <!-- Second Row -->
+  <div class="packages-container">
+
+    <!-- tile 1 -->
+    <a href="https://github.com/JuliaPhylo/PhyloPlots.jl" target="_blank" class="package-link"
+    id="PhyloPlots-section">
+    <section class="box">
+      <div class="pkg-header">
+        <h1 class="pkg-text">PhyloPlots</h1>
+      </div>
+      <br>
+      <p class="box-text">
+        PhyloPlots has utilities to plot tree and network objects from
+        PhyloNetworks through R via RCall.</p>
+    </section>
+    </a>
+
+    <!-- tile 2 -->
+    <a href="https://github.com/JuliaPhylo/QuartetNetworkGoodnessFit.jl" target="_blank" class="package-link"
+      id="QGoF-section">
+      <section class="box">
+        <div class="pkg-header">
+          <h1 class="pkg-text">Quarnet GoF</h1>
+        </div>
+        <br>
+        <p class="box-text">QuartetNetworkGoodnessFit, aka "Quarnet GoF"
+          or simply "QGoF", is a package for phylogenetic networks analyses
+          using four-taxon subsets. It includes tools to measure the goodness
+          of fit of a phylogenetic network to data on subsets of 4 tips.
+        </p>
+      </section>
+    </a>
+
+    <!-- tile 3 -->
+    <a href="https://github.com/JuliaPhylo/PhyloGaussianBeliefProp.jl" target="_blank" class="package-link"
+      id="PhyloGaussianBeliefProp-section">
+      <section class="box">
+        <div class="pkg-header">
+          <h1 class="pkg-text">PhyloGaussianBeliefProp</h1>
+        </div>
+        <br>
+        <p class="box-text">PhyloGaussianBeliefProp, or simply "PGBP", is a
+          package for the analysis of Gaussian models on phylogenetic networks
+          and admixture graphs using belief propagation (aka message passing).
+        </p>
+      </section>
+    </a>
+
+  </div>
+
+
+
+</div>
+</div>
 
   <script>
     // Used to toggle the menu on small screens when clicking on the menu button
