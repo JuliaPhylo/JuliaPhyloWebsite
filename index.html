@@ -34,93 +34,97 @@
 
 <body>
 
-  <!-- Navbar -->
-  <div class="w3-top">
-    <div class="w3-bar w3-card w3-left-align w3-large">
-      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
-        href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-      <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-padding-large ">About</a>
-      <a href="#community" class="w3-bar-item w3-button w3-hide-small w3-padding-large ">Community</a>
-      <a href="#packages" class="w3-bar-item w3-button w3-hide-small w3-padding-large ">Packages</a>
-      <a href="#resources" class="w3-bar-item w3-button w3-hide-small w3-padding-large ">Resources</a>
-    </div>
-
-
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+      href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-padding-large ">About</a>
+    <a href="#community" class="w3-bar-item w3-button w3-hide-small w3-padding-large ">Community</a>
+    <a href="#packages" class="w3-bar-item w3-button w3-hide-small w3-padding-large ">Packages</a>
+    <a href="#resources" class="w3-bar-item w3-button w3-hide-small w3-padding-large ">Resources</a>
   </div>
+</div>
 
-  <!-- Header -->
-  <header id="home" class="w3-container w3-red w3-center" style="padding:128px 16px">
-    <h1 class="w3-margin w3-jumbo"><a href="https://github.com/JuliaPhylo" style="text-decoration: none;" target="_blank">JuliaPhylo</a> <img src="logo.png" alt=""></h1>
-    <h2 class="w3-margin">A software ecosystem for phylogenetics in Julia.</h2>
+<!-- Header -->
+<header id="home" class="w3-container w3-red w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo"><a href="https://github.com/JuliaPhylo" style="text-decoration: none;">JuliaPhylo</a> <img src="logo.png" alt=""></h1>
+  <h2 class="w3-margin">A software ecosystem for phylogenetics in Julia</h2>
+</header>
 
+<!-- About Section -->
+<div id="about" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+  <div class="w3-twothird">
+  <h1>About</h1>
+    <h3>What is a Phylogeny?</h3>
+    <p class="w3-text-grey">
+      A phylogeny is a <a href="https://en.wikipedia.org/wiki/Phylogenetic_tree">tree</a>
+      or a <a href="https://en.wikipedia.org/wiki/Phylogenetic_network">network</a>
+      that describes the past history of a group of organisms (individuals,
+      populations, species; also languages).
+      A node represents a splitting event, such as a population divergence or
+      speciation; or a merging event, such as from hybridization,
+      <a href="https://en.wikipedia.org/wiki/Introgression">introgression</a>,
+      <a href="https://en.wikipedia.org/wiki/Gene_flow">gene flow</a> or
+      <a href="https://en.wikipedia.org/wiki/Genetic_admixture">admixture</a>.
+    </p>
+    <h3>What is it used for?</h3>
+    <p class="w3-text-grey">
+      Research in evolutionary biology uses
+      <a href="https://en.wikipedia.org/wiki/Phylogenetics">phylogenetics</a>
+      (or <a href="https://hal.science/hal-02535070v3/">phylogenomics</a>)
+      to infer phylogenies from molecular sequence data,
+      and use these phylogenies for the discovery of evolutionary patterns about
+      <a href="https://lukejharmon.github.io/pcm/">trait evolution</a>,
+      diversification, etc.
+    </p>
+  </div>
+  <div class="w3-third w3-center">
+    <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+  </div>
+  </div>
+</div>
 
-  </header>
-
-  <!-- About Section -->
-  <div id="about" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-    <div class="w3-content">
-      <div class="w3-twothird">
-        <h1>About</h1>
-        <h3>What is a Phylogeny?</h3>
-        <p class="w3-text-grey">
-          A phylogeny is a tree or a network that describes the past history of a group of
-          organisms (individuals, populations, species; also languages). A node represents a splitting event, such
-          as a population divergence or spectates, or a merging event, such a from hybridization, gene flow or
-          admixture.
-
-        </p>
-        <h3>What is it used for?</h3>
-        <p class="w3-text-grey">
-          Research in evolutionary biology uses phylogenetics (or phylogenomics) to infer phylogenies from molecular
-          sequence data,
-          and use these phylogenies for the discovery of evolutionary patterns about trait evolution, diversification,
-          etc.
-        </p>
-      </div>
-      <div class="w3-third w3-center">
-        <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
-      </div>
+<!-- Community Section -->
+<div id="community" class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+    <h1>Community</h1>
+    <p>Please connect with us or get involved! Everyone is welcome. To do so:</p>
+    <ul>
+    <li>Abide by
+      <a href="https://julialang.org/community/standards/">Community Guidelines.</a>
+    </li>
+    <li>If you have a question or want to report an issue about a specific
+      package, the best way is by open a github "issue" on that package
+      github repository.
+    </li>
+    <li>For inquiries about Julia in general, many answers to common
+      questions are on the
+      <a href="https://discourse.julialang.org/">Julia Discourse</a>
+      forum, and new questions can be poster there.<br>
+      This forum also has phylogenetics-related discussions,
+      e.g. search for "<a href="https://discourse.julialang.org/search?q=phylo">phylo</a>".
+    </li>
+    <li>Join our google group for more general questions on JuliaPhylo:
+      <a href="https://groups.google.com/g/juliaphylo-users">juliaphylo-users</a>.
+    </li>
+    <li>Join the &num;phylo channel on the
+      <a href="https://julialang.org/slack/">Julia Language Slack</a>
+      workspace.
+    </li>
+    </ul>
     </div>
   </div>
-  <!-- Community Section -->
-  <div id="community" class="w3-row-padding w3-padding-64 w3-container">
-    <div class="w3-content">
-      <div class="w3-twothird">
-      <h1>Community</h1>
-      <p>Please connect with us or get involved! Everyone is welcome. To do so:</p>
-      <ul>
-      <li class="w3-text-grey">Abide by
-        <a href="https://julialang.org/community/standards/">Community Guidelines</a>
-      </li>
-      <li>If you have a question or want to report an issue about a specific
-        package, the best way is by open a github "issue" on that package
-        github repository.
-      </li>
-      <li>For inquiries about Julia in general, many answers to common
-        questions are on the
-        <a href="https://discourse.julialang.org/">Julia Discourse</a>
-        forum, and new questions can be poster there.<br>
-        This forum also has phylogenetics-related discussions,
-        e.g. search for <a href="https://discourse.julialang.org/search?q=phylo">"phylo"</a>
-      </li>
-      <li>Join our google group for more general questions on JuliaPhylo:
-        <a href="https://groups.google.com/g/juliaphylo-users">juliaphylo-users</a>
-      </li>
-      <li>Join the &num;phylo channel on the
-        <a href="https://julialang.org/slack/">Julia Language Slack</a>
-        workspace.
-      </li>
-      </ul>
-      </div>
-    </div>
-  </div>
+</div>
 
-  <!-- Packages Section -->
-  <div id="packages" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-    <div class="w3-content">
-      <!-- <div class="w3-twothird"> -->
-      <h1>Packages</h1>
+<!-- Packages Section -->
+<div id="packages" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+<div class="w3-content">
+<!-- <div class="w3-twothird"> -->
+<h1>Packages</h1>
       <p class="w3-text-grey pkg-intro">
         There are a variety of Julia packages built by JuliaPhylo contributors.
         Most of them rely on the core PhyloNetworks package.
@@ -162,6 +166,7 @@
         </a>
       </div>
       <br>
+
       <div class="other-packages">
 
       </div>
@@ -224,7 +229,7 @@
       </div>
       <br>
       <p class="box-text">PhyloCoalSimulations is a package to simulate phylogenies under the coalescent.
-        It implements the network multi-species coalescent model with possible inheritance correlation</p>
+        It implements the network multi-species coalescent model with possible inheritance correlation.</p>
     </section>
     </a>
 
@@ -291,7 +296,8 @@
 <div class="w3-content">
   <div class="w3-twothird">
   <h1>Resources</h1>
-  <p>Here are other resources, such as non-Julia repositories and outside tutorials</p>
+  <p>Here are other resources, such as non-Julia repositories and outside tutorials:
+  </p>
   <ul>
   <li>PhyloUtilities:
     <a href="https://github.com/JuliaPhylo/PhyloUtilities">repository</a> for
@@ -301,11 +307,11 @@
   </li>
   <li>
     <a href="https://cecileane.github.io/networkPCM-workshop/">Comparative methods tutorial</a>
-    on reticulate phylogenies, including network calibration (2023 workshop)
+    on reticulate phylogenies, including network calibration (2023 workshop).
   </li>
   <li>
     <a href="https://solislemuslab.github.io/snaq-tutorial/">SNaQ tutorial</a>
-    to estimate networks from quartet concordance factor data (2023 workshop)
+    to estimate networks from quartet concordance factor data (2023 workshop).
   </li>
   <li>
     <a href="https://github.com/nstenz/TICR">TICR repository</a> with scripts
