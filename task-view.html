@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Julia phylogenetics task view | JuliaPhylo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Julia packages for phylogenetics, organized by analysis task.">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>
+
+<body id="top" class="task-view-page">
+  <nav class="w3-top" aria-label="Primary navigation">
+    <div class="w3-bar w3-card w3-left-align w3-large">
+      <a href="index.html#home" class="w3-bar-item w3-button w3-padding-large">Home</a>
+      <a href="index.html#packages" class="w3-bar-item w3-button w3-padding-large w3-white">Packages</a>
+      <a href="index.html#resources" class="w3-bar-item w3-button w3-padding-large">Resources</a>
+    </div>
+  </nav>
+
+  <header class="task-view-header">
+    <div class="task-view-inner">
+      <p class="task-view-kicker">JuliaPhylo</p>
+      <h1>Julia phylogenetics task view</h1>
+      <p>
+        Julia packages and binary wrappers organized by phylogenetic analysis task,
+        following the structure of the
+        <a href="https://cran.r-project.org/web/views/Phylogenetics.html">CRAN Phylogenetics Task View</a>.
+      </p>
+      <p class="task-view-meta">Last reviewed: <time datetime="2026-09-01">September 1, 2026</time></p>
+    </div>
+  </header>
+
+  <main id="main-content" class="task-view-content">
+    <section id="overview" aria-labelledby="overview-heading">
+      <h2 id="overview-heading">Overview</h2>
+      <p>
+        This view covers packages maintained by the
+        <a href="https://github.com/JuliaPhylo">JuliaPhylo organization</a>,
+        packages proposed in
+        <a href="https://github.com/JuliaPhylo/JuliaPhyloWebsite/issues/1">issue #1</a>,
+        directly relevant tools from the
+        <a href="https://github.com/diegozea/JuliaBioinformaticsJLLs">JuliaBioinformaticsJLLs catalogue</a>,
+        and packages found through a broader search of the Julia registry, GitHub, package organizations, and scientific software references.
+      </p>
+      <p>
+        Package descriptions use repository README files only. The
+        <span class="package-kind">JuliaPhylo</span> label marks packages maintained by the JuliaPhylo organization.
+        The <span class="package-kind package-inactive">No updates in past year</span> label marks repositories whose
+        default branch has no commits since September 1, 2025.
+      </p>
+    </section>
+
+    <section id="scope" class="task-major-section" aria-labelledby="scope-heading">
+      <h2 id="scope-heading">Scope</h2>
+      <p>
+        The focus is software that reads, builds, studies, compares, or plots phylogenetic trees and networks.
+        Command-line programs packaged as Julia artifacts are included when they support a standard phylogenetic workflow.
+      </p>
+
+      <section id="core-packages" class="task-subcategory" aria-labelledby="core-packages-heading">
+        <h3 id="core-packages-heading">Core packages</h3>
+        <ul class="task-package-list">
+          <li>
+            <a href="https://github.com/JuliaPhylo/PhyloNetworks.jl">PhyloNetworks.jl</a>
+            <span class="package-kind">JuliaPhylo</span>
+            reads, writes, manipulates, and compares phylogenetic trees and explicit networks with extended Newick support.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaCollections/AbstractTrees.jl">AbstractTrees.jl</a>
+            provides an interface for generalized tree-like data structures with child access and traversal utilities.
+          </li>
+          <li>
+            <a href="https://github.com/arzwa/NewickTree.jl">NewickTree.jl</a>
+            reads and writes Newick trees to a data structure supporting the AbstractTrees interface and includes a Plots recipe.
+          </li>
+          <li>
+            <a href="https://github.com/MurrellGroup/MolecularEvolution.jl">MolecularEvolution.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-07-07">No updates in past year</span>
+            is an experimental framework that implements likelihood calculations, branchlength optimization, topology optimization, and ancestral inference for user-defined evolutionary models.
+          </li>
+        </ul>
+      </section>
+
+      <nav id="tasks" class="task-contents" aria-labelledby="tasks-heading">
+        <h3 id="tasks-heading">Tasks</h3>
+        <ul>
+          <li>
+            <a href="#working-with-data">Working with phylogenetic data in Julia</a>
+            <ul>
+              <li><a href="#reading-alignments">Reading alignments and matrices</a></li>
+              <li><a href="#reading-trees">Reading trees</a></li>
+              <li><a href="#manipulating-trees">Manipulating trees</a></li>
+              <li><a href="#visualizing-trees">Visualizing trees</a></li>
+              <li><a href="#comparing-trees">Comparing trees</a></li>
+              <li><a href="#summary-statistics">Summary statistics</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#tree-building">Tree building in Julia</a>
+            <ul>
+              <li><a href="#simulating-trees">Simulating trees</a></li>
+              <li><a href="#inferring-trees">Inferring trees</a></li>
+              <li><a href="#time-dimension">Adding a time dimension</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#comparative-methods">Phylogenetic comparative methods</a>
+            <ul>
+              <li><a href="#ancestral-state">Ancestral state reconstruction</a></li>
+              <li><a href="#trait-evolution">Trait evolution</a></li>
+              <li><a href="#trait-simulations">Trait simulations</a></li>
+              <li><a href="#diversification">Diversification analysis</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#specific-fields">Phylogenetics in specific fields</a>
+            <ul>
+              <li><a href="#morphometrics">Morphometrics</a></li>
+              <li><a href="#paleontology">Time series and paleontology</a></li>
+              <li><a href="#community-ecology">Community and microbial ecology</a></li>
+              <li><a href="#phyloclimatic">Phyloclimatic modeling</a></li>
+              <li><a href="#biogeography">Phylogeography and biogeography</a></li>
+              <li><a href="#omics">Omics</a></li>
+              <li><a href="#gene-species">Gene tree–species tree and species delimitation</a></li>
+              <li><a href="#epidemiology">Epidemiology</a></li>
+            </ul>
+          </li>
+          <li><a href="#external-software">Interactions with external software and databases</a></li>
+          <li><a href="#manual-review">Needs manual review</a></li>
+          <li><a href="#references">References</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section id="working-with-data" class="task-major-section" aria-labelledby="working-with-data-heading">
+      <h2 id="working-with-data-heading">Working with phylogenetic data in Julia</h2>
+
+      <section id="reading-alignments" class="task-subcategory" aria-labelledby="reading-alignments-heading">
+        <h3 id="reading-alignments-heading">Reading alignments and matrices</h3>
+        <ul class="task-package-list">
+          <li>
+            <a href="https://github.com/JuliaBinaryWrappers/ClustalO_jll.jl">ClustalO_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-07-07">No updates in past year</span>
+            installs Clustal Omega, which reads sequences and profiles, writes multiple alignments in several formats, and reads or writes distance matrices and guide trees.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaBinaryWrappers/FAMSA_jll.jl">FAMSA_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-04-26">No updates in past year</span>
+            installs FAMSA, which reads FASTA inputs for multiple-sequence or profile-profile alignment and can import or export Newick guide trees and CSV distance matrices.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaBinaryWrappers/kalign_jll.jl">kalign_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-12-13">No updates in past year</span>
+            installs Kalign, which reads unaligned or aligned sequences and writes FASTA, MSF, or Clustal alignments.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaBinaryWrappers/MUSCLE_jll.jl">MUSCLE_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-06-03">No updates in past year</span>
+            installs MUSCLE for multiple alignment of biological sequences and alternative alignment ensembles for comparing downstream tree predictions.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaBinaryWrappers/Goalign_jll.jl">Goalign_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-03-28">No updates in past year</span>
+            installs Goalign for processing, converting, filtering, sampling, and summarizing multiple sequence alignments.
+          </li>
+          <li><a href="https://github.com/BioJulia/BioSequences.jl">BioSequences.jl</a> provides DNA, RNA, and amino-acid sequence types for biological sequence data.</li>
+          <li><a href="https://github.com/BioJulia/FASTX.jl">FASTX.jl</a> reads and writes FASTA and FASTQ files and provides utilities for those formats.</li>
+          <li><a href="https://github.com/carlobaldassi/FastaIO.jl">FastaIO.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-08-30">No updates in past year</span> provides utilities for reading and writing FASTA files.</li>
+          <li><a href="https://github.com/BioJulia/BioAlignments.jl">BioAlignments.jl</a> provides sequence-alignment algorithms and data structures.</li>
+          <li><a href="https://github.com/marcom/BioStockholm.jl">BioStockholm.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-01-17">No updates in past year</span> parses Stockholm-format protein, RNA, and DNA multiple alignments.</li>
+          <li><a href="https://github.com/PierreBarrat/BioSequenceMappings.jl">BioSequenceMappings.jl</a> manipulates alignments, calculates Hamming distances, and reads or writes FASTA files.</li>
+          <li><a href="https://github.com/diegozea/MIToS.jl">MIToS.jl</a> works with protein multiple-sequence alignments and their evolutionary information.</li>
+          <li><a href="https://github.com/latticetower/ProgressiveAligner.jl">ProgressiveAligner.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2016-10-04">No updates in past year</span> builds a guide tree with neighbor joining, UPGMA, or WPGMA and progressively aligns protein sequences.</li>
+          <li><a href="https://github.com/Qile0317/KmerGMA.jl">KmerGMA.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-04-24">No updates in past year</span> searches FASTA databases for homologues of a reference gene family or sequence using k-mers.</li>
+          <li><a href="https://github.com/fethalen/Patchwork">Patchwork</a> retrieves and concatenates phylogenetic markers and searches for homologues in distantly related taxa.</li>
+        </ul>
+      </section>
+
+      <section id="reading-trees" class="task-subcategory" aria-labelledby="reading-trees-heading">
+        <h3 id="reading-trees-heading">Reading trees</h3>
+        <ul class="task-package-list">
+          <li>
+            <a href="https://github.com/JuliaPhylo/PhyloNetworks.jl">PhyloNetworks.jl</a>
+            <span class="package-kind">JuliaPhylo</span>
+            reads and writes trees and networks in Newick and extended Newick formats.
+          </li>
+          <li>
+            <a href="https://github.com/arzwa/NewickTree.jl">NewickTree.jl</a>
+            parses Newick strings into tree structures and writes those trees back to Newick.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaBinaryWrappers/Gotree_jll.jl">Gotree_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-04-07">No updates in past year</span>
+            installs Gotree for working with phylogenetic trees in formats including Newick, Nexus, and PhyloXML.
+          </li>
+          <li><a href="https://github.com/EcoJulia/Phylo.jl">Phylo.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-10-23">No updates in past year</span> reads phylogenetic trees from Newick and Nexus files.</li>
+          <li><a href="https://github.com/jangevaare/PhyloTrees.jl">PhyloTrees.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2021-09-01">No updates in past year</span> provides tools for working with rooted phylogenetic trees.</li>
+          <li><a href="https://github.com/shaul-pollak/PhyloTools.jl">PhyloTools.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-03-14">No updates in past year</span> reads Newick trees for rooting, clustering, and plotting workflows.</li>
+          <li><a href="https://github.com/PierreBarrat/TreeTools.jl">TreeTools.jl</a> reads and writes rooted phylogenetic or genealogical trees in Newick format.</li>
+          <li><a href="https://github.com/banhbio/MetaPhylo.jl">MetaPhylo.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-01-22">No updates in past year</span> parses Newick into phylogenetic tree structures built with Graphs and AbstractTrees.</li>
+          <li><a href="https://github.com/Mikumikunisiteageru/TreeOfLife.jl">TreeOfLife.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-05-22">No updates in past year</span> parses and serializes cladograms and chronograms in Newick format.</li>
+          <li><a href="https://github.com/jeetsukumaran/LineagesIO.jl">LineagesIO.jl</a> reads rooted trees and networks from Newick and phylogeny CSV sources.</li>
+          <li><a href="https://github.com/nmatzke/PhyloBits.jl">PhyloBits.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-06-26">No updates in past year</span> provides phylogenetic tree tables and a dependency-light PhyloNetworks tree reader.</li>
+          <li><a href="https://github.com/aramanlab/NewickTreeTools.jl">NewickTreeTools.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-05-16">No updates in past year</span> reads Newick trees for traversal, distance calculations, clustering, and output.</li>
+          <li><a href="https://github.com/Mikumikunisiteageru/AsciiTrees.jl">AsciiTrees.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-01-28">No updates in past year</span> reads Newick phylogenetic trees and expands them as plain text.</li>
+          <li><a href="https://github.com/michaeltmeehan/TreeSim.jl">TreeSim.jl</a> represents, validates, traverses, and summarizes rooted trees for outbreak-modeling workflows.</li>
+        </ul>
+      </section>
+
+      <section id="manipulating-trees" class="task-subcategory" aria-labelledby="manipulating-trees-heading">
+        <h3 id="manipulating-trees-heading">Manipulating trees</h3>
+        <ul class="task-package-list">
+          <li>
+            <a href="https://github.com/JuliaPhylo/PhyloNetworks.jl">PhyloNetworks.jl</a>
+            <span class="package-kind">JuliaPhylo</span>
+            reroots and prunes phylogenies, removes hybrid edges, applies network rearrangements, and extracts displayed trees or networks.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaCollections/AbstractTrees.jl">AbstractTrees.jl</a>
+            provides child and descendant access plus preorder, postorder, and leaf traversal for tree-like structures.
+          </li>
+          <li>
+            <a href="https://github.com/arzwa/NewickTree.jl">NewickTree.jl</a>
+            provides tree nodes with traversal and query operations for Newick trees.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaBinaryWrappers/Gotree_jll.jl">Gotree_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-04-07">No updates in past year</span>
+            installs Gotree for manipulating, annotating, rerooting, and reformatting phylogenetic trees.
+          </li>
+          <li><a href="https://github.com/EcoJulia/Phylo.jl">Phylo.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-10-23">No updates in past year</span> creates phylogenetic trees manually and supports operations on the resulting phylogenies.</li>
+          <li><a href="https://github.com/BioJulia/Phylogenies.jl">Phylogenies.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2018-06-22">No updates in past year</span> defines an abstract phylogeny interface, a concrete implementation, and higher-level methods.</li>
+          <li><a href="https://github.com/jangevaare/PhyloTrees.jl">PhyloTrees.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2021-09-01">No updates in past year</span> provides node and branch operations, distances, and postorder traversal for rooted trees.</li>
+          <li><a href="https://github.com/shaul-pollak/PhyloTools.jl">PhyloTools.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-03-14">No updates in past year</span> midpoint-roots and clusters trees represented with NewickTree.jl.</li>
+          <li><a href="https://github.com/PierreBarrat/TreeTools.jl">TreeTools.jl</a> navigates, prunes, reroots, traverses, and annotates rooted trees.</li>
+          <li><a href="https://github.com/banhbio/MetaPhylo.jl">MetaPhylo.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-01-22">No updates in past year</span> stores phylogenetic metadata and supports node and branch queries.</li>
+          <li><a href="https://github.com/Mikumikunisiteageru/TreeOfLife.jl">TreeOfLife.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-05-22">No updates in past year</span> provides MRCA, monophyly, and other operations on cladograms and chronograms.</li>
+          <li><a href="https://github.com/aramanlab/NewickTreeTools.jl">NewickTreeTools.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-05-16">No updates in past year</span> traverses, cuts, clusters, and writes Newick trees.</li>
+          <li><a href="https://github.com/tgvaughan/TimeTrees.jl">TimeTrees.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2016-04-08">No updates in past year</span> represents and manipulates fully resolved phylogenetic time trees, including non-contemporaneous leaves.</li>
+          <li><a href="https://github.com/erathorn/MCPhyloTree.jl">MCPhyloTree.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-03-07">No updates in past year</span> supplies basic tree functionality for MCPhylo.jl.</li>
+        </ul>
+      </section>
+
+      <section id="visualizing-trees" class="task-subcategory" aria-labelledby="visualizing-trees-heading">
+        <h3 id="visualizing-trees-heading">Visualizing trees</h3>
+        <ul class="task-package-list">
+          <li>
+            <a href="https://github.com/JuliaPhylo/PhyloMakie.jl">PhyloMakie.jl</a>
+            <span class="package-kind">JuliaPhylo</span>
+            plots PhyloNetworks trees and networks with Makie and supports edge-length scaling, gamma display, tip labels, colors, and widths.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaPhylo/PhyloPlots.jl">PhyloPlots.jl</a>
+            <span class="package-kind">JuliaPhylo</span>
+            plots PhyloNetworks trees and networks via R through RCall.
+          </li>
+          <li>
+            <a href="https://github.com/BenjaminDoran/BasicTreePlots.jl">BasicTreePlots.jl</a>
+            provides Makie recipes for trees that implement the AbstractTrees interface.
+          </li>
+          <li>
+            <a href="https://github.com/arzwa/NewickTree.jl">NewickTree.jl</a>
+            includes a Plots recipe.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaBinaryWrappers/Gotree_jll.jl">Gotree_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-04-07">No updates in past year</span>
+            installs Gotree for drawing and annotating phylogenetic trees from the command line.
+          </li>
+          <li><a href="https://github.com/EcoJulia/Phylo.jl">Phylo.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-10-23">No updates in past year</span> plots phylogenies and associated traits with Plots recipes.</li>
+          <li><a href="https://github.com/jangevaare/PhyloTrees.jl">PhyloTrees.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2021-09-01">No updates in past year</span> provides a Plots recipe for rooted phylogenetic trees.</li>
+          <li><a href="https://github.com/shaul-pollak/PhyloTools.jl">PhyloTools.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-03-14">No updates in past year</span> plots NewickTree trees with Makie, including labels and orientation controls.</li>
+          <li><a href="https://github.com/jeetsukumaran/LineagesMakie.jl">LineagesMakie.jl</a> draws rooted lineage graphs with Makie using layouts, labels, clade annotations, and scale bars.</li>
+          <li><a href="https://github.com/sisl/D3Trees.jl">D3Trees.jl</a> provides interactive D3 visualization for large trees with styles, tooltips, expansion, and lazy loading.</li>
+          <li><a href="https://github.com/arzwa/PalmTree.jl">PalmTree.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2020-07-16">No updates in past year</span> draws and annotates NewickTree trees with Luxor.</li>
+          <li><a href="https://github.com/dharasim/TikzQTrees.jl">TikzQTrees.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2018-11-27">No updates in past year</span> plots trees with TikzPictures and the LaTeX tikz-qtree package.</li>
+          <li><a href="https://github.com/JuliaAI/TreeRecipe.jl">TreeRecipe.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-11-02">No updates in past year</span> plots tree types that implement the AbstractTrees interface.</li>
+          <li><a href="https://github.com/Mikumikunisiteageru/AsciiTrees.jl">AsciiTrees.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-01-28">No updates in past year</span> renders Newick phylogenetic trees as plain text.</li>
+          <li><a href="https://github.com/tgvaughan/TimeTrees.jl">TimeTrees.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2016-04-08">No updates in past year</span> plots fully resolved phylogenetic time trees in interactive Julia sessions.</li>
+        </ul>
+      </section>
+
+      <section id="comparing-trees" class="task-subcategory" aria-labelledby="comparing-trees-heading">
+        <h3 id="comparing-trees-heading">Comparing trees</h3>
+        <ul class="task-package-list">
+          <li>
+            <a href="https://github.com/cvigilv/PhyloDistances.jl">PhyloDistances.jl</a>
+            computes tree distances and similarities, including Robinson-Foulds variants, quartet distance, Nye similarity, and Jaccard-Robinson-Foulds.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaPhylo/PhyloNetworks.jl">PhyloNetworks.jl</a>
+            <span class="package-kind">JuliaPhylo</span>
+            compares phylogenetic trees and networks with dissimilarity measures.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaBinaryWrappers/Gotree_jll.jl">Gotree_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-04-07">No updates in past year</span>
+            installs Gotree for comparing phylogenetic trees from the command line.
+          </li>
+          <li><a href="https://github.com/solislemuslab/PhyloClustering.jl">PhyloClustering.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-10-25">No updates in past year</span> clusters phylogenetic trees with K-means, hierarchical clustering, Gaussian mixtures, or DBSCAN.</li>
+          <li><a href="https://github.com/PierreBarrat/TreeTools.jl">TreeTools.jl</a> computes metrics for rooted phylogenetic and genealogical trees.</li>
+          <li><a href="https://github.com/aramanlab/NewickTreeTools.jl">NewickTreeTools.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-05-16">No updates in past year</span> computes network, patristic, and traversal distances from Newick trees.</li>
+          <li><a href="https://github.com/JingZhai63/PhylogeneticDistance.jl">PhylogeneticDistance.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2018-07-18">No updates in past year</span> computes unweighted, weighted, variance-adjusted, and generalized UniFrac distance matrices.</li>
+          <li><a href="https://github.com/sungsik-kong/SymbolicQuartetCF.jl">SymbolicQuartetCF.jl</a> studies identifiability of tree and network parameters with quartet concordance factors.</li>
+        </ul>
+      </section>
+
+      <section id="summary-statistics" class="task-subcategory" aria-labelledby="summary-statistics-heading">
+        <h3 id="summary-statistics-heading">Summary statistics</h3>
+        <ul class="task-package-list">
+          <li>
+            <a href="https://github.com/JuliaPhylo/PhyloNetworks.jl">PhyloNetworks.jl</a>
+            <span class="package-kind">JuliaPhylo</span>
+            summarizes samples of phylogenetic networks and reports network features.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaPhylo/QuartetNetworkGoodnessFit.jl">QuartetNetworkGoodnessFit.jl</a>
+            <span class="package-kind">JuliaPhylo</span>
+            measures the goodness of fit of a phylogenetic network to data on four-taxon subsets.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaBinaryWrappers/Gotree_jll.jl">Gotree_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-04-07">No updates in past year</span>
+            installs Gotree for summarizing phylogenetic trees from the command line.
+          </li>
+          <li><a href="https://github.com/solislemuslab/PhyloClustering.jl">PhyloClustering.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-10-25">No updates in past year</span> summarizes structure among collections of phylogenetic trees with unsupervised learning.</li>
+          <li><a href="https://github.com/EcoJulia/Diversity.jl">Diversity.jl</a> measures and partitions alpha, beta, and gamma diversity using phylogenetic or other similarities.</li>
+          <li><a href="https://github.com/mkborregaard/Nodiv.jl">Nodiv.jl</a> compares descendant-clade richness at every internal node against a null model.</li>
+          <li><a href="https://github.com/Mikumikunisiteageru/TreeOfLife.jl">TreeOfLife.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-05-22">No updates in past year</span> calculates phylogenetic diversity, MRCA, and monophyly statistics.</li>
+          <li><a href="https://github.com/tochsner/TractableTimeTreeDistributions.jl">TractableTimeTreeDistributions.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-03-31">No updates in past year</span> calculates likelihoods, samples, credible regions, and point estimates for time-tree distributions.</li>
+          <li><a href="https://github.com/JingZhai63/PhylogeneticDistance.jl">PhylogeneticDistance.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2018-07-18">No updates in past year</span> returns UniFrac distance or kernel matrices for microbiome comparisons.</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="tree-building" class="task-major-section" aria-labelledby="tree-building-heading">
+      <h2 id="tree-building-heading">Tree building in Julia</h2>
+
+      <section id="simulating-trees" class="task-subcategory" aria-labelledby="simulating-trees-heading">
+        <h3 id="simulating-trees-heading">Simulating trees</h3>
+        <ul class="task-package-list">
+          <li>
+            <a href="https://github.com/JuliaPhylo/PhyloCoalSimulations.jl">PhyloCoalSimulations.jl</a>
+            <span class="package-kind">JuliaPhylo</span>
+            simulates phylogenies under the network multispecies coalescent with possible inheritance correlation.
+          </li>
+          <li><a href="https://github.com/EcoJulia/Phylo.jl">Phylo.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-10-23">No updates in past year</span> generates random phylogenetic trees.</li>
+          <li><a href="https://github.com/emvolz/Coalescent.jl">Coalescent.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-09-26">No updates in past year</span> simulates coalescent genealogical histories conditioned on flexible demographic histories.</li>
+          <li><a href="https://github.com/michaeltmeehan/CoalescentTrees.jl">CoalescentTrees.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-03-26">No updates in past year</span> simulates coalescent genealogies under standard and bounded models with heterochronous sampling support.</li>
+          <li><a href="https://github.com/skleinbo/TreeProcesses.jl">TreeProcesses.jl</a> simulates forward birth-death and Yule trees and backward coalescent trees.</li>
+          <li><a href="https://github.com/kopperud/BirthDeathSimulation.jl">BirthDeathSimulation.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-12-12">No updates in past year</span> simulates rooted time trees under a birth-death-shift process.</li>
+          <li><a href="https://github.com/PierreBarrat/TreeTools.jl">TreeTools.jl</a> generates random trees with birth-death, Kingman, Yule, and simple-shape processes.</li>
+        </ul>
+      </section>
+
+      <section id="inferring-trees" class="task-subcategory" aria-labelledby="inferring-trees-heading">
+        <h3 id="inferring-trees-heading">Inferring trees</h3>
+        <ul class="task-package-list">
+          <li>
+            <a href="https://github.com/BenjaminDoran/NeighborJoining.jl">NeighborJoining.jl</a>
+            reconstructs phylogenetic trees from pairwise distance matrices with regular, fast, or dynamic neighbor joining and converts results to Newick strings.
+          </li>
+          <li>
+            <a href="https://github.com/MurrellGroup/MolecularEvolution.jl">MolecularEvolution.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-07-07">No updates in past year</span>
+            performs branch-length and topology optimization for trees under user-defined evolutionary models.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaPhylo/SNaQ.jl">SNaQ.jl</a>
+            <span class="package-kind">JuliaPhylo</span>
+            estimates level-1 phylogenetic networks using maximum pseudolikelihood with numerical optimization of branch lengths and inheritance probabilities.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaPhylo/PhyLiNC.jl">PhyLiNC.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-09-12">No updates in past year</span>
+            <span class="package-kind">JuliaPhylo</span>
+            estimates phylogenetic networks from DNA sequences assuming sites evolve independently, but the method has not been thoroughly tested and NetRAX is recommended instead.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaBinaryWrappers/FastME_jll.jl">FastME_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-04-20">No updates in past year</span>
+            installs FastME for distance-based phylogeny reconstruction.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaBinaryWrappers/MrBayes_jll.jl">MrBayes_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-07-28">No updates in past year</span>
+            installs MrBayes for Bayesian inference of phylogeny.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaBinaryWrappers/PhyML_jll.jl">PhyML_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-08-04">No updates in past year</span>
+            installs PhyML for maximum-likelihood tree inference from nucleotide or amino-acid alignments.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaBinaryWrappers/RAxML_jll.jl">RAxML_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-08-03">No updates in past year</span>
+            installs standard RAxML v8 binaries for phylogenetic analysis and post-analysis of large phylogenies.
+          </li>
+          <li><a href="https://github.com/jangevaare/PhyloModels.jl">PhyloModels.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-04-02">No updates in past year</span> calculates phylogenetic tree likelihoods with Felsenstein's pruning algorithm.</li>
+          <li><a href="https://github.com/BioJulia/SubstitutionModels.jl">SubstitutionModels.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-04-23">No updates in past year</span> provides biological-sequence substitution models for sequence evolution, phylogenetics, and simulation.</li>
+          <li><a href="https://github.com/sungsik-kong/PhyNEST.jl">PhyNEST.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-06-03">No updates in past year</span> reads multilocus alignments and estimates maximum-composite-likelihood species networks from four-taxon site patterns.</li>
+          <li><a href="https://github.com/solislemuslab/PhyloDiamond.jl">PhyloDiamond.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-10-03">No updates in past year</span> learns four-node hybridization cycles in phylogenetic networks from concordance factors or gene trees.</li>
+          <li><a href="https://github.com/NathanKolbow/InPhyNet.jl">InPhyNet.jl</a> combines level-1 phylogenetic networks into a larger inferred network.</li>
+          <li><a href="https://github.com/sungsik-kong/SymbolicQuartetCF.jl">SymbolicQuartetCF.jl</a> studies identifiability of phylogenetic tree and network parameters with quartet concordance factors.</li>
+          <li><a href="https://github.com/akenglander/SymbolicQuartetNetworkCoal.jl">SymbolicQuartetNetworkCoal.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-04-14">No updates in past year</span> derives quartet concordance-factor formulas under the network multispecies coalescent for identifiability studies.</li>
+          <li><a href="https://github.com/max-hill/FourLeafMLE.jl">FourLeafMLE.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-06-09">No updates in past year</span> estimates a four-leaf phylogenetic tree from DNA sequence data.</li>
+          <li><a href="https://github.com/latticetower/ProgressiveAligner.jl">ProgressiveAligner.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2016-10-04">No updates in past year</span> builds neighbor-joining, UPGMA, or WPGMA guide trees while progressively aligning protein sequences.</li>
+          <li><a href="https://github.com/arzwa/Whale.jl">Whale.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-04-29">No updates in past year</span> jointly infers gene-tree topologies and their reconciliations to a species tree.</li>
+          <li><a href="https://github.com/arzwa/DeadBird.jl">DeadBird.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-01-27">No updates in past year</span> performs Bayesian and maximum-likelihood inference for phylogenetic birth-death models of gene families.</li>
+          <li><a href="https://github.com/juliayyan/PhylogeneticTrees.jl">PhylogeneticTrees.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2020-02-24">No updates in past year</span> fits admixture trees with a mixed-integer quadratic optimization algorithm.</li>
+          <li><a href="https://github.com/mashu/EvolutionModels.jl">EvolutionModels.jl</a> provides experimental DNA and protein CTMC models, simulation, likelihoods, and distances, but its README warns that results are unvalidated and not ready for production use.</li>
+          <li><a href="https://github.com/erathorn/MCPhylo.jl">MCPhylo.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-03-06">No updates in past year</span> extends Mamba's Markov chain Monte Carlo sampling for Bayesian phylogenetic computations.</li>
+          <li><a href="https://github.com/JuliaHealth/CAOS.jl">CAOS.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2020-02-09">No updates in past year</span> generates characteristic-attribute rules from Newick or Nexus phylogenetic trees for sequence classification.</li>
+        </ul>
+      </section>
+
+      <section id="time-dimension" class="task-subcategory" aria-labelledby="time-dimension-heading">
+        <h3 id="time-dimension-heading">Adding a time dimension</h3>
+        <ul class="task-package-list">
+          <li><a href="https://github.com/tgvaughan/TimeTrees.jl">TimeTrees.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2016-04-08">No updates in past year</span> represents fully resolved phylogenetic time trees, including trees with non-contemporaneous leaves.</li>
+          <li><a href="https://github.com/Mikumikunisiteageru/TreeOfLife.jl">TreeOfLife.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-05-22">No updates in past year</span> defines chronogram data types for time-scaled phylogenetic trees.</li>
+          <li><a href="https://github.com/tochsner/TractableTimeTreeDistributions.jl">TractableTimeTreeDistributions.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-03-31">No updates in past year</span> approximates time-tree distributions from MCMC posterior samples.</li>
+          <li><a href="https://github.com/kopperud/BirthDeathSimulation.jl">BirthDeathSimulation.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-12-12">No updates in past year</span> represents rooted phylogenetic trees in units of time and simulates birth-death-shift trees.</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="comparative-methods" class="task-major-section" aria-labelledby="comparative-methods-heading">
+      <h2 id="comparative-methods-heading">Phylogenetic comparative methods</h2>
+
+      <section id="ancestral-state" class="task-subcategory" aria-labelledby="ancestral-state-heading">
+        <h3 id="ancestral-state-heading">Ancestral state reconstruction</h3>
+        <ul class="task-package-list">
+          <li>
+            <a href="https://github.com/MurrellGroup/MolecularEvolution.jl">MolecularEvolution.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-07-07">No updates in past year</span>
+            performs ancestral inference under user-defined evolutionary models.
+          </li>
+          <li><a href="https://github.com/wyx619/EvoTraits.jl">EvoTraits.jl</a> performs ancestral reconstruction for continuous and discrete phylogenetic trait models.</li>
+          <li><a href="https://github.com/PierreBarrat/AncestralSequenceReconstruction.jl">AncestralSequenceReconstruction.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-11-13">No updates in past year</span> reconstructs ancestral protein sequences with autoregressive generative and profile models.</li>
+          <li><a href="https://github.com/jmkloos/PhyloInference.jl">PhyloInference.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2019-06-04">No updates in past year</span> performs Bayesian inference for trait evolution on phylogenetic trees.</li>
+        </ul>
+      </section>
+
+      <section id="trait-evolution" class="task-subcategory" aria-labelledby="trait-evolution-heading">
+        <h3 id="trait-evolution-heading">Trait evolution</h3>
+        <ul class="task-package-list">
+          <li>
+            <a href="https://github.com/JuliaPhylo/PhyloTraits.jl">PhyloTraits.jl</a>
+            <span class="package-kind">JuliaPhylo</span>
+            analyzes continuous and discrete trait evolution on phylogenetic trees and networks.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaPhylo/PhyloGaussianBeliefProp.jl">PhyloGaussianBeliefProp.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-03-13">No updates in past year</span>
+            <span class="package-kind">JuliaPhylo</span>
+            analyzes Gaussian models on phylogenetic networks and admixture graphs using belief propagation.
+          </li>
+          <li><a href="https://github.com/wyx619/EvoTraits.jl">EvoTraits.jl</a> fits continuous and discrete phylogenetic trait models and supports SIMMAP-aware analysis and model comparison.</li>
+          <li><a href="https://github.com/ignacioq/Tapestree.jl">Tapestree.jl</a> analyzes diversification, trait, and biogeographic dynamics on phylogenies.</li>
+          <li><a href="https://github.com/jmkloos/PhyloInference.jl">PhyloInference.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2019-06-04">No updates in past year</span> provides Bayesian inference for trait evolution on phylogenetic trees.</li>
+          <li><a href="https://github.com/porterjamesj/Pagel.jl">Pagel.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2013-12-13">No updates in past year</span> implements correlated-evolution analysis for discrete characters, but its README warns that it is a research prototype.</li>
+          <li><a href="https://github.com/EcoJulia/Phylo.jl">Phylo.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-10-23">No updates in past year</span> evolves continuous and discrete traits on generated phylogenies.</li>
+        </ul>
+      </section>
+
+      <section id="trait-simulations" class="task-subcategory" aria-labelledby="trait-simulations-heading">
+        <h3 id="trait-simulations-heading">Trait simulations</h3>
+        <ul class="task-package-list">
+          <li>
+            <a href="https://github.com/MurrellGroup/MolecularEvolution.jl">MolecularEvolution.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-07-07">No updates in past year</span>
+            simulates evolutionary states along trees under user-defined models.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaBinaryWrappers/SeqGen_jll.jl">SeqGen_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-03-16">No updates in past year</span>
+            installs Seq-Gen for Monte Carlo simulation of molecular sequence evolution along phylogenetic trees.
+          </li>
+          <li><a href="https://github.com/EcoJulia/Phylo.jl">Phylo.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-10-23">No updates in past year</span> evolves continuous and discrete traits on phylogenetic trees.</li>
+          <li><a href="https://github.com/wyx619/EvoTraits.jl">EvoTraits.jl</a> simulates continuous and discrete traits under its comparative models.</li>
+          <li><a href="https://github.com/jangevaare/PhyloModels.jl">PhyloModels.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-04-02">No updates in past year</span> simulates genetic sequences along specified phylogenetic trees.</li>
+          <li><a href="https://github.com/BioJulia/SubstitutionModels.jl">SubstitutionModels.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-04-23">No updates in past year</span> supplies sequence-substitution models for evolutionary simulation.</li>
+          <li><a href="https://github.com/PierreBarrat/PottsEvolver.jl">PottsEvolver.jl</a> simulates protein evolution with a Potts model along lineages or tree branches.</li>
+          <li><a href="https://github.com/michaeltmeehan/SeqSim.jl">SeqSim.jl</a> simulates sequences and alignments along trees and writes FASTA, Nexus, and PHYLIP output.</li>
+          <li><a href="https://github.com/mashu/EvolutionModels.jl">EvolutionModels.jl</a> simulates DNA and protein sequences with experimental continuous-time Markov models.</li>
+          <li><a href="https://github.com/spqb/Genie.jl">Genie.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-01-29">No updates in past year</span> simulates amino-acid or codon evolutionary trajectories with epistasis, codon bias, and selection.</li>
+          <li><a href="https://github.com/matteobisardi/SeqEvol">SeqEvol</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-02-03">No updates in past year</span> evolves protein alignments with DCA-based Gibbs sampling and controllable selection pressure.</li>
+        </ul>
+      </section>
+
+      <section id="diversification" class="task-subcategory" aria-labelledby="diversification-heading">
+        <h3 id="diversification-heading">Diversification analysis</h3>
+        <ul class="task-package-list">
+          <li><a href="https://github.com/ignacioq/Tapestree.jl">Tapestree.jl</a> fits constant, diffused, fossilized, and occurrence birth-death models.</li>
+          <li><a href="https://github.com/hmorlon/PANDA.jl">PANDA.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-07-09">No updates in past year</span> implements macroevolutionary analyses on phylogenetic trees.</li>
+          <li><a href="https://github.com/kopperud/Pesto.jl">Pesto.jl</a> fits state-dependent speciation and extinction models on reconstructed phylogenetic trees.</li>
+          <li><a href="https://github.com/nmatzke/PhyBEARS.jl">PhyBEARS.jl</a> implements biogeographic state-dependent speciation and extinction models.</li>
+          <li><a href="https://github.com/arzwa/DeadBird.jl">DeadBird.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-01-27">No updates in past year</span> models comparative genomic count data with phylogenetic birth-death processes.</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="specific-fields" class="task-major-section" aria-labelledby="specific-fields-heading">
+      <h2 id="specific-fields-heading">Phylogenetics in specific fields</h2>
+
+      <section id="morphometrics" class="task-subcategory task-empty" aria-labelledby="morphometrics-heading">
+        <h3 id="morphometrics-heading">Morphometrics</h3>
+        <p>No package in the current scope has a README-supported entry for phylogenetic morphometrics.</p>
+      </section>
+
+      <section id="paleontology" class="task-subcategory" aria-labelledby="paleontology-heading">
+        <h3 id="paleontology-heading">Time series and paleontology</h3>
+        <ul class="task-package-list">
+          <li><a href="https://github.com/ignacioq/Tapestree.jl">Tapestree.jl</a> fits fossilized and occurrence birth-death models for phylogenies with fossil information.</li>
+          <li><a href="https://github.com/jeetsukumaran/PaleobiologyDB.jl">PaleobiologyDB.jl</a> accesses fossil occurrences and taxonomy trees through the Paleobiology Database API.</li>
+        </ul>
+      </section>
+
+      <section id="community-ecology" class="task-subcategory" aria-labelledby="community-ecology-heading">
+        <h3 id="community-ecology-heading">Community and microbial ecology</h3>
+        <ul class="task-package-list">
+          <li><a href="https://github.com/EcoJulia/Diversity.jl">Diversity.jl</a> calculates phylogenetic diversity and partitions alpha, beta, and gamma diversity.</li>
+          <li><a href="https://github.com/mkborregaard/Nodiv.jl">Nodiv.jl</a> compares descendant-clade richness across cells against a null model at each internal phylogenetic node.</li>
+          <li><a href="https://github.com/JingZhai63/PhylogeneticDistance.jl">PhylogeneticDistance.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2018-07-18">No updates in past year</span> computes UniFrac matrices for comparing microbiome taxonomic composition.</li>
+          <li><a href="https://github.com/EvoArt/AssignTaxonomy.jl">AssignTaxonomy.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-02-06">No updates in past year</span> assigns taxonomic classifications to DNA sequences with an all-Julia RDP naive Bayesian classifier.</li>
+        </ul>
+      </section>
+
+      <section id="phyloclimatic" class="task-subcategory task-empty" aria-labelledby="phyloclimatic-heading">
+        <h3 id="phyloclimatic-heading">Phyloclimatic modeling</h3>
+        <p>No package in the current scope has a README-supported entry for combining phylogenies with climate data.</p>
+      </section>
+
+      <section id="biogeography" class="task-subcategory" aria-labelledby="biogeography-heading">
+        <h3 id="biogeography-heading">Phylogeography and biogeography</h3>
+        <ul class="task-package-list">
+          <li><a href="https://github.com/ignacioq/Tapestree.jl">Tapestree.jl</a> fits models of biogeographic dynamics on phylogenies.</li>
+          <li><a href="https://github.com/nmatzke/PhyBEARS.jl">PhyBEARS.jl</a> models biogeographic state-dependent speciation and extinction with systems of ODEs.</li>
+          <li><a href="https://github.com/BioJulia/PopGen.jl">PopGen.jl</a> provides population-genetics analysis in Julia.</li>
+          <li><a href="https://github.com/darreni/GenomicDiversity.jl">GenomicDiversity.jl</a> calculates genomic diversity, genetic distance, and population differentiation within and among populations.</li>
+          <li><a href="https://github.com/OpenMendel/OpenADMIXTURE.jl">OpenADMIXTURE.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-02-18">No updates in past year</span> estimates ancestry by maximum likelihood from large SNP genotype datasets.</li>
+          <li><a href="https://github.com/BgroveP/LocalAncestry.jl">LocalAncestry.jl</a> infers local ancestry from phased VCFs, reference ancestries, and a hidden Markov model.</li>
+          <li><a href="https://github.com/BioJulia/PopGenCore.jl">PopGenCore.jl</a> provides population-genetics data types and file I/O used by PopGen.jl.</li>
+          <li><a href="https://github.com/pdimens/PopGenSims.jl">PopGenSims.jl</a> simulates related and unrelated individuals from population-specific allele frequencies.</li>
+        </ul>
+      </section>
+
+      <section id="omics" class="task-subcategory" aria-labelledby="omics-heading">
+        <h3 id="omics-heading">Omics</h3>
+        <ul class="task-package-list">
+          <li>
+            <a href="https://github.com/MurrellGroup/CodonMolecularEvolution.jl">CodonMolecularEvolution.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-08-13">No updates in past year</span>
+            is a descendant of MolecularEvolution.jl specializing in codon models, with a dN/dS catalogue currently consisting of FUBAR and difFUBAR.
+          </li>
+          <li>
+            <a href="https://github.com/MurrellGroup/MolecularEvolution.jl">MolecularEvolution.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-07-07">No updates in past year</span>
+            provides likelihood and ancestral analyses for user-defined molecular evolutionary models.
+          </li>
+          <li><a href="https://github.com/BioJulia/SubstitutionModels.jl">SubstitutionModels.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-04-23">No updates in past year</span> defines DNA and protein substitution models for sequence evolution and phylogenetics.</li>
+          <li><a href="https://github.com/jangevaare/PhyloModels.jl">PhyloModels.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-04-02">No updates in past year</span> simulates genetic sequences and calculates phylogenetic tree likelihoods.</li>
+          <li><a href="https://github.com/arzwa/Whale.jl">Whale.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-04-29">No updates in past year</span> performs Bayesian gene-tree reconciliation and whole-genome duplication inference.</li>
+          <li><a href="https://github.com/arzwa/DeadBird.jl">DeadBird.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-01-27">No updates in past year</span> models comparative genomic count data, most commonly gene families, with phylogenetic birth-death processes.</li>
+          <li><a href="https://github.com/pagnani/ArDCA.jl">ArDCA.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-02-27">No updates in past year</span> learns autoregressive protein models with generalized logistic regression.</li>
+          <li><a href="https://github.com/PierreBarrat/PottsEvolver.jl">PottsEvolver.jl</a> simulates protein evolution along lineages or tree branches with Potts models.</li>
+          <li><a href="https://github.com/spqb/Genie.jl">Genie.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-01-29">No updates in past year</span> simulates amino-acid or codon sequence trajectories with mutation, epistasis, and selection.</li>
+          <li><a href="https://github.com/matteobisardi/SeqEvol">SeqEvol</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-02-03">No updates in past year</span> evolves protein multiple-sequence alignments with DCA-based Gibbs sampling.</li>
+          <li><a href="https://github.com/diegozea/MIToS.jl">MIToS.jl</a> extracts evolutionary information from protein multiple-sequence alignments.</li>
+          <li><a href="https://github.com/Qile0317/KmerGMA.jl">KmerGMA.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-04-24">No updates in past year</span> searches for homologous genes or sequences with a k-mer approach.</li>
+          <li><a href="https://github.com/fethalen/Patchwork">Patchwork</a> retrieves and concatenates phylogenetic markers from whole-genome sequence data.</li>
+        </ul>
+      </section>
+
+      <section id="gene-species" class="task-subcategory" aria-labelledby="gene-species-heading">
+        <h3 id="gene-species-heading">Gene tree–species tree and species delimitation</h3>
+        <ul class="task-package-list">
+          <li>
+            <a href="https://github.com/JuliaPhylo/SNaQ.jl">SNaQ.jl</a>
+            <span class="package-kind">JuliaPhylo</span>
+            estimates level-1 phylogenetic networks using maximum pseudolikelihood under incomplete lineage sorting.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaPhylo/PhyloCoalSimulations.jl">PhyloCoalSimulations.jl</a>
+            <span class="package-kind">JuliaPhylo</span>
+            simulates phylogenies under the network multispecies coalescent with possible inheritance correlation.
+          </li>
+          <li>
+            <a href="https://github.com/JuliaPhylo/QuartetNetworkGoodnessFit.jl">QuartetNetworkGoodnessFit.jl</a>
+            <span class="package-kind">JuliaPhylo</span>
+            checks the fit of a phylogenetic network to data from four-taxon subsets.
+          </li>
+          <li><a href="https://github.com/sungsik-kong/PhyNEST.jl">PhyNEST.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-06-03">No updates in past year</span> estimates maximum-composite-likelihood species networks from multilocus alignments and site patterns.</li>
+          <li><a href="https://github.com/solislemuslab/PhyloDiamond.jl">PhyloDiamond.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-10-03">No updates in past year</span> learns four-node hybridization cycles from concordance factors or gene-tree files.</li>
+          <li><a href="https://github.com/NathanKolbow/InPhyNet.jl">InPhyNet.jl</a> merges level-1 phylogenetic networks into a combined network.</li>
+          <li><a href="https://github.com/sungsik-kong/SymbolicQuartetCF.jl">SymbolicQuartetCF.jl</a> studies identifiability of tree and network parameters from quartet concordance factors.</li>
+          <li><a href="https://github.com/akenglander/SymbolicQuartetNetworkCoal.jl">SymbolicQuartetNetworkCoal.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-04-14">No updates in past year</span> derives quartet concordance-factor formulas under the network multispecies coalescent.</li>
+          <li><a href="https://github.com/arzwa/Whale.jl">Whale.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-04-29">No updates in past year</span> jointly infers gene trees and their reconciliation to a species tree.</li>
+          <li><a href="https://github.com/arzwa/DeadBird.jl">DeadBird.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-01-27">No updates in past year</span> infers gene-family duplication, loss, and gain processes on phylogenies.</li>
+          <li><a href="https://github.com/jrusinko/PhyloPickMe.jl">PhyloPickMe.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-10-08">No updates in past year</span> selects samples for inclusion in species-tree analyses.</li>
+          <li><a href="https://github.com/juliayyan/PhylogeneticTrees.jl">PhylogeneticTrees.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2020-02-24">No updates in past year</span> fits admixture trees using mixed-integer quadratic optimization.</li>
+        </ul>
+      </section>
+
+      <section id="epidemiology" class="task-subcategory" aria-labelledby="epidemiology-heading">
+        <h3 id="epidemiology-heading">Epidemiology</h3>
+        <ul class="task-package-list">
+          <li><a href="https://github.com/PierreBarrat/TreeKnit.jl">TreeKnit.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-02-18">No updates in past year</span> infers ancestral reassortment graphs for segmented genomes such as human influenza.</li>
+          <li><a href="https://github.com/jangevaare/Pathogen.jl">Pathogen.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-09-29">No updates in past year</span> fits individual-level infectious-disease models and infers who-infected-whom transmission pathways.</li>
+          <li><a href="https://github.com/michaeltmeehan/TreeSim.jl">TreeSim.jl</a> provides a rooted-tree layer for outbreak-modeling workflows.</li>
+          <li><a href="https://github.com/pablocarderam/glOpqua">glOpqua</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-12-01">No updates in past year</span> simulates pathogen epidemiology and evolution across scales.</li>
+          <li><a href="https://github.com/epirecipes/Outbreaks.jl">Outbreaks.jl</a> provides curated outbreak datasets, including contacts and pathogen DNA data.</li>
+          <li><a href="https://github.com/emvolz/Coalescent.jl">Coalescent.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-09-26">No updates in past year</span> simulates pathogen genealogical histories under flexible demographic and sampling histories.</li>
+        </ul>
+      </section>
+    </section>
+
+    <section id="external-software" class="task-major-section" aria-labelledby="external-software-heading">
+      <h2 id="external-software-heading">Interactions with external software and databases</h2>
+      <ul class="task-package-list">
+        <li><a href="https://github.com/PoisotLab/NCBITaxonomy.jl">NCBITaxonomy.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-06-30">No updates in past year</span> provides an interface to the NCBI Taxonomy and downloads the latest taxonomy files from the NCBI FTP service when installed.</li>
+        <li><a href="https://github.com/JuliaBinaryWrappers/NCBIDatasets_jll.jl">NCBIDatasets_jll</a> installs the NCBI Datasets commands for finding and downloading sequence, annotation, and metadata for genes, genomes, viruses, and taxonomies.</li>
+        <li><a href="https://github.com/JuliaPhylo/PhyloPlots.jl">PhyloPlots.jl</a> <span class="package-kind">JuliaPhylo</span> plots PhyloNetworks trees and networks through R via RCall.</li>
+        <li><a href="https://github.com/JuliaBinaryWrappers/ClustalO_jll.jl">ClustalO_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-07-07">No updates in past year</span> installs the Clustal Omega command-line executable.</li>
+        <li><a href="https://github.com/JuliaBinaryWrappers/FAMSA_jll.jl">FAMSA_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-04-26">No updates in past year</span> installs the FAMSA command-line executable.</li>
+        <li><a href="https://github.com/JuliaBinaryWrappers/kalign_jll.jl">kalign_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-12-13">No updates in past year</span> provides the Kalign executable and library.</li>
+        <li><a href="https://github.com/JuliaBinaryWrappers/MUSCLE_jll.jl">MUSCLE_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-06-03">No updates in past year</span> installs the MUSCLE command-line executable.</li>
+        <li><a href="https://github.com/JuliaBinaryWrappers/Goalign_jll.jl">Goalign_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-03-28">No updates in past year</span> installs the Goalign command-line alignment utility.</li>
+        <li><a href="https://github.com/JuliaBinaryWrappers/Gotree_jll.jl">Gotree_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-04-07">No updates in past year</span> installs the Gotree command-line tree utility.</li>
+        <li><a href="https://github.com/JuliaBinaryWrappers/FastME_jll.jl">FastME_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-04-20">No updates in past year</span> installs the FastME phylogeny-reconstruction executable.</li>
+        <li><a href="https://github.com/JuliaBinaryWrappers/MrBayes_jll.jl">MrBayes_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-07-28">No updates in past year</span> installs the MrBayes phylogenetic-inference executable.</li>
+        <li><a href="https://github.com/JuliaBinaryWrappers/PhyML_jll.jl">PhyML_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-08-04">No updates in past year</span> installs sequential and MPI PhyML executables.</li>
+        <li><a href="https://github.com/JuliaBinaryWrappers/RAxML_jll.jl">RAxML_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-08-03">No updates in past year</span> installs standard RAxML v8 executables.</li>
+        <li><a href="https://github.com/JuliaBinaryWrappers/SeqGen_jll.jl">SeqGen_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-03-16">No updates in past year</span> installs the Seq-Gen sequence-simulation executable.</li>
+        <li><a href="https://github.com/banhbio/Taxonomy.jl">Taxonomy.jl</a> handles the NCBI Taxonomy database with taxon traversal, name lookup, lineage, rank, and lowest-common-ancestor queries.</li>
+        <li><a href="https://github.com/EvoArt/AssignTaxonomy.jl">AssignTaxonomy.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-02-06">No updates in past year</span> assigns taxonomy to DNA sequences with an all-Julia RDP naive Bayesian classifier.</li>
+        <li><a href="https://github.com/jeetsukumaran/PaleobiologyDB.jl">PaleobiologyDB.jl</a> accesses fossil occurrences and taxonomic trees through the Paleobiology Database API.</li>
+        <li><a href="https://github.com/epirecipes/Outbreaks.jl">Outbreaks.jl</a> provides curated disease-outbreak datasets for Julia.</li>
+      </ul>
+    </section>
+
+    <section id="manual-review" class="task-major-section" aria-labelledby="manual-review-heading">
+      <h2 id="manual-review-heading">Needs manual review</h2>
+      <p>These repositories do not have enough information in the permitted README files to support a one-line description.</p>
+      <ul class="task-package-list">
+        <li><a href="https://github.com/JuliaPhylo/PhyloSummaries.jl">PhyloSummaries.jl</a> <span class="package-kind">JuliaPhylo</span></li>
+        <li><a href="https://github.com/JuliaBinaryWrappers/FastTree_jll.jl">FastTree_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-06-18">No updates in past year</span></li>
+        <li><a href="https://github.com/JuliaBinaryWrappers/PHYLIP_jll.jl">PHYLIP_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-11-17">No updates in past year</span></li>
+        <li><a href="https://github.com/JuliaBinaryWrappers/MAFFT_jll.jl">MAFFT_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-06-19">No updates in past year</span></li>
+        <li><a href="https://github.com/JuliaBinaryWrappers/norMD_jll.jl">norMD_jll</a></li>
+        <li><a href="https://github.com/CiaranOMara/Newick.jl">Newick.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2020-04-29">No updates in past year</span></li>
+        <li><a href="https://github.com/kingaa/PhyloPOMP.jl">PhyloPOMP.jl</a></li>
+        <li><a href="https://github.com/gabehassler/PhylogeneticFactorAnalysis.jl">PhylogeneticFactorAnalysis.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-04-15">No updates in past year</span></li>
+        <li><a href="https://github.com/Julia-BEAST-utils/BEASTDataPrep.jl">BEASTDataPrep.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-05-13">No updates in past year</span></li>
+        <li><a href="https://github.com/Julia-BEAST-utils/BEASTXMLConstructor.jl">BEASTXMLConstructor.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-03-29">No updates in past year</span></li>
+        <li><a href="https://github.com/gabehassler/BeastUtils.jl">BeastUtils.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-11-01">No updates in past year</span></li>
+        <li><a href="https://github.com/AITHM/BirthDeathPhylo.jl">BirthDeathPhylo.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-05-01">No updates in past year</span></li>
+        <li><a href="https://github.com/michaeltmeehan/EpiPhylo">EpiPhylo</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-04-03">No updates in past year</span></li>
+        <li><a href="https://github.com/JuliaBinaryWrappers/figtree_jll.jl">figtree_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2020-08-02">No updates in past year</span></li>
+        <li><a href="https://github.com/isangfeng/Dendrogram.jl">Dendrogram.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-12-25">No updates in past year</span></li>
+        <li><a href="https://github.com/savmasse/PhyloVI">PhyloVI</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2019-12-06">No updates in past year</span></li>
+        <li><a href="https://github.com/kopperud/BirthDeathShiftSim.jl">BirthDeathShiftSim.jl</a></li>
+        <li><a href="https://github.com/MurrellGroup/SequenceMutationDistance.jl">SequenceMutationDistance.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2018-08-28">No updates in past year</span></li>
+        <li><a href="https://github.com/EcoJulia/Taxonomies.jl">Taxonomies.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2021-05-25">No updates in past year</span></li>
+      </ul>
+    </section>
+
+    <section id="references" class="task-major-section" aria-labelledby="references-heading">
+      <h2 id="references-heading">References</h2>
+
+      <section id="package-index" class="task-subcategory" aria-labelledby="package-index-heading">
+        <h3 id="package-index-heading">Julia packages</h3>
+        <p>All packages and binary wrappers included in this task view, listed alphabetically.</p>
+        <ul class="package-index-list">
+          <li><a href="https://github.com/JuliaCollections/AbstractTrees.jl">AbstractTrees.jl</a></li>
+          <li><a href="https://github.com/PierreBarrat/AncestralSequenceReconstruction.jl">AncestralSequenceReconstruction.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-11-13">No updates in past year</span></li>
+          <li><a href="https://github.com/pagnani/ArDCA.jl">ArDCA.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-02-27">No updates in past year</span></li>
+          <li><a href="https://github.com/Mikumikunisiteageru/AsciiTrees.jl">AsciiTrees.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-01-28">No updates in past year</span></li>
+          <li><a href="https://github.com/EvoArt/AssignTaxonomy.jl">AssignTaxonomy.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-02-06">No updates in past year</span></li>
+          <li><a href="https://github.com/BenjaminDoran/BasicTreePlots.jl">BasicTreePlots.jl</a></li>
+          <li><a href="https://github.com/Julia-BEAST-utils/BEASTDataPrep.jl">BEASTDataPrep.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-05-13">No updates in past year</span></li>
+          <li><a href="https://github.com/gabehassler/BeastUtils.jl">BeastUtils.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-11-01">No updates in past year</span></li>
+          <li><a href="https://github.com/Julia-BEAST-utils/BEASTXMLConstructor.jl">BEASTXMLConstructor.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-03-29">No updates in past year</span></li>
+          <li><a href="https://github.com/BioJulia/BioAlignments.jl">BioAlignments.jl</a></li>
+          <li><a href="https://github.com/PierreBarrat/BioSequenceMappings.jl">BioSequenceMappings.jl</a></li>
+          <li><a href="https://github.com/BioJulia/BioSequences.jl">BioSequences.jl</a></li>
+          <li><a href="https://github.com/marcom/BioStockholm.jl">BioStockholm.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-01-17">No updates in past year</span></li>
+          <li><a href="https://github.com/AITHM/BirthDeathPhylo.jl">BirthDeathPhylo.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-05-01">No updates in past year</span></li>
+          <li><a href="https://github.com/kopperud/BirthDeathShiftSim.jl">BirthDeathShiftSim.jl</a></li>
+          <li><a href="https://github.com/kopperud/BirthDeathSimulation.jl">BirthDeathSimulation.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-12-12">No updates in past year</span></li>
+          <li><a href="https://github.com/JuliaHealth/CAOS.jl">CAOS.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2020-02-09">No updates in past year</span></li>
+          <li><a href="https://github.com/JuliaBinaryWrappers/ClustalO_jll.jl">ClustalO_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-07-07">No updates in past year</span></li>
+          <li><a href="https://github.com/emvolz/Coalescent.jl">Coalescent.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-09-26">No updates in past year</span></li>
+          <li><a href="https://github.com/michaeltmeehan/CoalescentTrees.jl">CoalescentTrees.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-03-26">No updates in past year</span></li>
+          <li><a href="https://github.com/MurrellGroup/CodonMolecularEvolution.jl">CodonMolecularEvolution.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-08-13">No updates in past year</span></li>
+          <li><a href="https://github.com/sisl/D3Trees.jl">D3Trees.jl</a></li>
+          <li><a href="https://github.com/arzwa/DeadBird.jl">DeadBird.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-01-27">No updates in past year</span></li>
+          <li><a href="https://github.com/isangfeng/Dendrogram.jl">Dendrogram.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-12-25">No updates in past year</span></li>
+          <li><a href="https://github.com/EcoJulia/Diversity.jl">Diversity.jl</a></li>
+          <li><a href="https://github.com/michaeltmeehan/EpiPhylo">EpiPhylo</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-04-03">No updates in past year</span></li>
+          <li><a href="https://github.com/mashu/EvolutionModels.jl">EvolutionModels.jl</a></li>
+          <li><a href="https://github.com/wyx619/EvoTraits.jl">EvoTraits.jl</a></li>
+          <li><a href="https://github.com/JuliaBinaryWrappers/FAMSA_jll.jl">FAMSA_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-04-26">No updates in past year</span></li>
+          <li><a href="https://github.com/carlobaldassi/FastaIO.jl">FastaIO.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-08-30">No updates in past year</span></li>
+          <li><a href="https://github.com/JuliaBinaryWrappers/FastME_jll.jl">FastME_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-04-20">No updates in past year</span></li>
+          <li><a href="https://github.com/JuliaBinaryWrappers/FastTree_jll.jl">FastTree_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-06-18">No updates in past year</span></li>
+          <li><a href="https://github.com/BioJulia/FASTX.jl">FASTX.jl</a></li>
+          <li><a href="https://github.com/JuliaBinaryWrappers/figtree_jll.jl">figtree_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2020-08-02">No updates in past year</span></li>
+          <li><a href="https://github.com/max-hill/FourLeafMLE.jl">FourLeafMLE.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-06-09">No updates in past year</span></li>
+          <li><a href="https://github.com/spqb/Genie.jl">Genie.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-01-29">No updates in past year</span></li>
+          <li><a href="https://github.com/darreni/GenomicDiversity.jl">GenomicDiversity.jl</a></li>
+          <li><a href="https://github.com/pablocarderam/glOpqua">glOpqua</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-12-01">No updates in past year</span></li>
+          <li><a href="https://github.com/JuliaBinaryWrappers/Goalign_jll.jl">Goalign_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-03-28">No updates in past year</span></li>
+          <li><a href="https://github.com/JuliaBinaryWrappers/Gotree_jll.jl">Gotree_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-04-07">No updates in past year</span></li>
+          <li><a href="https://github.com/NathanKolbow/InPhyNet.jl">InPhyNet.jl</a></li>
+          <li><a href="https://github.com/JuliaBinaryWrappers/kalign_jll.jl">kalign_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-12-13">No updates in past year</span></li>
+          <li><a href="https://github.com/Qile0317/KmerGMA.jl">KmerGMA.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-04-24">No updates in past year</span></li>
+          <li><a href="https://github.com/jeetsukumaran/LineagesIO.jl">LineagesIO.jl</a></li>
+          <li><a href="https://github.com/jeetsukumaran/LineagesMakie.jl">LineagesMakie.jl</a></li>
+          <li><a href="https://github.com/BgroveP/LocalAncestry.jl">LocalAncestry.jl</a></li>
+          <li><a href="https://github.com/JuliaBinaryWrappers/MAFFT_jll.jl">MAFFT_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-06-19">No updates in past year</span></li>
+          <li><a href="https://github.com/erathorn/MCPhylo.jl">MCPhylo.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-03-06">No updates in past year</span></li>
+          <li><a href="https://github.com/erathorn/MCPhyloTree.jl">MCPhyloTree.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-03-07">No updates in past year</span></li>
+          <li><a href="https://github.com/banhbio/MetaPhylo.jl">MetaPhylo.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-01-22">No updates in past year</span></li>
+          <li><a href="https://github.com/diegozea/MIToS.jl">MIToS.jl</a></li>
+          <li><a href="https://github.com/MurrellGroup/MolecularEvolution.jl">MolecularEvolution.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-07-07">No updates in past year</span></li>
+          <li><a href="https://github.com/JuliaBinaryWrappers/MrBayes_jll.jl">MrBayes_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-07-28">No updates in past year</span></li>
+          <li><a href="https://github.com/JuliaBinaryWrappers/MUSCLE_jll.jl">MUSCLE_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-06-03">No updates in past year</span></li>
+          <li><a href="https://github.com/JuliaBinaryWrappers/NCBIDatasets_jll.jl">NCBIDatasets_jll</a></li>
+          <li><a href="https://github.com/PoisotLab/NCBITaxonomy.jl">NCBITaxonomy.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-06-30">No updates in past year</span></li>
+          <li><a href="https://github.com/BenjaminDoran/NeighborJoining.jl">NeighborJoining.jl</a></li>
+          <li><a href="https://github.com/CiaranOMara/Newick.jl">Newick.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2020-04-29">No updates in past year</span></li>
+          <li><a href="https://github.com/arzwa/NewickTree.jl">NewickTree.jl</a></li>
+          <li><a href="https://github.com/aramanlab/NewickTreeTools.jl">NewickTreeTools.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-05-16">No updates in past year</span></li>
+          <li><a href="https://github.com/mkborregaard/Nodiv.jl">Nodiv.jl</a></li>
+          <li><a href="https://github.com/JuliaBinaryWrappers/norMD_jll.jl">norMD_jll</a></li>
+          <li><a href="https://github.com/OpenMendel/OpenADMIXTURE.jl">OpenADMIXTURE.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-02-18">No updates in past year</span></li>
+          <li><a href="https://github.com/epirecipes/Outbreaks.jl">Outbreaks.jl</a></li>
+          <li><a href="https://github.com/porterjamesj/Pagel.jl">Pagel.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2013-12-13">No updates in past year</span></li>
+          <li><a href="https://github.com/jeetsukumaran/PaleobiologyDB.jl">PaleobiologyDB.jl</a></li>
+          <li><a href="https://github.com/arzwa/PalmTree.jl">PalmTree.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2020-07-16">No updates in past year</span></li>
+          <li><a href="https://github.com/hmorlon/PANDA.jl">PANDA.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-07-09">No updates in past year</span></li>
+          <li><a href="https://github.com/fethalen/Patchwork">Patchwork</a></li>
+          <li><a href="https://github.com/jangevaare/Pathogen.jl">Pathogen.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-09-29">No updates in past year</span></li>
+          <li><a href="https://github.com/kopperud/Pesto.jl">Pesto.jl</a></li>
+          <li><a href="https://github.com/nmatzke/PhyBEARS.jl">PhyBEARS.jl</a></li>
+          <li><a href="https://github.com/JuliaPhylo/PhyLiNC.jl">PhyLiNC.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-09-12">No updates in past year</span> <span class="package-kind">JuliaPhylo</span></li>
+          <li><a href="https://github.com/JuliaBinaryWrappers/PHYLIP_jll.jl">PHYLIP_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-11-17">No updates in past year</span></li>
+          <li><a href="https://github.com/EcoJulia/Phylo.jl">Phylo.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-10-23">No updates in past year</span></li>
+          <li><a href="https://github.com/nmatzke/PhyloBits.jl">PhyloBits.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-06-26">No updates in past year</span></li>
+          <li><a href="https://github.com/solislemuslab/PhyloClustering.jl">PhyloClustering.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-10-25">No updates in past year</span></li>
+          <li><a href="https://github.com/JuliaPhylo/PhyloCoalSimulations.jl">PhyloCoalSimulations.jl</a> <span class="package-kind">JuliaPhylo</span></li>
+          <li><a href="https://github.com/solislemuslab/PhyloDiamond.jl">PhyloDiamond.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-10-03">No updates in past year</span></li>
+          <li><a href="https://github.com/cvigilv/PhyloDistances.jl">PhyloDistances.jl</a></li>
+          <li><a href="https://github.com/JuliaPhylo/PhyloGaussianBeliefProp.jl">PhyloGaussianBeliefProp.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-03-13">No updates in past year</span> <span class="package-kind">JuliaPhylo</span></li>
+          <li><a href="https://github.com/JingZhai63/PhylogeneticDistance.jl">PhylogeneticDistance.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2018-07-18">No updates in past year</span></li>
+          <li><a href="https://github.com/gabehassler/PhylogeneticFactorAnalysis.jl">PhylogeneticFactorAnalysis.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-04-15">No updates in past year</span></li>
+          <li><a href="https://github.com/juliayyan/PhylogeneticTrees.jl">PhylogeneticTrees.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2020-02-24">No updates in past year</span></li>
+          <li><a href="https://github.com/BioJulia/Phylogenies.jl">Phylogenies.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2018-06-22">No updates in past year</span></li>
+          <li><a href="https://github.com/jmkloos/PhyloInference.jl">PhyloInference.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2019-06-04">No updates in past year</span></li>
+          <li><a href="https://github.com/JuliaPhylo/PhyloMakie.jl">PhyloMakie.jl</a> <span class="package-kind">JuliaPhylo</span></li>
+          <li><a href="https://github.com/jangevaare/PhyloModels.jl">PhyloModels.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-04-02">No updates in past year</span></li>
+          <li><a href="https://github.com/JuliaPhylo/PhyloNetworks.jl">PhyloNetworks.jl</a> <span class="package-kind">JuliaPhylo</span></li>
+          <li><a href="https://github.com/jrusinko/PhyloPickMe.jl">PhyloPickMe.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-10-08">No updates in past year</span></li>
+          <li><a href="https://github.com/JuliaPhylo/PhyloPlots.jl">PhyloPlots.jl</a> <span class="package-kind">JuliaPhylo</span></li>
+          <li><a href="https://github.com/kingaa/PhyloPOMP.jl">PhyloPOMP.jl</a></li>
+          <li><a href="https://github.com/JuliaPhylo/PhyloSummaries.jl">PhyloSummaries.jl</a> <span class="package-kind">JuliaPhylo</span></li>
+          <li><a href="https://github.com/shaul-pollak/PhyloTools.jl">PhyloTools.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-03-14">No updates in past year</span></li>
+          <li><a href="https://github.com/JuliaPhylo/PhyloTraits.jl">PhyloTraits.jl</a> <span class="package-kind">JuliaPhylo</span></li>
+          <li><a href="https://github.com/jangevaare/PhyloTrees.jl">PhyloTrees.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2021-09-01">No updates in past year</span></li>
+          <li><a href="https://github.com/savmasse/PhyloVI">PhyloVI</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2019-12-06">No updates in past year</span></li>
+          <li><a href="https://github.com/JuliaBinaryWrappers/PhyML_jll.jl">PhyML_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-08-04">No updates in past year</span></li>
+          <li><a href="https://github.com/sungsik-kong/PhyNEST.jl">PhyNEST.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-06-03">No updates in past year</span></li>
+          <li><a href="https://github.com/BioJulia/PopGen.jl">PopGen.jl</a></li>
+          <li><a href="https://github.com/BioJulia/PopGenCore.jl">PopGenCore.jl</a></li>
+          <li><a href="https://github.com/pdimens/PopGenSims.jl">PopGenSims.jl</a></li>
+          <li><a href="https://github.com/PierreBarrat/PottsEvolver.jl">PottsEvolver.jl</a></li>
+          <li><a href="https://github.com/latticetower/ProgressiveAligner.jl">ProgressiveAligner.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2016-10-04">No updates in past year</span></li>
+          <li><a href="https://github.com/JuliaPhylo/QuartetNetworkGoodnessFit.jl">QuartetNetworkGoodnessFit.jl</a> <span class="package-kind">JuliaPhylo</span></li>
+          <li><a href="https://github.com/JuliaBinaryWrappers/RAxML_jll.jl">RAxML_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-08-03">No updates in past year</span></li>
+          <li><a href="https://github.com/matteobisardi/SeqEvol">SeqEvol</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-02-03">No updates in past year</span></li>
+          <li><a href="https://github.com/JuliaBinaryWrappers/SeqGen_jll.jl">SeqGen_jll</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2022-03-16">No updates in past year</span></li>
+          <li><a href="https://github.com/michaeltmeehan/SeqSim.jl">SeqSim.jl</a></li>
+          <li><a href="https://github.com/MurrellGroup/SequenceMutationDistance.jl">SequenceMutationDistance.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2018-08-28">No updates in past year</span></li>
+          <li><a href="https://github.com/JuliaPhylo/SNaQ.jl">SNaQ.jl</a> <span class="package-kind">JuliaPhylo</span></li>
+          <li><a href="https://github.com/BioJulia/SubstitutionModels.jl">SubstitutionModels.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-04-23">No updates in past year</span></li>
+          <li><a href="https://github.com/sungsik-kong/SymbolicQuartetCF.jl">SymbolicQuartetCF.jl</a></li>
+          <li><a href="https://github.com/akenglander/SymbolicQuartetNetworkCoal.jl">SymbolicQuartetNetworkCoal.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-04-14">No updates in past year</span></li>
+          <li><a href="https://github.com/ignacioq/Tapestree.jl">Tapestree.jl</a></li>
+          <li><a href="https://github.com/EcoJulia/Taxonomies.jl">Taxonomies.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2021-05-25">No updates in past year</span></li>
+          <li><a href="https://github.com/banhbio/Taxonomy.jl">Taxonomy.jl</a></li>
+          <li><a href="https://github.com/dharasim/TikzQTrees.jl">TikzQTrees.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2018-11-27">No updates in past year</span></li>
+          <li><a href="https://github.com/tgvaughan/TimeTrees.jl">TimeTrees.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2016-04-08">No updates in past year</span></li>
+          <li><a href="https://github.com/tochsner/TractableTimeTreeDistributions.jl">TractableTimeTreeDistributions.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-03-31">No updates in past year</span></li>
+          <li><a href="https://github.com/PierreBarrat/TreeKnit.jl">TreeKnit.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-02-18">No updates in past year</span></li>
+          <li><a href="https://github.com/Mikumikunisiteageru/TreeOfLife.jl">TreeOfLife.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2024-05-22">No updates in past year</span></li>
+          <li><a href="https://github.com/skleinbo/TreeProcesses.jl">TreeProcesses.jl</a></li>
+          <li><a href="https://github.com/JuliaAI/TreeRecipe.jl">TreeRecipe.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2023-11-02">No updates in past year</span></li>
+          <li><a href="https://github.com/michaeltmeehan/TreeSim.jl">TreeSim.jl</a></li>
+          <li><a href="https://github.com/PierreBarrat/TreeTools.jl">TreeTools.jl</a></li>
+          <li><a href="https://github.com/arzwa/Whale.jl">Whale.jl</a> <span class="package-kind package-inactive" title="Last default-branch commit: 2025-04-29">No updates in past year</span></li>
+        </ul>
+      </section>
+
+      <section id="other-resources" class="task-subcategory" aria-labelledby="other-resources-heading">
+        <h3 id="other-resources-heading">Other resources</h3>
+        <ul>
+          <li><a href="https://cran.r-project.org/web/views/Phylogenetics.html">CRAN Phylogenetics Task View</a></li>
+          <li><a href="https://github.com/diegozea/JuliaBioinformaticsJLLs">JuliaBioinformaticsJLLs catalogue</a></li>
+          <li><a href="https://github.com/JuliaPhylo">JuliaPhylo organization</a></li>
+          <li><a href="https://juliaphylo.github.io/PhyloUtilities/">JuliaPhylo analysis pipelines</a></li>
+          <li><a href="https://juliaphylo.github.io/networkPCM-tutorial/">Comparative methods on networks tutorial</a></li>
+        </ul>
+      </section>
+    </section>
+  </main>
+
+  <footer class="task-view-footer">
+    <a href="index.html#packages">Back to the JuliaPhylo packages section</a>
+    <a href="#top">Back to top</a>
+  </footer>
+</body>
+
+</html>
