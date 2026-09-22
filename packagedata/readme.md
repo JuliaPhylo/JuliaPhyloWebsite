@@ -5,20 +5,33 @@ The format follows that of the `cff`
 [schema guide](https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md),
 
 We adopt the same fields and subfields are required
-by `cff`, as much as possible, but need extra fields. 
+by `cff`, as much as possible, but we require some extra fields
+and we do *not* require the `cff-version` field.
 see
 [valid-keys](https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md#valid-keys)
 
 
-Required fields shared with citation file format:
+Required fields also required by citation file format:
 
-- `title`: name of software
+- `title`: string, name of software
+- `authors`: array of authors
+- `message`: string, message for the human reader
+  (what could we use this for?)
+- `type`: required in cff only for references.
+  would we want to use this to distinguish packages from
+  binary wrappers, from apps, perhaps databases in the future, etc.?
 
+Other required fields:
 
-Required fields / keys not shared with citation file format:
-
+- `url`: string starting with one of `https://`, `http://`,
+  `ftp://` or `sftp://` (following cff)
+- `version`: string or number, e.g. "1.2.0" or 1.2
+- `registry`:
+  to know if the sofware is in the official julia registry??
 - `tasks`: list of tasks (categories) within a phylogenetic
   pipeline that the software can perform.
+
+- `lastupdated`
 
 Optional fields:
 
