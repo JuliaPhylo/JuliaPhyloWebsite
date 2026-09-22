@@ -14,9 +14,11 @@
 <body id="top" class="task-view-page">
   <nav class="w3-top" aria-label="Primary navigation">
     <div class="w3-bar w3-card w3-left-align w3-large">
-      <a href="index.html#home" class="w3-bar-item w3-button w3-padding-large">Home</a>
-      <a href="index.html#packages" class="w3-bar-item w3-button w3-padding-large w3-white">Packages</a>
-      <a href="index.html#resources" class="w3-bar-item w3-button w3-padding-large">Resources</a>
+      <a href="index.html#home" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Home</a>
+      <a href="index.html#about" class="w3-bar-item w3-button w3-hide-small w3-padding-large ">About</a>
+      <a href="index.html#community" class="w3-bar-item w3-button w3-hide-small w3-padding-large ">Community</a>
+      <a href="index.html#packages" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Packages</a>
+      <a href="index.html#resources" class="w3-bar-item w3-button w3-hide-small w3-padding-large">Resources</a>
     </div>
   </nav>
 
@@ -25,7 +27,8 @@
       <p class="task-view-kicker">JuliaPhylo</p>
       <h1>Julia phylogenetics task view</h1>
       <p>
-        Julia packages and binary wrappers organized by phylogenetic analysis task,
+        This is a curated index of Julia packages and binary wrappers related
+        to phylogenetics, organized by tasks in a phylogenetic analysis workflow,
         following the structure of the
         <a href="https://cran.r-project.org/web/views/Phylogenetics.html">CRAN Phylogenetics Task View</a>.
       </p>
@@ -58,6 +61,8 @@
       <p>
         The focus is software that reads, builds, studies, compares, or plots phylogenetic trees and networks.
         Command-line programs packaged as Julia artifacts are included when they support a standard phylogenetic workflow.
+        The Julia ecosystem is extremely large, so we focus here on graphs that
+        explicitly support evolutionary studies.
       </p>
 
       <section id="core-packages" class="task-subcategory" aria-labelledby="core-packages-heading">
