@@ -1,0 +1,12 @@
+title: "MrBayes_jll.jl"
+type: "binary-wrapper"
+message: "Install MrBayes for Bayesian inference of phylogeny."
+url: "https://github.com/JuliaBinaryWrappers/MrBayes_jll.jl"
+version: "3.2.8+0"
+date-released: "2022-07-28"
+registry: "https://github.com/JuliaRegistries/General"
+task:
+  - phylogeny-building:
+    - infer-phylogenies: "Bayesian inference and model choice across a wide range of phylogenetic and evolutionary models. Home page: NBISweden.github.io/MrBayes/"
+lastedited: "2026-09-23"
+source-url: "https://github.com/NBISweden/MrBayes"

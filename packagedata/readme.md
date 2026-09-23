@@ -49,6 +49,8 @@ Optional fields:
 
 - `lastupdated`: date of last software update,
   which could be later than `date-released`
+- `source-url`: for binary wrappers, url of source code
+  from which binaries are built
 - `authors`: array of authors
 - `abstract`: string. summary of what the software does,
   to complement the one-line `message`.
