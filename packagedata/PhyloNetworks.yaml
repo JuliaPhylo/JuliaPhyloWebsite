@@ -1,0 +1,28 @@
+title: "PhyloNetworks"
+type: "package"
+message: "Utilities for handling and manipulating phylogenetic trees and networks."
+url: "https://github.com/JuliaPhylo/PhyloNetworks.jl"
+version: "1.4.0"
+date-released: "2026-08-23"
+registry: "https://github.com/JuliaRegistries/General"
+task:
+  - phylogenies:
+    - read-phylogenies: "read and write trees and networks in (extended) newick and nexus format."
+    - manipulate-phylogenies: "reroot, prune leaves, remove hybrid edges, apply network rearrangements, extract displayed trees or networks."
+    - compare-phylogenies: "compare phylogenetic trees and networks with dissimilarity measures."
+    - summarize-phylogenies: "summarize samples of phylogenetic networks; calculate network features."
+  - data-for-phylogenetics:
+    - summary-statistics: "calculate data expectations from phylogenetic models."
+  - phylogeny-building:
+    - infer-phylogenies: "build the Neighbor-Joining tree"
+lastedited: "2026-09-23"
+
+abstract: >
+  PhyloNetworks provides utilities for analyzing and evaluating
+  phylogenies such as to parse/read/write, visualize, traverse them,
+  manipulate them (pruning leaves, re-rooting, moves to modify them),
+  construct them (neighbor-joining), compare them (dissimiliarity measures),
+  summarize a sample (features shared by networks, quartet CFs from trees),
+  or calculate features from a network (level, tree-child and other properties,
+  clusters, least-stable ancestors, displayed trees/subnetworks/quartets,
+  expected distances/f-stat, and more).
