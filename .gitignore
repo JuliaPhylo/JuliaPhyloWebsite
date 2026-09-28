@@ -209,3 +209,5 @@ coverage/
 
 /.luarc.json
 
+
+**/*.quarto_ipynb
