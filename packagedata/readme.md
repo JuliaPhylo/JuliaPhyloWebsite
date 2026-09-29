@@ -67,7 +67,7 @@ Optional fields:
   Standard keywords:
   "tree", "network", "split network", "admixture graph",
   "ARG", "ancestral recombination graph", "mutation tree", "transmission tree",
-  "unrooted", "rooted", "multirooted",
+  "unrooted", "semidirected", "rooted", "multirooted",
 
 # tasks and subtasks
 
