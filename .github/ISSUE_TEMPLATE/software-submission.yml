@@ -89,16 +89,15 @@ body:
         ---
         ## Task Classifications
         For each relevant task category below, list the subtasks and their one-line descriptions. Leave blank if the software does not perform tasks in that category.
-		Each subtask and one-line description should be its own line with the formatting `sub-task:"description"`. For example:
-		`manipulate-phylogenies`:"read and write trees and networks"
-		
-		If a specific subtask is not listed in the "current subtasks" please include it and maintainers will review the subtask.
-
+        Each subtask and one-line description should be its own line with the formatting `sub-task: "description"`. For example:
+        `manipulate-phylogenies`: "read and write trees and networks"
+        
+        If a specific subtask is not listed in the "current subtasks" please include it and maintainers will review the subtask.
 
   - type: textarea
     id: task-phylogenies
     attributes:
-      label:Phylogenies
+      label: Phylogenies
       description: |
         Current subtasks: `read-phylogenies`, `manipulate-phylogenies`, `visualize-phylogenies`, `compare-phylogenies`, `summarize-phylogenies`
       placeholder: |
@@ -110,7 +109,7 @@ body:
   - type: textarea
     id: task-data-for-phylogenetics
     attributes:
-      label:Data for phylogenetics
+      label: Data for phylogenetics
       description: |
         Current subtasks: read-alignments, summary-statistics
       placeholder: |
@@ -121,7 +120,7 @@ body:
   - type: textarea
     id: task-phylogeny-building
     attributes:
-      label:Phylogeny building
+      label: Phylogeny building
       description: |
         Current subtasks: simulate-phylogenies, infer-phylogenies, phylogenies-with-time
       placeholder: |
@@ -132,7 +131,7 @@ body:
   - type: textarea
     id: task-phylogenetic-comparative-methods
     attributes:
-      label:  Phylogenetic comparative methods
+      label: Phylogenetic comparative methods
       description: |
         Current subtasks: trait-evolution, trait-simulation, diversification
       placeholder: |
@@ -145,7 +144,7 @@ body:
     attributes:
       label: Phylogenetics in specific fields
       description: |
-        Curren subtasks: genetree-speciestree, species-delimitation, gene-duplications, morphometrics, time-series-and-paleontology, community-and-microbial-ecology, phyloclimatic-modeling, population-genetics, phylogeography-and-biogeography, epidemiology, omics
+        Current subtasks: genetree-speciestree, species-delimitation, gene-duplications, morphometrics, time-series-and-paleontology, community-and-microbial-ecology, phyloclimatic-modeling, population-genetics, phylogeography-and-biogeography, epidemiology, omics
       placeholder: |
         - population-genetics: "Compute effective population size over time"
     validations:
