@@ -4,7 +4,7 @@ title: "[Software Entry]: "
 labels: ["software-submission", "cff"]
 body:
   - type: markdown
-  - attributes:
+    attributes:
       value: |
         Thanks for contributing a software entry! Please fill out the core metadata below and provide descriptions for any relevant subtasks performed by your software.
 
