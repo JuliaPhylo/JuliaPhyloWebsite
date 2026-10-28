@@ -1,0 +1,221 @@
+name: "Submit Software Entry"
+description: "Submit or update metadata and task classifications for a Julia package or JLL wrapper."
+title: "[Software Entry]: "
+labels: ["software-submission", "cff"]
+body:
+  - type: markdown
+  - attributes:
+      value: |
+        Thanks for contributing a software entry! Please fill out the core metadata below and provide descriptions for any relevant subtasks performed by your software.
+
+  - type: input
+    id: title
+    attributes:
+      label: Software Title
+      description: The official name of the software.
+      placeholder: e.g., MyPackage.jl
+    validations:
+      required: true
+
+  - type: input
+    id: message
+    attributes:
+      label: One-line Message
+      description: A concise, one-line description of what the software does.
+      placeholder: e.g., Utilities for handling and manipulating phylogenetic trees and networks.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Software Type
+      description: 'Choose "package" if it can be added in pkg mode in Julia REPL, or "jll" for binary wrappers.'
+      options:
+        - package
+        - jll
+        - Other/not listed
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: URL where the software is located
+      description: Must start with https://, http://, ftp://, or sftp://.
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Version number or string of the release.
+      placeholder: "1.4.0"
+    validations:
+      required: true
+
+  - type: input
+    id: date-released
+    attributes:
+      label: Release Date
+      description: Date the software at this version was released. Format `YYYY-MM-DD`.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: registered
+    attributes:
+      label: Registered in General Julia Registry?
+      description: Select true if it is listed in the [General Registry](https://github.com/JuliaRegistries/General).
+      options:
+        - "true"
+        - "false"
+    validations:
+      required: true
+
+  - type: input
+    id: uuid
+    attributes:
+      label: UUID
+      description: Enter the package UUID if registered, else leave blank.
+      placeholder: "33ad39ac-ed31-50eb-9b15-43d0656eaa72"
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Task Classifications
+        For each relevant task category below, list the subtasks and their one-line descriptions. Leave blank if the software does not perform tasks in that category.
+        Each subtask and one-line description should be its own line with the formatting `sub-task: "description"`. For example:
+        `manipulate-phylogenies`: "read and write trees and networks"
+        
+        If a specific subtask is not listed in the "current subtasks" please include it and maintainers will review the subtask.
+
+  - type: textarea
+    id: task-phylogenies
+    attributes:
+      label: Phylogenies
+      description: |
+        Current subtasks: `read-phylogenies`, `manipulate-phylogenies`, `visualize-phylogenies`, `compare-phylogenies`, `summarize-phylogenies`
+      placeholder: |
+        - read-phylogenies: "read and write trees and networks..."
+        - manipulate-phylogenies: "reroot, prune leaves..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: task-data-for-phylogenetics
+    attributes:
+      label: Data for phylogenetics
+      description: |
+        Current subtasks: read-alignments, summary-statistics
+      placeholder: |
+        - summary-statistics: "calculate data expectations from phylogenetic models."
+    validations:
+      required: false
+
+  - type: textarea
+    id: task-phylogeny-building
+    attributes:
+      label: Phylogeny building
+      description: |
+        Current subtasks: simulate-phylogenies, infer-phylogenies, phylogenies-with-time
+      placeholder: |
+        - infer-phylogenies: "build the Neighbor-Joining tree"
+    validations:
+      required: false
+
+  - type: textarea
+    id: task-phylogenetic-comparative-methods
+    attributes:
+      label: Phylogenetic comparative methods
+      description: |
+        Current subtasks: trait-evolution, trait-simulation, diversification
+      placeholder: |
+        - trait-evolution: "..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: task-phylogenetics-in-specific-fields
+    attributes:
+      label: Phylogenetics in specific fields
+      description: |
+        Current subtasks: genetree-speciestree, species-delimitation, gene-duplications, morphometrics, time-series-and-paleontology, community-and-microbial-ecology, phyloclimatic-modeling, population-genetics, phylogeography-and-biogeography, epidemiology, omics
+      placeholder: |
+        - population-genetics: "Compute effective population size over time"
+    validations:
+      required: false
+
+  - type: textarea
+    id: task-interact-with-external-resources
+    attributes:
+      label: Interact with external resources
+      description: Provide a one-line summary string for how it interacts with external resources.
+      placeholder: "install the MrBayes phylogenetic-inference executable."
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ## Additional Metadata (Optional)
+
+  - type: checkboxes
+    id: graphtype
+    attributes:
+      label: Graph Types Handled
+      description: Select the types of graphs the software can handle.
+      options:
+        - label: tree
+        - label: network
+        - label: split network
+        - label: admixture graph
+        - label: ARG
+        - label: ancestral recombination graph
+        - label: mutation tree
+        - label: transmission tree
+        - label: unrooted
+        - label: semidirected
+        - label: rooted
+        - label: multirooted
+
+  - type: textarea
+    id: abstract
+    attributes:
+      label: Abstract
+      description: A longer summary of what the software does, complementing the one-line message.
+      placeholder: Provide a detailed summary of features, algorithms, or empirical applications...
+    validations:
+      required: false
+
+  - type: input
+    id: source-url
+    attributes:
+      label: Source URL 
+      description: For binary wrappers (jll), enter the URL of the source code from which binaries are built.
+    validations:
+      required: false
+
+  - type: input
+    id: date-updated
+    attributes:
+      label: Date Updated
+      description: Date of last edit update on the main/master branch (YYYY-MM-DD). This can be later than the latest release date.
+      placeholder: "2026-09-01"
+    validations:
+      required: false
+
+  - type: textarea
+    id: authors
+    attributes:
+      label: Authors
+      description: List authors. Names should either be on their own line or each name separated by a comma.
+      placeholder: |
+        John Smith, Mario Rossi, Kari Nordmann
+    validations:
+      required: false
