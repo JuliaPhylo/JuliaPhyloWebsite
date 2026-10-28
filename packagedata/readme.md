@@ -46,7 +46,7 @@ Other required fields:
   Each subtask could of the form: `key: "one-line summary"`.
   Keywords should match those in the website "Task" box.
   See below for the allowed task and subtasks names.
-- `date-curated`: date this `yaml` record was created or last updated by a human
+- `date-curated`: date (formatted as "yyyy-mm-dd") this `yaml` record was created or last updated by a human
   -- *not* the last update of the software itself!
   "0000-00-00" if uncurated, that is, if the `yaml` file was created or updated
   by an LLM and was not yet validated by a human.
