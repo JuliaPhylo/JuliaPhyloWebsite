@@ -101,8 +101,8 @@ body:
       description: |
         Current subtasks: `read-phylogenies`, `manipulate-phylogenies`, `visualize-phylogenies`, `compare-phylogenies`, `summarize-phylogenies`
       placeholder: |
-        - read-phylogenies: "read and write trees and networks..."
-        - manipulate-phylogenies: "reroot, prune leaves..."
+        read-phylogenies: "read and write trees and networks..."
+        manipulate-phylogenies: "reroot, prune leaves..."
     validations:
       required: false
 
@@ -113,7 +113,7 @@ body:
       description: |
         Current subtasks: read-alignments, summary-statistics
       placeholder: |
-        - summary-statistics: "calculate data expectations from phylogenetic models."
+        summary-statistics: "calculate data expectations from phylogenetic models."
     validations:
       required: false
 
@@ -124,7 +124,7 @@ body:
       description: |
         Current subtasks: simulate-phylogenies, infer-phylogenies, phylogenies-with-time
       placeholder: |
-        - infer-phylogenies: "build the Neighbor-Joining tree"
+        infer-phylogenies: "build the Neighbor-Joining tree"
     validations:
       required: false
 
@@ -135,7 +135,7 @@ body:
       description: |
         Current subtasks: trait-evolution, trait-simulation, diversification
       placeholder: |
-        - trait-evolution: "..."
+        trait-evolution: "..."
     validations:
       required: false
 
@@ -146,16 +146,16 @@ body:
       description: |
         Current subtasks: genetree-speciestree, species-delimitation, gene-duplications, morphometrics, time-series-and-paleontology, community-and-microbial-ecology, phyloclimatic-modeling, population-genetics, phylogeography-and-biogeography, epidemiology, omics
       placeholder: |
-        - population-genetics: "Compute effective population size over time"
+        population-genetics: "Compute effective population size over time"
     validations:
       required: false
 
   - type: textarea
     id: task-interact-with-external-resources
     attributes:
-      label: Interact with external resources
-      description: Provide a one-line summary string for how it interacts with external resources.
-      placeholder: "install the MrBayes phylogenetic-inference executable."
+      label: Interactions with external resources
+      description: |
+        Current subtasks: none
     validations:
       required: false
 
