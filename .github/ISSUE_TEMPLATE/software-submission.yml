@@ -111,7 +111,7 @@ body:
     attributes:
       label: Data for phylogenetics
       description: |
-        Current subtasks: read-alignments, summary-statistics
+        Current subtasks: `read-alignments`, `summary-statistics`
       placeholder: |
         summary-statistics: "calculate data expectations from phylogenetic models."
     validations:
@@ -122,7 +122,7 @@ body:
     attributes:
       label: Phylogeny building
       description: |
-        Current subtasks: simulate-phylogenies, infer-phylogenies, phylogenies-with-time
+        Current subtasks: `simulate-phylogenies`, `infer-phylogenies`, `phylogenies-with-time`
       placeholder: |
         infer-phylogenies: "build the Neighbor-Joining tree"
     validations:
@@ -133,7 +133,7 @@ body:
     attributes:
       label: Phylogenetic comparative methods
       description: |
-        Current subtasks: trait-evolution, trait-simulation, diversification
+        Current subtasks: `trait-evolution`, `trait-simulation`, `diversification`
       placeholder: |
         trait-evolution: "..."
     validations:
@@ -144,7 +144,7 @@ body:
     attributes:
       label: Phylogenetics in specific fields
       description: |
-        Current subtasks: genetree-speciestree, species-delimitation, gene-duplications, morphometrics, time-series-and-paleontology, community-and-microbial-ecology, phyloclimatic-modeling, population-genetics, phylogeography-and-biogeography, epidemiology, omics
+        Current subtasks: `genetree-speciestree`, `species-delimitation`, `gene-duplications`, `morphometrics`, `time-series-and-paleontology`, `community-and-microbial-ecology`, `phyloclimatic-modeling`, `population-genetics`, `phylogeography-and-biogeography`, `epidemiology`, `omics`
       placeholder: |
         population-genetics: "Compute effective population size over time"
     validations:
