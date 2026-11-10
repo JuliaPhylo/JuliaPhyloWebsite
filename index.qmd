@@ -1,0 +1,138 @@
+---
+description: A software ecosystem for phylogenetics in Julia.
+page-layout: full
+toc: false
+---
+
+::: {#home .site-hero}
+::: {.hero-copy}
+<p class="eyebrow">JuliaPhylo community</p>
+
+# JuliaPhylo
+
+## A software ecosystem for phylogenetics in Julia
+
+Explore Julia tools for studying evolutionary trees and networks, and connect with the people building them.
+
+[Explore the task view](task-view.qmd){.hero-button} [Connect with the community](#community){.hero-link}
+:::
+
+<img src="assets/logo.png" class="hero-logo" alt="JuliaPhylo logo">
+:::
+
+::: {.home-section .about-section}
+## About {#about}
+
+::: {.intro-grid}
+::: {}
+### Phylogenies
+
+A phylogeny is a [tree](https://en.wikipedia.org/wiki/Phylogenetic_tree) or [network](https://en.wikipedia.org/wiki/Phylogenetic_network) that describes the history of a group of organisms, populations, species, or languages. A node can represent a splitting event, such as population divergence or speciation, or a merging event caused by hybridization, [introgression](https://en.wikipedia.org/wiki/Introgression), [gene flow](https://en.wikipedia.org/wiki/Gene_flow), or [admixture](https://en.wikipedia.org/wiki/Genetic_admixture).
+:::
+
+::: {}
+### Research uses
+
+Research in evolutionary biology uses [phylogenetics](https://en.wikipedia.org/wiki/Phylogenetics) and [phylogenomics](https://hal.science/hal-02535070v3/) to infer phylogenies from molecular sequence data. Researchers use those phylogenies to study [trait evolution](https://lukejharmon.github.io/pcm/), diversification, and other evolutionary patterns.
+:::
+:::
+:::
+
+::: {.home-section .community-section}
+## Community {#community}
+
+Everyone is welcome to connect with JuliaPhylo and contribute. Please follow the [Julia community standards](https://julialang.org/community/standards/).
+
+::: {.community-grid}
+::: {.info-card}
+### Package questions and issues
+
+For a question or bug report about a specific package, open an issue in that package's GitHub repository.
+:::
+
+::: {.info-card}
+### Julia Discourse
+
+Find answers and ask new questions on [Julia Discourse](https://discourse.julialang.org/). You can also search its [phylogenetics discussions](https://discourse.julialang.org/search?q=phylo).
+:::
+
+::: {.info-card}
+### JuliaPhylo users
+
+Join the [juliaphylo-users Google group](https://groups.google.com/g/juliaphylo-users) for general JuliaPhylo questions.
+:::
+
+::: {.info-card}
+### Julia Slack
+
+Join the **#phylo** channel in the [Julia Language Slack workspace](https://julialang.org/slack/).
+:::
+:::
+:::
+
+::: {.home-section .packages-section}
+## Packages {#packages}
+
+JuliaPhylo contributors build packages for phylogenetic analysis. Many rely on the core PhyloNetworks package. The [Julia phylogenetics task view](task-view.qmd) also lists related software by use case.
+
+::: {.featured-package}
+::: {.featured-package-heading}
+<img src="assets/PhyloNetworksLogo.png" class="package-logo" alt="PhyloNetworks logo">
+
+### [PhyloNetworks](https://github.com/JuliaPhylo/PhyloNetworks.jl/tree/master)
+:::
+
+PhyloNetworks provides tools for reading, writing, analyzing, and manipulating phylogenetic trees and networks. It supports extended Newick, quartet concordance factors, distance and dissimilarity measures, network summaries, and inference through parsimony and neighbor joining. Its traversal and network manipulation functions also support specialized packages.
+:::
+
+::: {.package-grid}
+::: {.package-card}
+<img src="assets/snaq-logo.png" class="package-logo" alt="SNaQ logo">
+
+### [SNaQ](https://github.com/JuliaPhylo/SNaQ.jl)
+
+Infer level-1 phylogenetic networks from quartet concordance factors using maximum pseudolikelihood and a heuristic search of network space.
+:::
+
+::: {.package-card}
+### [PhyloTraits](https://github.com/JuliaPhylo/PhyloTraits.jl)
+
+Simulate and analyze continuous and discrete trait evolution along phylogenetic trees and networks. Fit models, estimate ancestral states and rates, and study correlations between traits.
+:::
+
+::: {.package-card}
+### [PhyloCoalSimulations](https://github.com/JuliaPhylo/PhyloCoalSimulations.jl)
+
+Simulate phylogenies under the network multispecies coalescent, including models with inheritance correlation.
+:::
+
+::: {.package-card}
+### [PhyloPlots](https://github.com/JuliaPhylo/PhyloPlots.jl)
+
+Plot tree and network objects from PhyloNetworks through R via RCall.
+:::
+
+::: {.package-card}
+### [Quarnet GoF](https://github.com/JuliaPhylo/QuartetNetworkGoodnessFit.jl)
+
+Measure the goodness of fit of a phylogenetic network to data on four-taxon subsets.
+:::
+
+::: {.package-card}
+### [PhyloGaussianBeliefProp](https://github.com/JuliaPhylo/PhyloGaussianBeliefProp.jl)
+
+Analyze Gaussian models on phylogenetic networks and admixture graphs using belief propagation.
+:::
+:::
+:::
+
+::: {.home-section .resources-section}
+## Resources {#resources}
+
+These repositories and tutorials complement the JuliaPhylo packages.
+
+- [PhyloUtilities](https://github.com/JuliaPhylo/PhyloUtilities) provides scripts and [pipeline documentation](https://juliaphylo.github.io/PhyloUtilities/) for phylogenetic analyses.
+- The [comparative methods tutorial](https://juliaphylo.github.io/networkPCM-tutorial/) covers reticulate phylogenies and network calibration. An [earlier workshop](https://cecileane.github.io/networkPCM-workshop/) covers PhyloNetworks 0.16.
+- The [SNaQ tutorial](https://solislemuslab.github.io/snaq-tutorial/) covers network estimation from quartet concordance factors.
+- The [TICR repository](https://github.com/nstenz/TICR) provides scripts for analyzing genome-wide data, obtaining quartet concordance factors, and assessing tree-like evolution.
+:::

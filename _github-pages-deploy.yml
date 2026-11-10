@@ -1,0 +1,5 @@
+build: _site
+deploy_url: "git@github.com:JuliaPhylo/JuliaPhyloWebsite"
+deploy_branch: main
+
+

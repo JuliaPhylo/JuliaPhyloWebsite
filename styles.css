@@ -1,0 +1,370 @@
+:root {
+  --phylo-ink: #20343b;
+  --phylo-muted: #52636a;
+  --phylo-deep: #183d43;
+  --phylo-green: #74a46d;
+  --phylo-purple: #704b82;
+  --phylo-paper: #f7f8f4;
+  --phylo-line: #dce5df;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--phylo-ink);
+  background: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.65;
+}
+
+a {
+  color: #305f68;
+  text-underline-offset: 0.16em;
+}
+
+a:hover {
+  color: var(--phylo-purple);
+}
+
+a:focus-visible {
+  outline: 3px solid var(--phylo-green);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+h1, h2, h3 {
+  color: var(--phylo-deep);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.navbar {
+  box-shadow: 0 2px 16px rgb(16 44 48 / 13%);
+}
+
+.navbar-brand img {
+  max-height: 38px;
+}
+
+.navbar a:hover,
+.navbar a:focus-visible {
+  color: #fff;
+}
+
+.site-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(160px, 260px);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+  max-width: 1160px;
+  margin: 2.5rem auto 0;
+  padding: clamp(2.5rem, 6vw, 5.5rem);
+  color: #fff;
+  background:
+    radial-gradient(circle at 90% 15%, rgb(116 164 109 / 30%) 0 9rem, transparent 9.2rem),
+    radial-gradient(circle at 75% 95%, rgb(112 75 130 / 45%) 0 12rem, transparent 12.2rem),
+    linear-gradient(135deg, #183d43, #285b62);
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.site-hero h1,
+.site-hero h2 {
+  color: #fff;
+}
+
+.site-hero h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(3rem, 6vw, 5rem);
+  letter-spacing: -0.045em;
+}
+
+.site-hero h2 {
+  margin: 0 0 1.25rem;
+  max-width: 24ch;
+  font-size: clamp(1.45rem, 2.3vw, 2.1rem);
+  font-weight: 500;
+}
+
+.site-hero p:not(.eyebrow) {
+  max-width: 56ch;
+  font-size: 1.08rem;
+  color: #e9f2ef;
+}
+
+.site-hero .eyebrow {
+  margin: 0 0 0.6rem;
+  color: #c6e5bd;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.site-hero .hero-logo {
+  display: block;
+  width: min(100%, 220px);
+  margin: 0 auto;
+  padding: 2.2rem;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 24px 55px rgb(0 0 0 / 18%);
+}
+
+.hero-button,
+.hero-link {
+  display: inline-block;
+  margin: 0.5rem 1rem 0 0;
+  font-weight: 700;
+}
+
+.hero-button {
+  padding: 0.7rem 1.1rem;
+  color: var(--phylo-deep);
+  background: #e3f0de;
+  border-radius: 7px;
+  text-decoration: none;
+}
+
+.hero-button:hover {
+  color: var(--phylo-deep);
+  background: #fff;
+}
+
+.hero-link {
+  color: #fff;
+  text-decoration-color: #c6e5bd;
+}
+
+.hero-link:hover {
+  color: #e3f0de;
+}
+
+.home-section {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 4vw, 3rem);
+}
+
+.home-section > h2 {
+  margin-bottom: 1.2rem;
+  font-size: clamp(2rem, 3vw, 2.65rem);
+}
+
+.home-section > p {
+  max-width: 76ch;
+  color: var(--phylo-muted);
+}
+
+.intro-grid,
+.community-grid,
+.package-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.intro-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2rem, 4vw, 4rem);
+}
+
+.intro-grid h3,
+.info-card h3,
+.package-card h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+.about-section,
+.packages-section {
+  margin-top: 2.5rem;
+  background: var(--phylo-paper);
+  border-radius: 18px;
+}
+
+.community-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 2rem;
+}
+
+.info-card,
+.package-card,
+.featured-package {
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid var(--phylo-line);
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgb(24 61 67 / 4%);
+}
+
+.community-section .info-card {
+  background: #f9fbf9;
+}
+
+.info-card p:last-child,
+.package-card p:last-child {
+  margin-bottom: 0;
+}
+
+.featured-package {
+  margin: 2rem 0 1.25rem;
+  border-left: 5px solid var(--phylo-green);
+}
+
+.featured-package-heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.featured-package-heading h3 {
+  margin: 0;
+}
+
+.featured-package-heading .package-logo {
+  max-width: 180px;
+  max-height: 75px;
+  object-fit: contain;
+}
+
+.package-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.package-card {
+  border-top: 4px solid var(--phylo-purple);
+}
+
+.package-card .package-logo {
+  display: block;
+  max-width: 180px;
+  height: 72px;
+  object-fit: contain;
+  object-position: left center;
+  margin-bottom: 1rem;
+}
+
+.resources-section ul {
+  max-width: 78ch;
+  padding-left: 1.4rem;
+}
+
+.resources-section li {
+  margin-bottom: 0.9rem;
+}
+
+.package-kind {
+  display: inline-block;
+  margin: 0 0.14rem;
+  padding: 0.04rem 0.43rem;
+  color: #3c5c52;
+  background: #e8f2eb;
+  border: 1px solid #cbded1;
+  border-radius: 4px;
+  font-size: 0.74em;
+  font-weight: 700;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.package-inactive {
+  color: #705224;
+  background: #fff8e8;
+  border-color: #e9d4a6;
+}
+
+#quarto-content:has(#overview) main.content > p:first-of-type {
+  font-size: 1.12rem;
+  color: var(--phylo-muted);
+}
+
+#quarto-content:has(#overview) h2 {
+  margin-top: 3rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--phylo-line);
+}
+
+#quarto-content:has(#overview) h3 {
+  margin-top: 2rem;
+}
+
+#quarto-content:has(#overview) ul li {
+  margin-bottom: 0.72rem;
+}
+
+#quarto-content:has(#overview) ul li > a:first-child {
+  font-weight: 650;
+}
+
+@media (max-width: 800px) {
+  .site-hero {
+    grid-template-columns: 1fr;
+    margin: 1rem 1rem 0;
+  }
+
+  .site-hero .hero-logo {
+    grid-row: auto;
+    width: 130px;
+    margin: 0;
+    padding: 1.3rem;
+  }
+
+  .package-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .site-hero {
+    padding: 1.5rem;
+  }
+
+  .site-hero h2 {
+    font-size: 1.45rem;
+  }
+
+  .intro-grid,
+  .community-grid,
+  .package-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section,
+  .packages-section {
+    border-radius: 0;
+  }
+
+  .site-hero h1 {
+    font-size: 3rem;
+  }
+}
+
+#quarto-content main.content p,
+#quarto-content main.content li {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+#quarto-content:has(#overview) main.content p,
+#quarto-content:has(#overview) main.content li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#package-index ul {
+  columns: 3;
+  column-gap: 2rem;
+}
+
+#package-index li {
+  break-inside: avoid;
+}
+
+@media (max-width: 700px) {
+  #package-index ul {
+    columns: 1;
+  }
+}

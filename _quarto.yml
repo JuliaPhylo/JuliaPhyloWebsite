@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - task-view.qmd
+
+website:
+  title: JuliaPhylo
+  description: A software ecosystem for phylogenetics in Julia.
+  navbar:
+    logo: assets/logo.png
+    logo-alt: JuliaPhylo logo
+    background: "#183d43"
+    foreground: "#ffffff"
+    search: true
+    left:
+      - text: Home
+        href: index.qmd
+      - text: About
+        href: index.qmd#about
+      - text: Community
+        href: index.qmd#community
+      - text: Packages
+        href: index.qmd#packages
+      - text: Resources
+        href: index.qmd#resources
+      - text: Task view
+        href: task-view.qmd
+  page-footer:
+    left: "JuliaPhylo"
+    right: "[JuliaPhylo on GitHub](https://github.com/JuliaPhylo)"
+
+format:
+  html:
+    theme: litera
+    css: styles.css
+    link-external-newwindow: true
+    anchor-sections: true
