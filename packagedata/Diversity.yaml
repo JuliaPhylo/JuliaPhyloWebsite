@@ -1,0 +1,15 @@
+title: "Diversity.jl"
+type: "package"
+message: "Measures and partitions alpha, beta, and gamma diversity using phylogenetic or other similarities."
+url: "https://github.com/EcoJulia/Diversity.jl"
+version: "0.6.6"
+date-released: "2026-11-09"
+registered: true
+uuid: "d3d5718d-52de-57ab-b67a-eca7fd6175a4"
+task:
+  - phylogenies:
+    - summarize-phylogenies: "measures and partitions alpha, beta, and gamma diversity using phylogenetic or other similarities."
+  - phylogenetics-in-specific-fields:
+    - community-and-microbial-ecology: "calculates phylogenetic diversity and partitions alpha, beta, and gamma diversity."
+date-curated: "0000-00-00"
+date-updated: "2026-11-09"

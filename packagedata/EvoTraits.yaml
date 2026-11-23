@@ -1,0 +1,14 @@
+title: "EvoTraits.jl"
+type: "package"
+message: "Performs ancestral reconstruction for continuous and discrete phylogenetic trait models."
+url: "https://github.com/wyx619/EvoTraits.jl"
+version: "1.6.1"
+date-released: "2026-11-23"
+registered: false
+uuid: "notregistered"
+task:
+  - phylogenetic-comparative-methods:
+    - trait-evolution: "performs ancestral reconstruction for continuous and discrete phylogenetic trait models.; fits continuous and discrete phylogenetic trait models and supports SIMMAP-aware analysis and model comparison."
+    - trait-simulation: "simulates continuous and discrete traits under its comparative models."
+date-curated: "0000-00-00"
+date-updated: "2026-11-23"

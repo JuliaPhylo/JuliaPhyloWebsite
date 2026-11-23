@@ -1,0 +1,15 @@
+title: "TractableTimeTreeDistributions.jl"
+type: "package"
+message: "Calculates likelihoods, samples, credible regions, and point estimates for time-tree distributions."
+url: "https://github.com/tochsner/TractableTimeTreeDistributions.jl"
+version: "0.1.0"
+date-released: "2025-04-03"
+registered: true
+uuid: "1ed903b1-d65e-4243-bae3-7d6e2e5f54a0"
+task:
+  - phylogenies:
+    - summarize-phylogenies: "calculates likelihoods, samples, credible regions, and point estimates for time-tree distributions."
+  - phylogeny-building:
+    - phylogenies-with-time: "approximates time-tree distributions from MCMC posterior samples."
+date-curated: "0000-00-00"
+date-updated: "2025-03-31"

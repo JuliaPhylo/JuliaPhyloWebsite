@@ -1,0 +1,13 @@
+title: "PhyloTraits.jl"
+type: "package"
+message: "Analyzes continuous and discrete trait evolution on phylogenetic trees and networks."
+url: "https://github.com/JuliaPhylo/PhyloTraits.jl"
+version: "1.2.0"
+date-released: "2025-12-10"
+registered: true
+uuid: "bce24f4f-6725-4ba4-a77f-2b043c8e33c5"
+task:
+  - phylogenetic-comparative-methods:
+    - trait-evolution: "analyzes continuous and discrete trait evolution on phylogenetic trees and networks."
+date-curated: "0000-00-00"
+date-updated: "2026-07-26"

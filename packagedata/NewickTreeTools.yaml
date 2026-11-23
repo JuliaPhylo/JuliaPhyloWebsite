@@ -1,0 +1,15 @@
+title: "NewickTreeTools.jl"
+type: "package"
+message: "Reads Newick trees for traversal, distance calculations, clustering, and output."
+url: "https://github.com/aramanlab/NewickTreeTools.jl"
+version: "0.1.0"
+date-released: "2022-05-12"
+registered: false
+uuid: "notregistered"
+task:
+  - phylogenies:
+    - read-phylogenies: "reads Newick trees for traversal, distance calculations, clustering, and output."
+    - manipulate-phylogenies: "traverses, cuts, clusters, and writes Newick trees."
+    - compare-phylogenies: "computes network, patristic, and traversal distances from Newick trees."
+date-curated: "0000-00-00"
+date-updated: "2023-05-16"

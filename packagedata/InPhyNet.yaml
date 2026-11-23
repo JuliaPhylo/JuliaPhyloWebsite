@@ -1,0 +1,15 @@
+title: "InPhyNet.jl"
+type: "package"
+message: "Combines level-1 phylogenetic networks into a larger inferred network."
+url: "https://github.com/NathanKolbow/InPhyNet.jl"
+version: "1.0.7"
+date-released: "2026-07-10"
+registered: true
+uuid: "7d272db0-e1ce-47ab-9b64-d0002ca9962f"
+task:
+  - phylogeny-building:
+    - infer-phylogenies: "combines level-1 phylogenetic networks into a larger inferred network."
+  - phylogenetics-in-specific-fields:
+    - genetree-speciestree: "merges level-1 phylogenetic networks into a combined network."
+date-curated: "0000-00-00"
+date-updated: "2026-08-20"

@@ -1,0 +1,13 @@
+title: "D3Trees.jl"
+type: "package"
+message: "Provides interactive D3 visualization for large trees with styles, tooltips, expansion, and lazy loading."
+url: "https://github.com/sisl/D3Trees.jl"
+version: "0.3.8"
+date-released: "2026-03-01"
+registered: true
+uuid: "e3df1716-f71e-5df9-9e2d-98e193103c45"
+task:
+  - phylogenies:
+    - visualize-phylogenies: "provides interactive D3 visualization for large trees with styles, tooltips, expansion, and lazy loading."
+date-curated: "0000-00-00"
+date-updated: "2026-02-28"

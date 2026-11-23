@@ -1,0 +1,15 @@
+title: "KmerGMA.jl"
+type: "package"
+message: "Searches FASTA databases for homologues of a reference gene family or sequence using k-mers."
+url: "https://github.com/Qile0317/KmerGMA.jl"
+version: "0.5.3"
+date-released: "2023-04-01"
+registered: false
+uuid: "notregistered"
+task:
+  - data-for-phylogenetics:
+    - read-alignments: "searches FASTA databases for homologues of a reference gene family or sequence using k-mers."
+  - phylogenetics-in-specific-fields:
+    - omics: "searches for homologous genes or sequences with a k-mer approach."
+date-curated: "0000-00-00"
+date-updated: "2023-04-24"

@@ -1,0 +1,15 @@
+title: "QuartetNetworkGoodnessFit.jl"
+type: "package"
+message: "Measures the goodness of fit of a phylogenetic network to data on four-taxon subsets."
+url: "https://github.com/JuliaPhylo/QuartetNetworkGoodnessFit.jl"
+version: "1.0.0"
+date-released: "2025-06-26"
+registered: true
+uuid: "1382f7fc-2744-4d9d-8ec6-1e3efdec0746"
+task:
+  - phylogenies:
+    - summarize-phylogenies: "measures the goodness of fit of a phylogenetic network to data on four-taxon subsets."
+  - phylogenetics-in-specific-fields:
+    - genetree-speciestree: "checks the fit of a phylogenetic network to data from four-taxon subsets."
+date-curated: "0000-00-00"
+date-updated: "2026-06-22"

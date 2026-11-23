@@ -1,0 +1,16 @@
+title: "TimeTrees.jl"
+type: "package"
+message: "Represents and manipulates fully resolved phylogenetic time trees, including non-contemporaneous leaves."
+url: "https://github.com/tgvaughan/TimeTrees.jl"
+version: null
+date-released: null
+registered: false
+uuid: "notregistered"
+task:
+  - phylogenies:
+    - manipulate-phylogenies: "represents and manipulates fully resolved phylogenetic time trees, including non-contemporaneous leaves."
+    - visualize-phylogenies: "plots fully resolved phylogenetic time trees in interactive Julia sessions."
+  - phylogeny-building:
+    - phylogenies-with-time: "represents fully resolved phylogenetic time trees, including trees with non-contemporaneous leaves."
+date-curated: "0000-00-00"
+date-updated: "2016-04-08"

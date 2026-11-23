@@ -1,0 +1,15 @@
+title: "PhyloCoalSimulations.jl"
+type: "package"
+message: "Simulates phylogenies under the network multispecies coalescent with possible inheritance correlation."
+url: "https://github.com/JuliaPhylo/PhyloCoalSimulations.jl"
+version: "1.1.0"
+date-released: "2025-10-10"
+registered: true
+uuid: "53f7b83a-06b5-4910-9a21-1896bf762ade"
+task:
+  - phylogeny-building:
+    - simulate-phylogenies: "simulates phylogenies under the network multispecies coalescent with possible inheritance correlation."
+  - phylogenetics-in-specific-fields:
+    - genetree-speciestree: "simulates phylogenies under the network multispecies coalescent with possible inheritance correlation."
+date-curated: "0000-00-00"
+date-updated: "2026-06-22"

@@ -1,0 +1,20 @@
+title: "Phylo.jl"
+type: "package"
+message: "Reads phylogenetic trees from Newick and Nexus files."
+url: "https://github.com/EcoJulia/Phylo.jl"
+version: "0.5.4"
+date-released: "2024-07-20"
+registered: true
+uuid: "aea672f4-3940-5932-aa44-993d1c3ff149"
+task:
+  - phylogenies:
+    - read-phylogenies: "reads phylogenetic trees from Newick and Nexus files."
+    - manipulate-phylogenies: "creates phylogenetic trees manually and supports operations on the resulting phylogenies."
+    - visualize-phylogenies: "plots phylogenies and associated traits with Plots recipes."
+  - phylogeny-building:
+    - simulate-phylogenies: "generates random phylogenetic trees."
+  - phylogenetic-comparative-methods:
+    - trait-evolution: "evolves continuous and discrete traits on generated phylogenies."
+    - trait-simulation: "evolves continuous and discrete traits on phylogenetic trees."
+date-curated: "0000-00-00"
+date-updated: "2026-11-09"

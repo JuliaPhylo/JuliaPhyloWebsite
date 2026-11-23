@@ -1,0 +1,15 @@
+title: "PhyNEST.jl"
+type: "package"
+message: "Reads multilocus alignments and estimates maximum-composite-likelihood species networks from four-taxon site patterns."
+url: "https://github.com/sungsik-kong/PhyNEST.jl"
+version: "0.1.12"
+date-released: "2024-06-03"
+registered: true
+uuid: "115de871-c282-4823-a74f-b03678acf966"
+task:
+  - phylogeny-building:
+    - infer-phylogenies: "reads multilocus alignments and estimates maximum-composite-likelihood species networks from four-taxon site patterns."
+  - phylogenetics-in-specific-fields:
+    - genetree-speciestree: "estimates maximum-composite-likelihood species networks from multilocus alignments and site patterns."
+date-curated: "0000-00-00"
+date-updated: "2024-06-03"

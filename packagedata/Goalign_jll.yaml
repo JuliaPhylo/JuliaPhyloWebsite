@@ -1,0 +1,15 @@
+title: "Goalign_jll.jl"
+type: "jll"
+message: "Installs Goalign for processing, converting, filtering, sampling, and summarizing multiple sequence alignments."
+url: "https://github.com/JuliaBinaryWrappers/Goalign_jll.jl"
+version: "0.3.5+0"
+date-released: "2022-03-28"
+registered: true
+uuid: "ed1357da-d9e6-57e3-b342-6130e0ca2d5e"
+task:
+  - data-for-phylogenetics:
+    - read-alignments: "installs Goalign for processing, converting, filtering, sampling, and summarizing multiple sequence alignments."
+  - interact-with-external-resources: "installs the Goalign command-line alignment utility."
+date-curated: "0000-00-00"
+date-updated: "2022-03-28"
+source-url: "https://github.com/evolbioinfo/goalign"

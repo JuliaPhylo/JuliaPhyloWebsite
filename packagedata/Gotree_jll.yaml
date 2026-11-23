@@ -1,0 +1,19 @@
+title: "Gotree_jll.jl"
+type: "jll"
+message: "Installs Gotree for working with phylogenetic trees in formats including Newick, Nexus, and PhyloXML."
+url: "https://github.com/JuliaBinaryWrappers/Gotree_jll.jl"
+version: "0.4.2+0"
+date-released: "2022-04-07"
+registered: true
+uuid: "39fdd4d3-b125-5cbe-a3fb-d0967b9158ef"
+task:
+  - phylogenies:
+    - read-phylogenies: "installs Gotree for working with phylogenetic trees in formats including Newick, Nexus, and PhyloXML."
+    - manipulate-phylogenies: "installs Gotree for manipulating, annotating, rerooting, and reformatting phylogenetic trees."
+    - visualize-phylogenies: "installs Gotree for drawing and annotating phylogenetic trees from the command line."
+    - compare-phylogenies: "installs Gotree for comparing phylogenetic trees from the command line."
+    - summarize-phylogenies: "installs Gotree for summarizing phylogenetic trees from the command line."
+  - interact-with-external-resources: "installs the Gotree command-line tree utility."
+date-curated: "0000-00-00"
+date-updated: "2022-04-07"
+source-url: "https://github.com/evolbioinfo/gotree"

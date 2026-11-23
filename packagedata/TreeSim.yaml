@@ -1,0 +1,15 @@
+title: "TreeSim.jl"
+type: "package"
+message: "Represents, validates, traverses, and summarizes rooted trees for outbreak-modeling workflows."
+url: "https://github.com/michaeltmeehan/TreeSim.jl"
+version: "0.1.0"
+date-released: "2026-04-15"
+registered: false
+uuid: "notregistered"
+task:
+  - phylogenies:
+    - read-phylogenies: "represents, validates, traverses, and summarizes rooted trees for outbreak-modeling workflows."
+  - phylogenetics-in-specific-fields:
+    - epidemiology: "provides a rooted-tree layer for outbreak-modeling workflows."
+date-curated: "0000-00-00"
+date-updated: "2026-04-16"

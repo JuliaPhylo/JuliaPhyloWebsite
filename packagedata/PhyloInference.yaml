@@ -1,0 +1,13 @@
+title: "PhyloInference.jl"
+type: "package"
+message: "Performs Bayesian inference for trait evolution on phylogenetic trees."
+url: "https://github.com/jmkloos/PhyloInference.jl"
+version: "0.1.0"
+date-released: "2019-05-29"
+registered: false
+uuid: "notregistered"
+task:
+  - phylogenetic-comparative-methods:
+    - trait-evolution: "performs Bayesian inference for trait evolution on phylogenetic trees.; provides Bayesian inference for trait evolution on phylogenetic trees."
+date-curated: "0000-00-00"
+date-updated: "2019-06-04"

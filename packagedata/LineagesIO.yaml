@@ -1,0 +1,13 @@
+title: "LineagesIO.jl"
+type: "package"
+message: "Reads rooted trees and networks from Newick and phylogeny CSV sources."
+url: "https://github.com/jeetsukumaran/LineagesIO.jl"
+version: "0.1.0"
+date-released: "2026-05-03"
+registered: false
+uuid: "notregistered"
+task:
+  - phylogenies:
+    - read-phylogenies: "reads rooted trees and networks from Newick and phylogeny CSV sources."
+date-curated: "0000-00-00"
+date-updated: "2026-05-10"

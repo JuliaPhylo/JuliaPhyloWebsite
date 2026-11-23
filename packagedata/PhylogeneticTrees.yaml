@@ -1,0 +1,15 @@
+title: "PhylogeneticTrees.jl"
+type: "package"
+message: "Fits admixture trees with a mixed-integer quadratic optimization algorithm."
+url: "https://github.com/juliayyan/PhylogeneticTrees.jl"
+version: "0.1"
+date-released: "2018-12-02"
+registered: false
+uuid: "notregistered"
+task:
+  - phylogeny-building:
+    - infer-phylogenies: "fits admixture trees with a mixed-integer quadratic optimization algorithm."
+  - phylogenetics-in-specific-fields:
+    - genetree-speciestree: "fits admixture trees using mixed-integer quadratic optimization."
+date-curated: "0000-00-00"
+date-updated: "2020-02-24"

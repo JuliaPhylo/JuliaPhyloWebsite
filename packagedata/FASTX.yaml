@@ -1,0 +1,13 @@
+title: "FASTX.jl"
+type: "package"
+message: "Reads and writes FASTA and FASTQ files and provides utilities for those formats."
+url: "https://github.com/BioJulia/FASTX.jl"
+version: "2.2.0"
+date-released: "2026-08-30"
+registered: true
+uuid: "c2308a5c-f048-11e8-3e8a-31650f418d12"
+task:
+  - data-for-phylogenetics:
+    - read-alignments: "reads and writes FASTA and FASTQ files and provides utilities for those formats."
+date-curated: "0000-00-00"
+date-updated: "2026-11-07"

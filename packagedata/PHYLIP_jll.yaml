@@ -1,0 +1,12 @@
+title: "PHYLIP_jll.jl"
+type: "jll"
+message: null
+url: "https://github.com/JuliaBinaryWrappers/PHYLIP_jll.jl"
+version: "3.697.0+0"
+date-released: "2022-11-17"
+registered: true
+uuid: "6c8e8166-39d2-5c7b-a0d9-a6b5560fbba2"
+task: []
+date-curated: "0000-00-00"
+date-updated: "2022-11-17"
+source-url: "http://evolution.gs.washington.edu/phylip/download/phylip-3.697.tar.gz"

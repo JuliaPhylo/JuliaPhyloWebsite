@@ -1,0 +1,13 @@
+title: "glOpqua"
+type: "package"
+message: "Simulates pathogen epidemiology and evolution across scales."
+url: "https://github.com/pablocarderam/glOpqua"
+version: "0.1.0"
+date-released: "2024-11-30"
+registered: false
+uuid: "notregistered"
+task:
+  - phylogenetics-in-specific-fields:
+    - epidemiology: "simulates pathogen epidemiology and evolution across scales."
+date-curated: "0000-00-00"
+date-updated: "2024-12-01"

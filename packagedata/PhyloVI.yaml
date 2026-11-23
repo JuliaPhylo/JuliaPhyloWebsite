@@ -1,0 +1,11 @@
+title: "PhyloVI"
+type: "package"
+message: "Variational inference for phylogenetics"
+url: "https://github.com/savmasse/PhyloVI"
+version: "0.1.0"
+date-released: "2019-12-04"
+registered: false
+uuid: "notregistered"
+task: []
+date-curated: "0000-00-00"
+date-updated: "2019-12-06"

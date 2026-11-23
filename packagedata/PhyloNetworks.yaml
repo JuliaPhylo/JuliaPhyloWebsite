@@ -1,11 +1,11 @@
-title: "PhyloNetworks"
+title: "PhyloNetworks.jl"
 type: "package"
 message: "Utilities for handling and manipulating phylogenetic trees and networks."
 url: "https://github.com/JuliaPhylo/PhyloNetworks.jl"
-version: "1.4.0"
-date-released: "2026-08-23"
+version: "1.5.0"
+date-released: "2026-11-14"
 registered: true
-uuide: "33ad39ac-ed31-50eb-9b15-43d0656eaa72"
+uuid: "33ad39ac-ed31-50eb-9b15-43d0656eaa72"
 task:
   - phylogenies:
     - read-phylogenies: "read and write trees and networks in (extended) newick and nexus format."
@@ -16,7 +16,7 @@ task:
     - summary-statistics: "calculate data expectations from phylogenetic models."
   - phylogeny-building:
     - infer-phylogenies: "build the Neighbor-Joining tree"
-date-curated: "2026-09-29"
+date-curated: "2026-11-23"
 
 abstract: >
   PhyloNetworks provides utilities for analyzing and evaluating

@@ -1,0 +1,13 @@
+title: "CoalescentTrees.jl"
+type: "package"
+message: "Simulates coalescent genealogies under standard and bounded models with heterochronous sampling support."
+url: "https://github.com/michaeltmeehan/CoalescentTrees.jl"
+version: "0.1.0"
+date-released: "2025-03-26"
+registered: false
+uuid: "notregistered"
+task:
+  - phylogeny-building:
+    - simulate-phylogenies: "simulates coalescent genealogies under standard and bounded models with heterochronous sampling support."
+date-curated: "0000-00-00"
+date-updated: "2025-03-26"

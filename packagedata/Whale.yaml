@@ -1,0 +1,16 @@
+title: "Whale.jl"
+type: "package"
+message: "Jointly infers gene-tree topologies and their reconciliations to a species tree."
+url: "https://github.com/arzwa/Whale.jl"
+version: "2.1.0"
+date-released: "2022-09-12"
+registered: false
+uuid: "notregistered"
+task:
+  - phylogeny-building:
+    - infer-phylogenies: "jointly infers gene-tree topologies and their reconciliations to a species tree."
+  - phylogenetics-in-specific-fields:
+    - omics: "performs Bayesian gene-tree reconciliation and whole-genome duplication inference."
+    - genetree-speciestree: "jointly infers gene trees and their reconciliation to a species tree."
+date-curated: "0000-00-00"
+date-updated: "2025-04-29"

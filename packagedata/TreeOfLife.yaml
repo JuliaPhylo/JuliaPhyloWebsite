@@ -1,0 +1,17 @@
+title: "TreeOfLife.jl"
+type: "package"
+message: "Parses and serializes cladograms and chronograms in Newick format."
+url: "https://github.com/Mikumikunisiteageru/TreeOfLife.jl"
+version: "0.0.10"
+date-released: "2023-06-14"
+registered: true
+uuid: "84ef9827-9357-47d4-b4e4-19dbb3edd7c1"
+task:
+  - phylogenies:
+    - read-phylogenies: "parses and serializes cladograms and chronograms in Newick format."
+    - manipulate-phylogenies: "provides MRCA, monophyly, and other operations on cladograms and chronograms."
+    - summarize-phylogenies: "calculates phylogenetic diversity, MRCA, and monophyly statistics."
+  - phylogeny-building:
+    - phylogenies-with-time: "defines chronogram data types for time-scaled phylogenetic trees."
+date-curated: "0000-00-00"
+date-updated: "2024-05-22"

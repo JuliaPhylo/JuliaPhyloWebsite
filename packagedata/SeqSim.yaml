@@ -1,0 +1,13 @@
+title: "SeqSim.jl"
+type: "package"
+message: "Simulates sequences and alignments along trees and writes FASTA, Nexus, and PHYLIP output."
+url: "https://github.com/michaeltmeehan/SeqSim.jl"
+version: "0.1.0"
+date-released: "2026-04-15"
+registered: false
+uuid: "notregistered"
+task:
+  - phylogenetic-comparative-methods:
+    - trait-simulation: "simulates sequences and alignments along trees and writes FASTA, Nexus, and PHYLIP output."
+date-curated: "0000-00-00"
+date-updated: "2026-04-16"

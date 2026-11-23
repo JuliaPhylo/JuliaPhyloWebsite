@@ -1,0 +1,14 @@
+title: "PaleobiologyDB.jl"
+type: "package"
+message: "Accesses fossil occurrences and taxonomy trees through the Paleobiology Database API."
+url: "https://github.com/jeetsukumaran/PaleobiologyDB.jl"
+version: "2.0.0"
+date-released: "2026-09-21"
+registered: true
+uuid: "c9cb2f45-518b-476d-9b58-4dd79871b05b"
+task:
+  - phylogenetics-in-specific-fields:
+    - time-series-and-paleontology: "accesses fossil occurrences and taxonomy trees through the Paleobiology Database API."
+  - interact-with-external-resources: "accesses fossil occurrences and taxonomic trees through the Paleobiology Database API."
+date-curated: "0000-00-00"
+date-updated: "2026-09-20"

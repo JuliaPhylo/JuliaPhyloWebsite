@@ -1,0 +1,15 @@
+title: "PhyloTrees.jl"
+type: "package"
+message: "Provides tools for working with rooted phylogenetic trees."
+url: "https://github.com/jangevaare/PhyloTrees.jl"
+version: "0.12.0"
+date-released: "2026-09-29"
+registered: true
+uuid: "4c47b132-0681-5a5d-b498-3afcf53fd314"
+task:
+  - phylogenies:
+    - read-phylogenies: "provides tools for working with rooted phylogenetic trees."
+    - manipulate-phylogenies: "provides node and branch operations, distances, and postorder traversal for rooted trees."
+    - visualize-phylogenies: "provides a Plots recipe for rooted phylogenetic trees."
+date-curated: "0000-00-00"
+date-updated: "2026-09-29"

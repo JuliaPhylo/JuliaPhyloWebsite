@@ -1,0 +1,17 @@
+title: "PhyloModels.jl"
+type: "package"
+message: "Calculates phylogenetic tree likelihoods with Felsenstein's pruning algorithm."
+url: "https://github.com/jangevaare/PhyloModels.jl"
+version: "0.4.0"
+date-released: "2026-10-20"
+registered: true
+uuid: "6465ae08-de3a-5dbe-bda8-3920f6a01ab7"
+task:
+  - phylogeny-building:
+    - infer-phylogenies: "calculates phylogenetic tree likelihoods with Felsenstein's pruning algorithm."
+  - phylogenetic-comparative-methods:
+    - trait-simulation: "simulates genetic sequences along specified phylogenetic trees."
+  - phylogenetics-in-specific-fields:
+    - omics: "simulates genetic sequences and calculates phylogenetic tree likelihoods."
+date-curated: "0000-00-00"
+date-updated: "2026-09-30"

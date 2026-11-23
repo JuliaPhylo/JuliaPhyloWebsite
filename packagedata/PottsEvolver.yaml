@@ -1,0 +1,15 @@
+title: "PottsEvolver.jl"
+type: "package"
+message: "Simulates protein evolution with a Potts model along lineages or tree branches."
+url: "https://github.com/PierreBarrat/PottsEvolver.jl"
+version: "0.2.0"
+date-released: "2026-11-19"
+registered: true
+uuid: "288ebb56-9d8a-405a-a2d6-6ed6f22c6052"
+task:
+  - phylogenetic-comparative-methods:
+    - trait-simulation: "simulates protein evolution with a Potts model along lineages or tree branches."
+  - phylogenetics-in-specific-fields:
+    - omics: "simulates protein evolution along lineages or tree branches with Potts models."
+date-curated: "0000-00-00"
+date-updated: "2026-11-19"

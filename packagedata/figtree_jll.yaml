@@ -1,0 +1,12 @@
+title: "figtree_jll.jl"
+type: "jll"
+message: null
+url: "https://github.com/JuliaBinaryWrappers/figtree_jll.jl"
+version: "0.9.3+0"
+date-released: "2020-08-02"
+registered: true
+uuid: "eeb7bb4a-9a32-53d0-9978-007222276d6f"
+task: []
+date-curated: "0000-00-00"
+date-updated: "2020-08-02"
+source-url: "https://sourceforge.net/projects/figtree/files/figtree-0.9.3.zip"

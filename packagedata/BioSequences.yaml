@@ -1,0 +1,13 @@
+title: "BioSequences.jl"
+type: "package"
+message: "Provides DNA, RNA, and amino-acid sequence types for biological sequence data."
+url: "https://github.com/BioJulia/BioSequences.jl"
+version: "3.5.3"
+date-released: "2026-11-10"
+registered: true
+uuid: "7e6ae17a-c86d-528c-b3b9-7f778a29fe59"
+task:
+  - data-for-phylogenetics:
+    - read-alignments: "provides DNA, RNA, and amino-acid sequence types for biological sequence data."
+date-curated: "0000-00-00"
+date-updated: "2026-11-10"

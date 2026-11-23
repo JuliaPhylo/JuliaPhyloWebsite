@@ -1,0 +1,15 @@
+title: "PhyloTools.jl"
+type: "package"
+message: "Reads Newick trees for rooting, clustering, and plotting workflows."
+url: "https://github.com/shaul-pollak/PhyloTools.jl"
+version: "0.1.0"
+date-released: "2022-10-31"
+registered: true
+uuid: "b795de74-0e0b-491f-a34a-f5524d7c246d"
+task:
+  - phylogenies:
+    - read-phylogenies: "reads Newick trees for rooting, clustering, and plotting workflows."
+    - manipulate-phylogenies: "midpoint-roots and clusters trees represented with NewickTree.jl."
+    - visualize-phylogenies: "plots NewickTree trees with Makie, including labels and orientation controls."
+date-curated: "0000-00-00"
+date-updated: "2025-03-14"

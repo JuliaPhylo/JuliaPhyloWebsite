@@ -1,0 +1,13 @@
+title: "FastaIO.jl"
+type: "package"
+message: "Provides utilities for reading and writing FASTA files."
+url: "https://github.com/carlobaldassi/FastaIO.jl"
+version: "1.1.0"
+date-released: "2024-08-30"
+registered: true
+uuid: "a0c94c4b-ebed-5953-b5fc-82fe598ac79f"
+task:
+  - data-for-phylogenetics:
+    - read-alignments: "provides utilities for reading and writing FASTA files."
+date-curated: "0000-00-00"
+date-updated: "2024-08-30"

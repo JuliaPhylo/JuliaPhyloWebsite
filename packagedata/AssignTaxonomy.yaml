@@ -1,0 +1,14 @@
+title: "AssignTaxonomy.jl"
+type: "package"
+message: "Assigns taxonomic classifications to DNA sequences with an all-Julia RDP naive Bayesian classifier."
+url: "https://github.com/EvoArt/AssignTaxonomy.jl"
+version: "0.2.1"
+date-released: "2026-11-21"
+registered: true
+uuid: "941572e2-79a6-4ec3-8380-7ad5c8caa571"
+task:
+  - phylogenetics-in-specific-fields:
+    - community-and-microbial-ecology: "assigns taxonomic classifications to DNA sequences with an all-Julia RDP naive Bayesian classifier."
+  - interact-with-external-resources: "assigns taxonomy to DNA sequences with an all-Julia RDP naive Bayesian classifier."
+date-curated: "0000-00-00"
+date-updated: "2026-11-23"

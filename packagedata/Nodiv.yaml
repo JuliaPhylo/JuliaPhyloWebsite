@@ -1,0 +1,15 @@
+title: "Nodiv.jl"
+type: "package"
+message: "Compares descendant-clade richness at every internal node against a null model."
+url: "https://github.com/mkborregaard/Nodiv.jl"
+version: "0.2.2"
+date-released: "2026-09-26"
+registered: true
+uuid: "6a6d1b09-ff88-4671-a19a-d516f2482c79"
+task:
+  - phylogenies:
+    - summarize-phylogenies: "compares descendant-clade richness at every internal node against a null model."
+  - phylogenetics-in-specific-fields:
+    - community-and-microbial-ecology: "compares descendant-clade richness across cells against a null model at each internal phylogenetic node."
+date-curated: "0000-00-00"
+date-updated: "2026-09-26"

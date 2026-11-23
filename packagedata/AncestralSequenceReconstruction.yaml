@@ -1,0 +1,13 @@
+title: "AncestralSequenceReconstruction.jl"
+type: "package"
+message: "Reconstructs ancestral protein sequences with autoregressive generative and profile models."
+url: "https://github.com/PierreBarrat/AncestralSequenceReconstruction.jl"
+version: "0.1"
+date-released: "2026-10-02"
+registered: false
+uuid: "notregistered"
+task:
+  - phylogenetic-comparative-methods:
+    - trait-evolution: "reconstructs ancestral protein sequences with autoregressive generative and profile models."
+date-curated: "0000-00-00"
+date-updated: "2026-10-09"

@@ -1,0 +1,15 @@
+title: "NewickTree.jl"
+type: "package"
+message: "Parses Newick strings into tree structures and writes those trees back to Newick."
+url: "https://github.com/arzwa/NewickTree.jl"
+version: "0.4.0"
+date-released: "2025-08-06"
+registered: true
+uuid: "b0a14db8-6308-4ebc-8917-f72cd81f5094"
+task:
+  - phylogenies:
+    - read-phylogenies: "parses Newick strings into tree structures and writes those trees back to Newick."
+    - manipulate-phylogenies: "provides tree nodes with traversal and query operations for Newick trees."
+    - visualize-phylogenies: "includes a Plots recipe."
+date-curated: "0000-00-00"
+date-updated: "2026-05-19"

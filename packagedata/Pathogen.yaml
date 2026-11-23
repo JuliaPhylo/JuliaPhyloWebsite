@@ -1,0 +1,13 @@
+title: "Pathogen.jl"
+type: "package"
+message: "Fits individual-level infectious-disease models and infers who-infected-whom transmission pathways."
+url: "https://github.com/jangevaare/Pathogen.jl"
+version: "0.4.13"
+date-released: "2021-10-01"
+registered: true
+uuid: "c8189ad9-0349-5cbb-98f2-579781f27e5c"
+task:
+  - phylogenetics-in-specific-fields:
+    - epidemiology: "fits individual-level infectious-disease models and infers who-infected-whom transmission pathways."
+date-curated: "0000-00-00"
+date-updated: "2026-10-20"

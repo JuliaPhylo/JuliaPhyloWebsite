@@ -1,0 +1,13 @@
+title: "PalmTree.jl"
+type: "package"
+message: "Draws and annotates NewickTree trees with Luxor."
+url: "https://github.com/arzwa/PalmTree.jl"
+version: "0.1.0"
+date-released: "2020-02-11"
+registered: false
+uuid: "notregistered"
+task:
+  - phylogenies:
+    - visualize-phylogenies: "draws and annotates NewickTree trees with Luxor."
+date-curated: "0000-00-00"
+date-updated: "2020-07-16"

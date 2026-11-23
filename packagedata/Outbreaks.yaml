@@ -1,0 +1,14 @@
+title: "Outbreaks.jl"
+type: "package"
+message: "Provides curated outbreak datasets, including contacts and pathogen DNA data."
+url: "https://github.com/epirecipes/Outbreaks.jl"
+version: "0.3.0"
+date-released: "2026-05-05"
+registered: false
+uuid: "notregistered"
+task:
+  - phylogenetics-in-specific-fields:
+    - epidemiology: "provides curated outbreak datasets, including contacts and pathogen DNA data."
+  - interact-with-external-resources: "provides curated disease-outbreak datasets for Julia."
+date-curated: "0000-00-00"
+date-updated: "2026-05-05"

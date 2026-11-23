@@ -1,0 +1,11 @@
+title: "Taxonomies.jl"
+type: "package"
+message: "a prototype of a taxonomy system in julia"
+url: "https://github.com/EcoJulia/Taxonomies.jl"
+version: "0.0.1"
+date-released: "2021-05-19"
+registered: false
+uuid: "notregistered"
+task: []
+date-curated: "0000-00-00"
+date-updated: "2021-05-25"

@@ -1,0 +1,13 @@
+title: "Pagel.jl"
+type: "package"
+message: "Implements correlated-evolution analysis for discrete characters, but its README warns that it is a research prototype."
+url: "https://github.com/porterjamesj/Pagel.jl"
+version: null
+date-released: null
+registered: false
+uuid: "notregistered"
+task:
+  - phylogenetic-comparative-methods:
+    - trait-evolution: "implements correlated-evolution analysis for discrete characters, but its README warns that it is a research prototype."
+date-curated: "0000-00-00"
+date-updated: "2013-12-13"

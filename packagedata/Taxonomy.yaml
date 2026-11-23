@@ -1,0 +1,12 @@
+title: "Taxonomy.jl"
+type: "package"
+message: "Handles the NCBI Taxonomy database with taxon traversal, name lookup, lineage, rank, and lowest-common-ancestor queries."
+url: "https://github.com/banhbio/Taxonomy.jl"
+version: "0.5.1"
+date-released: "2026-07-09"
+registered: true
+uuid: "10bb16a4-4bfc-432e-9419-4ca69c1a753c"
+task:
+  - interact-with-external-resources: "handles the NCBI Taxonomy database with taxon traversal, name lookup, lineage, rank, and lowest-common-ancestor queries."
+date-curated: "0000-00-00"
+date-updated: "2026-07-09"

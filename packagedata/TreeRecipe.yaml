@@ -1,0 +1,13 @@
+title: "TreeRecipe.jl"
+type: "package"
+message: "Plots tree types that implement the AbstractTrees interface."
+url: "https://github.com/JuliaAI/TreeRecipe.jl"
+version: "0.2.0"
+date-released: "2023-11-02"
+registered: true
+uuid: "1fa7448c-8018-415c-9278-624f5a245816"
+task:
+  - phylogenies:
+    - visualize-phylogenies: "plots tree types that implement the AbstractTrees interface."
+date-curated: "0000-00-00"
+date-updated: "2023-11-02"

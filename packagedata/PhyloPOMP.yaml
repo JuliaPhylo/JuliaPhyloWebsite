@@ -1,0 +1,11 @@
+title: "PhyloPOMP.jl"
+type: "package"
+message: "Phylodynamics for partially observed Markov processes in Julia"
+url: "https://github.com/kingaa/PhyloPOMP.jl"
+version: "0.1.0"
+date-released: "2026-10-01"
+registered: true
+uuid: "d3093253-1426-44ff-8fa8-1ab5fe440962"
+task: []
+date-curated: "0000-00-00"
+date-updated: "2026-11-20"

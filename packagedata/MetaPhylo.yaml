@@ -1,0 +1,14 @@
+title: "MetaPhylo.jl"
+type: "package"
+message: "Parses Newick into phylogenetic tree structures built with Graphs and AbstractTrees."
+url: "https://github.com/banhbio/MetaPhylo.jl"
+version: "0.1.1"
+date-released: "2023-01-19"
+registered: true
+uuid: "58946fd8-f65e-4b58-ac25-0d711c9bbc40"
+task:
+  - phylogenies:
+    - read-phylogenies: "parses Newick into phylogenetic tree structures built with Graphs and AbstractTrees."
+    - manipulate-phylogenies: "stores phylogenetic metadata and supports node and branch queries."
+date-curated: "0000-00-00"
+date-updated: "2023-01-22"

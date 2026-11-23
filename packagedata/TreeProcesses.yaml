@@ -1,0 +1,13 @@
+title: "TreeProcesses.jl"
+type: "package"
+message: "Simulates forward birth-death and Yule trees and backward coalescent trees."
+url: "https://github.com/skleinbo/TreeProcesses.jl"
+version: "0.2.0"
+date-released: "2026-01-11"
+registered: false
+uuid: "notregistered"
+task:
+  - phylogeny-building:
+    - simulate-phylogenies: "simulates forward birth-death and Yule trees and backward coalescent trees."
+date-curated: "0000-00-00"
+date-updated: "2026-01-11"

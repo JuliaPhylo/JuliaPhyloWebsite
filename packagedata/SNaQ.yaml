@@ -1,0 +1,15 @@
+title: "SNaQ.jl"
+type: "package"
+message: "Estimates level-1 phylogenetic networks using maximum pseudolikelihood with numerical optimization of branch lengths and inheritance probabilities."
+url: "https://github.com/JuliaPhylo/SNaQ.jl"
+version: "1.2.1"
+date-released: "2026-09-10"
+registered: true
+uuid: "c2bf7a07-44d2-4d11-b5e2-76dc5aa199d6"
+task:
+  - phylogeny-building:
+    - infer-phylogenies: "estimates level-1 phylogenetic networks using maximum pseudolikelihood with numerical optimization of branch lengths and inheritance probabilities."
+  - phylogenetics-in-specific-fields:
+    - genetree-speciestree: "estimates level-1 phylogenetic networks using maximum pseudolikelihood under incomplete lineage sorting."
+date-curated: "0000-00-00"
+date-updated: "2026-09-10"

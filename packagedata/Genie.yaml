@@ -1,0 +1,15 @@
+title: "Genie.jl"
+type: "package"
+message: "Simulates amino-acid or codon evolutionary trajectories with epistasis, codon bias, and selection."
+url: "https://github.com/spqb/Genie.jl"
+version: "1.0.0-DEV"
+date-released: "2025-01-29"
+registered: false
+uuid: "notregistered"
+task:
+  - phylogenetic-comparative-methods:
+    - trait-simulation: "simulates amino-acid or codon evolutionary trajectories with epistasis, codon bias, and selection."
+  - phylogenetics-in-specific-fields:
+    - omics: "simulates amino-acid or codon sequence trajectories with mutation, epistasis, and selection."
+date-curated: "0000-00-00"
+date-updated: "2025-01-29"

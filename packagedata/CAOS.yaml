@@ -1,0 +1,13 @@
+title: "CAOS.jl"
+type: "package"
+message: "Generates characteristic-attribute rules from Newick or Nexus phylogenetic trees for sequence classification."
+url: "https://github.com/JuliaHealth/CAOS.jl"
+version: "0.1.2"
+date-released: "2020-02-09"
+registered: true
+uuid: "84b91ece-59cc-50c4-8800-6f827c67b7cb"
+task:
+  - phylogeny-building:
+    - infer-phylogenies: "generates characteristic-attribute rules from Newick or Nexus phylogenetic trees for sequence classification."
+date-curated: "0000-00-00"
+date-updated: "2020-02-09"

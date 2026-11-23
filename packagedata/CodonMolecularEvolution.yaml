@@ -1,0 +1,13 @@
+title: "CodonMolecularEvolution.jl"
+type: "package"
+message: "Is a descendant of MolecularEvolution.jl specializing in codon models, with a dN/dS catalogue currently consisting of FUBAR and difFUBAR."
+url: "https://github.com/MurrellGroup/CodonMolecularEvolution.jl"
+version: "0.2.0"
+date-released: "2025-08-13"
+registered: true
+uuid: "6511b2a3-0bb8-4def-a118-560a7e125e34"
+task:
+  - phylogenetics-in-specific-fields:
+    - omics: "is a descendant of MolecularEvolution.jl specializing in codon models, with a dN/dS catalogue currently consisting of FUBAR and difFUBAR."
+date-curated: "0000-00-00"
+date-updated: "2025-08-13"

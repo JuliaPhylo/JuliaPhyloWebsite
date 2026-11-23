@@ -1,0 +1,13 @@
+title: "Pesto.jl"
+type: "package"
+message: "Fits state-dependent speciation and extinction models on reconstructed phylogenetic trees."
+url: "https://github.com/kopperud/Pesto.jl"
+version: "0.1.7"
+date-released: "2025-06-23"
+registered: true
+uuid: "f3a6be2d-a68d-4ec3-9269-e9777039d639"
+task:
+  - phylogenetic-comparative-methods:
+    - diversification: "fits state-dependent speciation and extinction models on reconstructed phylogenetic trees."
+date-curated: "0000-00-00"
+date-updated: "2026-08-05"
