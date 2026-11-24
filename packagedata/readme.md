@@ -35,7 +35,7 @@ Other required fields:
   `ftp://` or `sftp://` (following cff)
 - `version`: string or number, e.g. "1.2.0" or 1.2
 - `date-released`: date the software (at that version) was released.
-  format: "yyyy-mm-dd"
+  format: "yyyy-mm-dd". If the version is still in development and not officially released, please enter "0000-00-00".
 - `registered`: boolean.
   true if the software is in the general julia registry, which is here:
   "https://github.com/JuliaRegistries/General"
