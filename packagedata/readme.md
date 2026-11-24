@@ -20,7 +20,7 @@ see
 
 Required fields also required by citation file format:
 
-- `title`: string, name of software
+- `title`: string, full name of software (including `.jl`)
 - `message`: string, one-line description of what the software does
 - `type`: required in cff only for references.
   string, either "package" or "jll".
@@ -35,7 +35,8 @@ Other required fields:
   `ftp://` or `sftp://` (following cff)
 - `version`: string or number, e.g. "1.2.0" or 1.2
 - `date-released`: date the software (at that version) was released.
-  format: "yyyy-mm-dd". If the version is still in development and not officially released, please enter "0000-00-00".
+  format: "yyyy-mm-dd".
+  "0000-00-00" if the version is still in development and not officially released.
 - `registered`: boolean.
   true if the software is in the general julia registry, which is here:
   "https://github.com/JuliaRegistries/General"
