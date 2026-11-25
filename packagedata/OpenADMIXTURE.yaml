@@ -1,0 +1,13 @@
+title: "OpenADMIXTURE.jl"
+type: "package"
+message: "Estimates ancestry by maximum likelihood from large SNP genotype datasets."
+url: "https://github.com/OpenMendel/OpenADMIXTURE.jl"
+version: "0.1.0"
+date-released: "2023-09-27"
+registered: true
+uuid: "425c031d-9e5b-441b-a07e-4acde9a966a3"
+task:
+  - phylogenetics-in-specific-fields:
+    - population-genetics: "estimates ancestry by maximum likelihood from large SNP genotype datasets."
+date-curated: "0000-00-00"
+date-updated: "2025-02-18"

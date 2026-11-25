@@ -1,0 +1,15 @@
+title: "ClustalO_jll.jl"
+type: "jll"
+message: "Installs Clustal Omega, which reads sequences and profiles, writes multiple alignments in several formats, and reads or writes distance matrices and guide trees."
+url: "https://github.com/JuliaBinaryWrappers/ClustalO_jll.jl"
+version: "1.2.4+0"
+date-released: "2023-07-07"
+registered: true
+uuid: "0dad4a17-6433-5fde-a0a0-daebbaba7b50"
+task:
+  - data-for-phylogenetics:
+    - read-alignments: "installs Clustal Omega, which reads sequences and profiles, writes multiple alignments in several formats, and reads or writes distance matrices and guide trees."
+  - interact-with-external-resources: "installs the Clustal Omega command-line executable."
+date-curated: "0000-00-00"
+date-updated: "2023-07-07"
+source-url: "https://github.com/GSLBiotech/clustal-omega"

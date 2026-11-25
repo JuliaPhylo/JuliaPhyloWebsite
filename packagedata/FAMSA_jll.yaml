@@ -1,0 +1,15 @@
+title: "FAMSA_jll.jl"
+type: "jll"
+message: "Installs FAMSA, which reads FASTA inputs for multiple-sequence or profile-profile alignment and can import or export Newick guide trees and CSV distance matrices."
+url: "https://github.com/JuliaBinaryWrappers/FAMSA_jll.jl"
+version: "2.2.2+1"
+date-released: "2023-04-26"
+registered: true
+uuid: "03e070a6-cabd-5a65-a0e2-949769773651"
+task:
+  - data-for-phylogenetics:
+    - read-alignments: "installs FAMSA, which reads FASTA inputs for multiple-sequence or profile-profile alignment and can import or export Newick guide trees and CSV distance matrices."
+  - interact-with-external-resources: "installs the FAMSA command-line executable."
+date-curated: "0000-00-00"
+date-updated: "2023-04-26"
+source-url: "https://github.com/refresh-bio/FAMSA"

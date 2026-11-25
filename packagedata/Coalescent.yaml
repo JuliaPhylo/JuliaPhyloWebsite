@@ -1,0 +1,15 @@
+title: "Coalescent.jl"
+type: "package"
+message: "Simulates coalescent genealogical histories conditioned on flexible demographic histories."
+url: "https://github.com/emvolz/Coalescent.jl"
+version: "0.1.5"
+date-released: "2026-10-26"
+registered: true
+uuid: "7af52d38-510f-42b9-ba0a-b0cde7e92322"
+task:
+  - phylogeny-building:
+    - simulate-phylogenies: "simulates coalescent genealogical histories conditioned on flexible demographic histories."
+  - phylogenetics-in-specific-fields:
+    - epidemiology: "simulates pathogen genealogical histories under flexible demographic and sampling histories."
+date-curated: "0000-00-00"
+date-updated: "2026-10-26"

@@ -1,0 +1,17 @@
+title: "TreeTools.jl"
+type: "package"
+message: "Reads and writes rooted phylogenetic or genealogical trees in Newick format."
+url: "https://github.com/PierreBarrat/TreeTools.jl"
+version: "0.8.0"
+date-released: "2026-03-31"
+registered: true
+uuid: "62f0eae3-8c0e-4032-a621-7756092209e5"
+task:
+  - phylogenies:
+    - read-phylogenies: "reads and writes rooted phylogenetic or genealogical trees in Newick format."
+    - manipulate-phylogenies: "navigates, prunes, reroots, traverses, and annotates rooted trees."
+    - compare-phylogenies: "computes metrics for rooted phylogenetic and genealogical trees."
+  - phylogeny-building:
+    - simulate-phylogenies: "generates random trees with birth-death, Kingman, Yule, and simple-shape processes."
+date-curated: "0000-00-00"
+date-updated: "2026-10-09"

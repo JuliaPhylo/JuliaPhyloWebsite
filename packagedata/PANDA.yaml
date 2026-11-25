@@ -1,0 +1,13 @@
+title: "PANDA.jl"
+type: "package"
+message: "Implements macroevolutionary analyses on phylogenetic trees."
+url: "https://github.com/hmorlon/PANDA.jl"
+version: "0.0.8"
+date-released: "2024-07-13"
+registered: true
+uuid: "57a71ab2-c1ee-420a-94e0-f42fd769768c"
+task:
+  - phylogenetic-comparative-methods:
+    - diversification: "implements macroevolutionary analyses on phylogenetic trees."
+date-curated: "0000-00-00"
+date-updated: "2024-07-09"

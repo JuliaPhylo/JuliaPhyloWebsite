@@ -1,0 +1,15 @@
+title: "SeqGen_jll.jl"
+type: "jll"
+message: "Installs Seq-Gen for Monte Carlo simulation of molecular sequence evolution along phylogenetic trees."
+url: "https://github.com/JuliaBinaryWrappers/SeqGen_jll.jl"
+version: "1.3.4+0"
+date-released: "2022-03-16"
+registered: true
+uuid: "1820de90-959d-54bb-9e2e-c539b020f79b"
+task:
+  - phylogenetic-comparative-methods:
+    - trait-simulation: "installs Seq-Gen for Monte Carlo simulation of molecular sequence evolution along phylogenetic trees."
+  - interact-with-external-resources: "installs the Seq-Gen sequence-simulation executable."
+date-curated: "0000-00-00"
+date-updated: "2022-03-16"
+source-url: "https://github.com/rambaut/Seq-Gen"

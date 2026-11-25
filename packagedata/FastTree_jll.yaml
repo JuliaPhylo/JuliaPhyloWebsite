@@ -1,0 +1,12 @@
+title: "FastTree_jll.jl"
+type: "jll"
+message: null
+url: "https://github.com/JuliaBinaryWrappers/FastTree_jll.jl"
+version: "2.1.11+1"
+date-released: "2023-06-18"
+registered: true
+uuid: "046fc0e8-debb-562a-987b-147c85b24435"
+task: []
+date-curated: "0000-00-00"
+date-updated: "2023-06-18"
+source-url: "http://www.microbesonline.org/fasttree/FastTree-2.1.11.c"

@@ -1,0 +1,13 @@
+title: "PhyloPickMe.jl"
+type: "package"
+message: "Selects samples for inclusion in species-tree analyses."
+url: "https://github.com/jrusinko/PhyloPickMe.jl"
+version: "1.0.9"
+date-released: "2024-10-08"
+registered: true
+uuid: "0dfd6e21-1466-4d69-a740-ac598855cece"
+task:
+  - phylogenetics-in-specific-fields:
+    - genetree-speciestree: "selects samples for inclusion in species-tree analyses."
+date-curated: "0000-00-00"
+date-updated: "2024-10-08"

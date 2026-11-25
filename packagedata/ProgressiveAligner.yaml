@@ -1,0 +1,15 @@
+title: "ProgressiveAligner.jl"
+type: "package"
+message: "Builds a guide tree with neighbor joining, UPGMA, or WPGMA and progressively aligns protein sequences."
+url: "https://github.com/latticetower/ProgressiveAligner.jl"
+version: "0.4.0"
+date-released: "2016-02-02"
+registered: false
+uuid: "notregistered"
+task:
+  - data-for-phylogenetics:
+    - read-alignments: "builds a guide tree with neighbor joining, UPGMA, or WPGMA and progressively aligns protein sequences."
+  - phylogeny-building:
+    - infer-phylogenies: "builds neighbor-joining, UPGMA, or WPGMA guide trees while progressively aligning protein sequences."
+date-curated: "0000-00-00"
+date-updated: "2016-10-04"

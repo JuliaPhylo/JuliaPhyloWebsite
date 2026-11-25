@@ -1,0 +1,13 @@
+title: "MCPhylo.jl"
+type: "package"
+message: "Extends Mamba's Markov chain Monte Carlo sampling for Bayesian phylogenetic computations."
+url: "https://github.com/erathorn/MCPhylo.jl"
+version: "0.9.5"
+date-released: "2023-04-12"
+registered: true
+uuid: "af0ac7d2-842d-415f-bd76-8183c117c674"
+task:
+  - phylogeny-building:
+    - infer-phylogenies: "extends Mamba's Markov chain Monte Carlo sampling for Bayesian phylogenetic computations."
+date-curated: "0000-00-00"
+date-updated: "2024-03-06"

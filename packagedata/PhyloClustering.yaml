@@ -1,0 +1,14 @@
+title: "PhyloClustering.jl"
+type: "package"
+message: "Clusters phylogenetic trees with K-means, hierarchical clustering, Gaussian mixtures, or DBSCAN."
+url: "https://github.com/solislemuslab/PhyloClustering.jl"
+version: "0.2.0"
+date-released: "2024-02-26"
+registered: true
+uuid: "2e4ec7c6-185f-4bfd-8419-ce336ea983f6"
+task:
+  - phylogenies:
+    - compare-phylogenies: "clusters phylogenetic trees with K-means, hierarchical clustering, Gaussian mixtures, or DBSCAN."
+    - summarize-phylogenies: "summarizes structure among collections of phylogenetic trees with unsupervised learning."
+date-curated: "0000-00-00"
+date-updated: "2026-11-06"

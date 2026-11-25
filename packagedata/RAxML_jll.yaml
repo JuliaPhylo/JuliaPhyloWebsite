@@ -1,0 +1,15 @@
+title: "RAxML_jll.jl"
+type: "jll"
+message: "Installs standard RAxML v8 binaries for phylogenetic analysis and post-analysis of large phylogenies."
+url: "https://github.com/JuliaBinaryWrappers/RAxML_jll.jl"
+version: "8.2.13+0"
+date-released: "2022-08-03"
+registered: true
+uuid: "c041c47d-3145-556a-bf4b-99e7014d775b"
+task:
+  - phylogeny-building:
+    - infer-phylogenies: "installs standard RAxML v8 binaries for phylogenetic analysis and post-analysis of large phylogenies."
+  - interact-with-external-resources: "installs standard RAxML v8 executables."
+date-curated: "2026-11-25"
+date-updated: "2022-08-03"
+source-url: "https://github.com/stamatak/standard-RAxML"

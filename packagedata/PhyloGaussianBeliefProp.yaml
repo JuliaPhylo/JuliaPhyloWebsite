@@ -1,0 +1,13 @@
+title: "PhyloGaussianBeliefProp.jl"
+type: "package"
+message: "Analyzes Gaussian models on phylogenetic networks and admixture graphs using belief propagation."
+url: "https://github.com/JuliaPhylo/PhyloGaussianBeliefProp.jl"
+version: "0.0.1"
+date-released: "2024-05-16"
+registered: true
+uuid: "e3084505-90a0-4799-8167-4168d9f39f7c"
+task:
+  - phylogenetic-comparative-methods:
+    - trait-evolution: "analyzes Gaussian models on phylogenetic networks and admixture graphs using belief propagation."
+date-curated: "0000-00-00"
+date-updated: "2025-03-13"

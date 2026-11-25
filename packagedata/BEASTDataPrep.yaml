@@ -1,0 +1,11 @@
+title: "BEASTDataPrep.jl"
+type: "package"
+message: "Standard data cleaning tools prior to generating BEAST xml file"
+url: "https://github.com/Julia-BEAST-utils/BEASTDataPrep.jl"
+version: "0.2.0"
+date-released: "2022-05-13"
+registered: true
+uuid: "7fe627e2-2553-44c3-aa13-292e356d3647"
+task: []
+date-curated: "0000-00-00"
+date-updated: "2022-05-13"

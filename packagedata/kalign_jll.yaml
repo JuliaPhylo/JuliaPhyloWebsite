@@ -1,0 +1,15 @@
+title: "kalign_jll.jl"
+type: "jll"
+message: "Installs Kalign, which reads unaligned or aligned sequences and writes FASTA, MSF, or Clustal alignments."
+url: "https://github.com/JuliaBinaryWrappers/kalign_jll.jl"
+version: "3.4.0+0"
+date-released: "2023-12-13"
+registered: true
+uuid: "86ae5844-b998-5f56-950b-e2311b0a7e21"
+task:
+  - data-for-phylogenetics:
+    - read-alignments: "installs Kalign, which reads unaligned or aligned sequences and writes FASTA, MSF, or Clustal alignments."
+  - interact-with-external-resources: "provides the Kalign executable and library."
+date-curated: "0000-00-00"
+date-updated: "2023-12-13"
+source-url: "https://github.com/TimoLassmann/kalign"

@@ -1,0 +1,15 @@
+title: "PhyML_jll.jl"
+type: "jll"
+message: "Installs PhyML for maximum-likelihood tree inference from nucleotide or amino-acid alignments."
+url: "https://github.com/JuliaBinaryWrappers/PhyML_jll.jl"
+version: "3.3.20210610+0"
+date-released: "2022-08-04"
+registered: true
+uuid: "1371226f-2bf8-5a91-99cc-70a4fbc99e18"
+task:
+  - phylogeny-building:
+    - infer-phylogenies: "installs PhyML for maximum-likelihood tree inference from nucleotide or amino-acid alignments."
+  - interact-with-external-resources: "installs sequential and MPI PhyML executables."
+date-curated: "0000-00-00"
+date-updated: "2022-08-04"
+source-url: "https://github.com/stephaneguindon/phyml"

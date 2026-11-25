@@ -1,0 +1,18 @@
+title: "DeadBird.jl"
+type: "package"
+message: "Performs Bayesian and maximum-likelihood inference for phylogenetic birth-death models of gene families."
+url: "https://github.com/arzwa/DeadBird.jl"
+version: "0.1.0"
+date-released: "2021-01-03"
+registered: false
+uuid: "notregistered"
+task:
+  - phylogeny-building:
+    - infer-phylogenies: "performs Bayesian and maximum-likelihood inference for phylogenetic birth-death models of gene families."
+  - phylogenetic-comparative-methods:
+    - diversification: "models comparative genomic count data with phylogenetic birth-death processes."
+  - phylogenetics-in-specific-fields:
+    - omics: "models comparative genomic count data, most commonly gene families, with phylogenetic birth-death processes."
+    - gene-duplications: "infers gene-family duplication, loss, and gain processes on phylogenies."
+date-curated: "0000-00-00"
+date-updated: "2022-01-27"

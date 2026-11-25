@@ -1,0 +1,15 @@
+title: "PhyBEARS.jl"
+type: "package"
+message: "Implements biogeographic state-dependent speciation and extinction models."
+url: "https://github.com/nmatzke/PhyBEARS.jl"
+version: "1.0.0"
+date-released: "2024-02-28"
+registered: false
+uuid: "notregistered"
+task:
+  - phylogenetic-comparative-methods:
+    - diversification: "implements biogeographic state-dependent speciation and extinction models."
+  - phylogenetics-in-specific-fields:
+    - phylogeography-and-biogeography: "models biogeographic state-dependent speciation and extinction with systems of ODEs."
+date-curated: "0000-00-00"
+date-updated: "2026-11-16"

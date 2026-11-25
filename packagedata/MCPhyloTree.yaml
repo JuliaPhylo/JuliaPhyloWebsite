@@ -1,0 +1,13 @@
+title: "MCPhyloTree.jl"
+type: "package"
+message: "Supplies basic tree functionality for MCPhylo.jl."
+url: "https://github.com/erathorn/MCPhyloTree.jl"
+version: "1.1.7"
+date-released: "2024-03-07"
+registered: true
+uuid: "e53f0ae0-6895-45b6-9907-1ecda2d8723d"
+task:
+  - phylogenies:
+    - manipulate-phylogenies: "supplies basic tree functionality for MCPhylo.jl."
+date-curated: "0000-00-00"
+date-updated: "2024-03-07"

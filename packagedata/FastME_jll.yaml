@@ -1,0 +1,15 @@
+title: "FastME_jll.jl"
+type: "jll"
+message: "Installs FastME for distance-based phylogeny reconstruction."
+url: "https://github.com/JuliaBinaryWrappers/FastME_jll.jl"
+version: "2.1.6+0"
+date-released: "2022-04-20"
+registered: true
+uuid: "c1840c37-842c-5077-b0bd-95b7c831fb27"
+task:
+  - phylogeny-building:
+    - infer-phylogenies: "installs FastME for distance-based phylogeny reconstruction."
+  - interact-with-external-resources: "installs the FastME phylogeny-reconstruction executable."
+date-curated: "0000-00-00"
+date-updated: "2022-04-20"
+source-url: "https://gite.lirmm.fr/atgc/FastME"

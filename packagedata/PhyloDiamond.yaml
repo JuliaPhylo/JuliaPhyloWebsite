@@ -1,0 +1,15 @@
+title: "PhyloDiamond.jl"
+type: "package"
+message: "Learns four-node hybridization cycles in phylogenetic networks from concordance factors or gene trees."
+url: "https://github.com/solislemuslab/PhyloDiamond.jl"
+version: "0.2.0"
+date-released: "2026-11-20"
+registered: true
+uuid: "5fd89c64-9bfa-4c3b-9406-7e573fc4f4af"
+task:
+  - phylogeny-building:
+    - infer-phylogenies: "learns four-node hybridization cycles in phylogenetic networks from concordance factors or gene trees."
+  - phylogenetics-in-specific-fields:
+    - genetree-speciestree: "learns four-node hybridization cycles from concordance factors or gene-tree files."
+date-curated: "0000-00-00"
+date-updated: "2026-11-20"

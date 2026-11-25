@@ -1,0 +1,17 @@
+title: "SymbolicQuartetCF.jl"
+type: "package"
+message: "Studies identifiability of tree and network parameters with quartet concordance factors."
+url: "https://github.com/sungsik-kong/SymbolicQuartetCF.jl"
+version: "0.1.7"
+date-released: "2026-02-25"
+registered: true
+uuid: "bdb2d313-ae54-487a-ba87-13d2dbade7fa"
+task:
+  - phylogenies:
+    - compare-phylogenies: "studies identifiability of tree and network parameters with quartet concordance factors."
+  - phylogeny-building:
+    - infer-phylogenies: "studies identifiability of phylogenetic tree and network parameters with quartet concordance factors."
+  - phylogenetics-in-specific-fields:
+    - genetree-speciestree: "studies identifiability of tree and network parameters from quartet concordance factors."
+date-curated: "0000-00-00"
+date-updated: "2026-06-04"

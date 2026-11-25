@@ -1,0 +1,13 @@
+title: "PhyLiNC.jl"
+type: "package"
+message: "Estimates phylogenetic networks from DNA sequences assuming sites evolve independently, but the method has not been thoroughly tested and NetRAX is recommended instead."
+url: "https://github.com/JuliaPhylo/PhyLiNC.jl"
+version: "0.1.0-DEV"
+date-released: "2024-09-12"
+registered: false
+uuid: "notregistered"
+task:
+  - phylogeny-building:
+    - infer-phylogenies: "estimates phylogenetic networks from DNA sequences assuming sites evolve independently, but the method has not been thoroughly tested and NetRAX is recommended instead."
+date-curated: "0000-00-00"
+date-updated: "2024-09-12"

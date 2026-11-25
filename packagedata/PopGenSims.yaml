@@ -1,0 +1,13 @@
+title: "PopGenSims.jl"
+type: "package"
+message: "Simulates related and unrelated individuals from population-specific allele frequencies."
+url: "https://github.com/pdimens/PopGenSims.jl"
+version: "0.3.2"
+date-released: "2022-03-03"
+registered: true
+uuid: "e670a858-c023-4621-870e-30d0f49b8322"
+task:
+  - phylogenetics-in-specific-fields:
+    - population-genetics: "simulates related and unrelated individuals from population-specific allele frequencies."
+date-curated: "0000-00-00"
+date-updated: "2026-07-14"

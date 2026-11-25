@@ -1,0 +1,13 @@
+title: "ArDCA.jl"
+type: "package"
+message: "Learns autoregressive protein models with generalized logistic regression."
+url: "https://github.com/pagnani/ArDCA.jl"
+version: "0.6.6"
+date-released: "2025-02-27"
+registered: true
+uuid: "fc7e833f-a3b9-439d-ae82-c6ad11a3e54b"
+task:
+  - phylogenetics-in-specific-fields:
+    - omics: "learns autoregressive protein models with generalized logistic regression."
+date-curated: "0000-00-00"
+date-updated: "2025-02-27"

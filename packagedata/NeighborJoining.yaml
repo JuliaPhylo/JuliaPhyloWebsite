@@ -1,0 +1,13 @@
+title: "NeighborJoining.jl"
+type: "package"
+message: "Reconstructs phylogenetic trees from pairwise distance matrices with regular, fast, or dynamic neighbor joining and converts results to Newick strings."
+url: "https://github.com/BenjaminDoran/NeighborJoining.jl"
+version: "0.2.2"
+date-released: "2026-08-18"
+registered: true
+uuid: "3f465f53-8c2e-426b-b4f1-431dfde0fdf8"
+task:
+  - phylogeny-building:
+    - infer-phylogenies: "reconstructs phylogenetic trees from pairwise distance matrices with regular, fast, or dynamic neighbor joining and converts results to Newick strings."
+date-curated: "0000-00-00"
+date-updated: "2026-08-18"

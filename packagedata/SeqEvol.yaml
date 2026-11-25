@@ -1,0 +1,15 @@
+title: "SeqEvol"
+type: "package"
+message: "Evolves protein alignments with DCA-based Gibbs sampling and controllable selection pressure."
+url: "https://github.com/matteobisardi/SeqEvol"
+version: "0.1.0"
+date-released: "2021-09-23"
+registered: false
+uuid: "notregistered"
+task:
+  - phylogenetic-comparative-methods:
+    - trait-simulation: "evolves protein alignments with DCA-based Gibbs sampling and controllable selection pressure."
+  - phylogenetics-in-specific-fields:
+    - omics: "evolves protein multiple-sequence alignments with DCA-based Gibbs sampling."
+date-curated: "0000-00-00"
+date-updated: "2023-02-03"

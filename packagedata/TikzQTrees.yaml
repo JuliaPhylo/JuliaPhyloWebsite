@@ -1,0 +1,13 @@
+title: "TikzQTrees.jl"
+type: "package"
+message: "Plots trees with TikzPictures and the LaTeX tikz-qtree package."
+url: "https://github.com/dharasim/TikzQTrees.jl"
+version: "0.1.1"
+date-released: "2018-09-04"
+registered: true
+uuid: "f52f3d38-10ca-5f0e-b577-4b5045d0977b"
+task:
+  - phylogenies:
+    - visualize-phylogenies: "plots trees with TikzPictures and the LaTeX tikz-qtree package."
+date-curated: "0000-00-00"
+date-updated: "2018-11-27"

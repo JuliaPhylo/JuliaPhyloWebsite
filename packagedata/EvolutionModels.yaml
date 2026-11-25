@@ -1,0 +1,15 @@
+title: "EvolutionModels.jl"
+type: "package"
+message: "Provides experimental DNA and protein CTMC models, simulation, likelihoods, and distances, but its README warns that results are unvalidated and not ready for production use."
+url: "https://github.com/mashu/EvolutionModels.jl"
+version: "0.0.2"
+date-released: "2026-02-03"
+registered: false
+uuid: "notregistered"
+task:
+  - phylogeny-building:
+    - infer-phylogenies: "provides experimental DNA and protein CTMC models, simulation, likelihoods, and distances, but its README warns that results are unvalidated and not ready for production use."
+  - phylogenetic-comparative-methods:
+    - trait-simulation: "simulates DNA and protein sequences with experimental continuous-time Markov models."
+date-curated: "0000-00-00"
+date-updated: "2026-02-03"

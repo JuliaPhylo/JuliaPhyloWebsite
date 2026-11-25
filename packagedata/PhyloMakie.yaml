@@ -1,0 +1,13 @@
+title: "PhyloMakie.jl"
+type: "package"
+message: "Plots PhyloNetworks trees and networks with Makie and supports edge-length scaling, gamma display, tip labels, colors, and widths."
+url: "https://github.com/JuliaPhylo/PhyloMakie.jl"
+version: "0.1.0"
+date-released: "2026-11-23"
+registered: true
+uuid: "ccbd7354-87c9-452d-961c-17247803ee9f"
+task:
+  - phylogenies:
+    - visualize-phylogenies: "plots PhyloNetworks trees and networks with Makie and supports edge-length scaling, gamma display, tip labels, colors, and widths."
+date-curated: "0000-00-00"
+date-updated: "2026-11-21"

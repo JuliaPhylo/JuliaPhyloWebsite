@@ -1,0 +1,13 @@
+title: "AbstractTrees.jl"
+type: "package"
+message: "Provides child and descendant access plus preorder, postorder, and leaf traversal for tree-like structures."
+url: "https://github.com/JuliaCollections/AbstractTrees.jl"
+version: "0.4.5"
+date-released: "2024-02-19"
+registered: true
+uuid: "1520ce14-60c1-5f80-bbc7-55ef81b5835c"
+task:
+  - phylogenies:
+    - manipulate-phylogenies: "provides child and descendant access plus preorder, postorder, and leaf traversal for tree-like structures."
+date-curated: "0000-00-00"
+date-updated: "2026-06-22"

@@ -1,0 +1,11 @@
+title: "BirthDeathPhylo.jl"
+type: "package"
+message: "Tools for simulating birth-death processes and phylogenetic trees"
+url: "https://github.com/AITHM/BirthDeathPhylo.jl"
+version: "0.1.0"
+date-released: "2024-05-01"
+registered: false
+uuid: "notregistered"
+task: []
+date-curated: "0000-00-00"
+date-updated: "2024-05-01"

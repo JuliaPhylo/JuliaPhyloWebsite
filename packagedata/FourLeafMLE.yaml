@@ -1,0 +1,13 @@
+title: "FourLeafMLE.jl"
+type: "package"
+message: "Estimates a four-leaf phylogenetic tree from DNA sequence data."
+url: "https://github.com/max-hill/FourLeafMLE.jl"
+version: "1.0.1"
+date-released: "2024-06-09"
+registered: true
+uuid: "5790dc55-b552-4dea-a575-4088ca23464b"
+task:
+  - phylogeny-building:
+    - infer-phylogenies: "estimates a four-leaf phylogenetic tree from DNA sequence data."
+date-curated: "0000-00-00"
+date-updated: "2024-06-09"

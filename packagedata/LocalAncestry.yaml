@@ -1,0 +1,13 @@
+title: "LocalAncestry.jl"
+type: "package"
+message: "Infers local ancestry from phased VCFs, reference ancestries, and a hidden Markov model."
+url: "https://github.com/BgroveP/LocalAncestry.jl"
+version: "0.3.2"
+date-released: "2026-11-19"
+registered: true
+uuid: "9c717bbe-74a8-4a1b-8702-c9261a6bba1a"
+task:
+  - phylogenetics-in-specific-fields:
+    - population-genetics: "infers local ancestry from phased VCFs, reference ancestries, and a hidden Markov model."
+date-curated: "0000-00-00"
+date-updated: "2026-11-19"

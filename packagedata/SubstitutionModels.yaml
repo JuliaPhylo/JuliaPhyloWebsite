@@ -1,0 +1,17 @@
+title: "SubstitutionModels.jl"
+type: "package"
+message: "Provides biological-sequence substitution models for sequence evolution, phylogenetics, and simulation."
+url: "https://github.com/BioJulia/SubstitutionModels.jl"
+version: "0.6.1"
+date-released: "2026-09-30"
+registered: true
+uuid: "8365b1bb-bd83-58ee-a267-f2965fc81c73"
+task:
+  - phylogeny-building:
+    - infer-phylogenies: "provides biological-sequence substitution models for sequence evolution, phylogenetics, and simulation."
+  - phylogenetic-comparative-methods:
+    - trait-simulation: "supplies sequence-substitution models for evolutionary simulation."
+  - phylogenetics-in-specific-fields:
+    - omics: "defines DNA and protein substitution models for sequence evolution and phylogenetics."
+date-curated: "0000-00-00"
+date-updated: "2026-09-30"

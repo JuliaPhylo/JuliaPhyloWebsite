@@ -1,0 +1,14 @@
+title: "AsciiTrees.jl"
+type: "package"
+message: "Reads Newick phylogenetic trees and expands them as plain text."
+url: "https://github.com/Mikumikunisiteageru/AsciiTrees.jl"
+version: null
+date-released: null
+registered: false
+uuid: "notregistered"
+task:
+  - phylogenies:
+    - read-phylogenies: "reads Newick phylogenetic trees and expands them as plain text."
+    - visualize-phylogenies: "renders Newick phylogenetic trees as plain text."
+date-curated: "0000-00-00"
+date-updated: "2022-01-28"

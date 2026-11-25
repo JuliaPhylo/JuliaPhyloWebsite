@@ -1,0 +1,13 @@
+title: "PopGenCore.jl"
+type: "package"
+message: "Provides population-genetics data types and file I/O used by PopGen.jl."
+url: "https://github.com/BioJulia/PopGenCore.jl"
+version: "0.7.3"
+date-released: "2026-07-14"
+registered: true
+uuid: "45b36091-5ef7-4b08-b448-aaf24c763a14"
+task:
+  - phylogenetics-in-specific-fields:
+    - population-genetics: "provides population-genetics data types and file I/O used by PopGen.jl."
+date-curated: "0000-00-00"
+date-updated: "2026-07-14"

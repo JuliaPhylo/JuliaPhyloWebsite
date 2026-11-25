@@ -1,0 +1,13 @@
+title: "LineagesMakie.jl"
+type: "package"
+message: "Draws rooted lineage graphs with Makie using layouts, labels, clade annotations, and scale bars."
+url: "https://github.com/jeetsukumaran/LineagesMakie.jl"
+version: "0.1.0"
+date-released: "2026-04-21"
+registered: false
+uuid: "notregistered"
+task:
+  - phylogenies:
+    - visualize-phylogenies: "draws rooted lineage graphs with Makie using layouts, labels, clade annotations, and scale bars."
+date-curated: "0000-00-00"
+date-updated: "2026-05-07"

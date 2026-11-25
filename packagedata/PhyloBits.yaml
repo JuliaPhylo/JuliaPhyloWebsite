@@ -1,0 +1,13 @@
+title: "PhyloBits.jl"
+type: "package"
+message: "Provides phylogenetic tree tables and a dependency-light PhyloNetworks tree reader."
+url: "https://github.com/nmatzke/PhyloBits.jl"
+version: "1.0.0"
+date-released: "2024-02-28"
+registered: false
+uuid: "notregistered"
+task:
+  - phylogenies:
+    - read-phylogenies: "provides phylogenetic tree tables and a dependency-light PhyloNetworks tree reader."
+date-curated: "0000-00-00"
+date-updated: "2024-06-26"

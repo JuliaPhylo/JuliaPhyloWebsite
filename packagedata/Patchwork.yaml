@@ -1,0 +1,15 @@
+title: "Patchwork"
+type: "package"
+message: "Retrieves and concatenates phylogenetic markers and searches for homologues in distantly related taxa."
+url: "https://github.com/fethalen/Patchwork"
+version: "0.8.0"
+date-released: "2026-07-24"
+registered: false
+uuid: "notregistered"
+task:
+  - data-for-phylogenetics:
+    - read-alignments: "retrieves and concatenates phylogenetic markers and searches for homologues in distantly related taxa."
+  - phylogenetics-in-specific-fields:
+    - omics: "retrieves and concatenates phylogenetic markers from whole-genome sequence data."
+date-curated: "0000-00-00"
+date-updated: "2026-07-24"

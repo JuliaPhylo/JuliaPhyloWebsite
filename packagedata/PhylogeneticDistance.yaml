@@ -1,0 +1,16 @@
+title: "PhylogeneticDistance.jl"
+type: "package"
+message: "Computes unweighted, weighted, variance-adjusted, and generalized UniFrac distance matrices."
+url: "https://github.com/JingZhai63/PhylogeneticDistance.jl"
+version: null
+date-released: null
+registered: false
+uuid: "notregistered"
+task:
+  - phylogenies:
+    - compare-phylogenies: "computes unweighted, weighted, variance-adjusted, and generalized UniFrac distance matrices."
+    - summarize-phylogenies: "returns UniFrac distance or kernel matrices for microbiome comparisons."
+  - phylogenetics-in-specific-fields:
+    - community-and-microbial-ecology: "computes UniFrac matrices for comparing microbiome taxonomic composition."
+date-curated: "0000-00-00"
+date-updated: "2018-07-18"

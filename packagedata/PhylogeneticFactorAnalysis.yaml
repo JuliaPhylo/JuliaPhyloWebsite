@@ -1,0 +1,11 @@
+title: "PhylogeneticFactorAnalysis.jl"
+type: "package"
+message: "Julia package for automating phylogenetic factor analysis model selection"
+url: "https://github.com/gabehassler/PhylogeneticFactorAnalysis.jl"
+version: "1.0.0"
+date-released: "2022-11-02"
+registered: true
+uuid: "88e69f3b-d3b7-48b0-a205-c3c72d2ca7ac"
+task: []
+date-curated: "0000-00-00"
+date-updated: "2026-10-16"

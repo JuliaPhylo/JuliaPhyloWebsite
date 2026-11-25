@@ -1,0 +1,17 @@
+title: "Tapestree.jl"
+type: "package"
+message: "Analyzes diversification, trait, and biogeographic dynamics on phylogenies."
+url: "https://github.com/ignacioq/Tapestree.jl"
+version: "0.4.5"
+date-released: "2025-10-02"
+registered: true
+uuid: "cd6db766-07eb-5897-84c0-92a6c9b887bd"
+task:
+  - phylogenetic-comparative-methods:
+    - trait-evolution: "analyzes diversification, trait, and biogeographic dynamics on phylogenies."
+    - diversification: "fits constant, diffused, fossilized, and occurrence birth-death models."
+  - phylogenetics-in-specific-fields:
+    - time-series-and-paleontology: "fits fossilized and occurrence birth-death models for phylogenies with fossil information."
+    - phylogeography-and-biogeography: "fits models of biogeographic dynamics on phylogenies."
+date-curated: "0000-00-00"
+date-updated: "2026-07-01"

@@ -1,0 +1,13 @@
+title: "BioStockholm.jl"
+type: "package"
+message: "Parses Stockholm-format protein, RNA, and DNA multiple alignments."
+url: "https://github.com/marcom/BioStockholm.jl"
+version: "0.2.1"
+date-released: "2024-01-17"
+registered: true
+uuid: "eeb925a3-6f9d-43e6-829e-e0ea03b76ecf"
+task:
+  - data-for-phylogenetics:
+    - read-alignments: "parses Stockholm-format protein, RNA, and DNA multiple alignments."
+date-curated: "0000-00-00"
+date-updated: "2024-01-17"

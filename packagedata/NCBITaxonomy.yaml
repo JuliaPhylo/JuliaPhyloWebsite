@@ -1,0 +1,12 @@
+title: "NCBITaxonomy.jl"
+type: "package"
+message: "Provides an interface to the NCBI Taxonomy and downloads the latest taxonomy files from the NCBI FTP service when installed."
+url: "https://github.com/PoisotLab/NCBITaxonomy.jl"
+version: "0.4.1"
+date-released: "2023-03-04"
+registered: true
+uuid: "f88b31d2-eb98-4433-b52d-2dd32bc6efce"
+task:
+  - interact-with-external-resources: "provides an interface to the NCBI Taxonomy and downloads the latest taxonomy files from the NCBI FTP service when installed."
+date-curated: "0000-00-00"
+date-updated: "2025-06-30"

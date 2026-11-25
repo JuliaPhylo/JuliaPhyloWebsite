@@ -1,0 +1,13 @@
+title: "PhyloDistances.jl"
+type: "package"
+message: "Computes tree distances and similarities, including Robinson-Foulds variants, quartet distance, Nye similarity, and Jaccard-Robinson-Foulds."
+url: "https://github.com/cvigilv/PhyloDistances.jl"
+version: "0.1.0"
+date-released: "2026-08-17"
+registered: false
+uuid: "notregistered"
+task:
+  - phylogenies:
+    - compare-phylogenies: "computes tree distances and similarities, including Robinson-Foulds variants, quartet distance, Nye similarity, and Jaccard-Robinson-Foulds."
+date-curated: "0000-00-00"
+date-updated: "2026-09-16"

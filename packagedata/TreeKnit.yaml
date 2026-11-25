@@ -1,0 +1,13 @@
+title: "TreeKnit.jl"
+type: "package"
+message: "Infers ancestral reassortment graphs for segmented genomes such as human influenza."
+url: "https://github.com/PierreBarrat/TreeKnit.jl"
+version: "0.5.8"
+date-released: "2024-08-09"
+registered: true
+uuid: "03f602be-98a1-4bb2-9504-fbd3406624a7"
+task:
+  - phylogenetics-in-specific-fields:
+    - epidemiology: "infers ancestral reassortment graphs for segmented genomes such as human influenza."
+date-curated: "0000-00-00"
+date-updated: "2025-02-18"

@@ -1,0 +1,14 @@
+title: "PhyloPlots.jl"
+type: "package"
+message: "Plots PhyloNetworks trees and networks via R through RCall."
+url: "https://github.com/JuliaPhylo/PhyloPlots.jl"
+version: "2.1.0"
+date-released: "2025-06-23"
+registered: true
+uuid: "c0d5b6db-e3fc-52bc-a87d-1d050989ed3b"
+task:
+  - phylogenies:
+    - visualize-phylogenies: "plots PhyloNetworks trees and networks via R through RCall."
+  - interact-with-external-resources: "plots PhyloNetworks trees and networks through R via RCall."
+date-curated: "0000-00-00"
+date-updated: "2026-07-10"

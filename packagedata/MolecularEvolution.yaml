@@ -1,0 +1,18 @@
+title: "MolecularEvolution.jl"
+type: "package"
+message: "Performs branch-length and topology optimization for trees under user-defined evolutionary models."
+url: "https://github.com/MurrellGroup/MolecularEvolution.jl"
+version: "0.2.7"
+date-released: "2025-03-06"
+registered: true
+uuid: "9f975960-e239-4209-8aa0-3d3ad5a82892"
+task:
+  - phylogeny-building:
+    - infer-phylogenies: "performs branch-length and topology optimization for trees under user-defined evolutionary models."
+  - phylogenetic-comparative-methods:
+    - trait-evolution: "performs ancestral inference under user-defined evolutionary models."
+    - trait-simulation: "simulates evolutionary states along trees under user-defined models."
+  - phylogenetics-in-specific-fields:
+    - omics: "provides likelihood and ancestral analyses for user-defined molecular evolutionary models."
+date-curated: "0000-00-00"
+date-updated: "2025-07-07"

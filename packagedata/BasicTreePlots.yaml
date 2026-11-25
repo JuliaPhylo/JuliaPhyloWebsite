@@ -1,0 +1,13 @@
+title: "BasicTreePlots.jl"
+type: "package"
+message: "Provides Makie recipes for trees that implement the AbstractTrees interface."
+url: "https://github.com/BenjaminDoran/BasicTreePlots.jl"
+version: "0.2.1"
+date-released: "2026-10-21"
+registered: true
+uuid: "523fa316-3eda-45c7-ad2f-0d13a1dc3d77"
+task:
+  - phylogenies:
+    - visualize-phylogenies: "provides Makie recipes for trees that implement the AbstractTrees interface."
+date-curated: "0000-00-00"
+date-updated: "2026-11-16"

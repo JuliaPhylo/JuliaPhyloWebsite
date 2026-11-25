@@ -1,0 +1,11 @@
+title: "PhyloSummaries.jl"
+type: "package"
+message: "package to summarize features of a phylogenetic network, or features shared across a set of phylogenetic networks"
+url: "https://github.com/JuliaPhylo/PhyloSummaries.jl"
+version: "0.1.2"
+date-released: "2026-11-19"
+registered: true
+uuid: "431a9082-0c03-4c0b-a224-e592b0e14882"
+task: []
+date-curated: "0000-00-00"
+date-updated: "2026-11-19"

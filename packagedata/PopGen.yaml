@@ -1,0 +1,13 @@
+title: "PopGen.jl"
+type: "package"
+message: "Provides population-genetics analysis in Julia."
+url: "https://github.com/BioJulia/PopGen.jl"
+version: "0.9.5"
+date-released: "2024-11-26"
+registered: true
+uuid: "af524d12-c74b-11e9-22a8-3b091653023f"
+task:
+  - phylogenetics-in-specific-fields:
+    - population-genetics: "provides population-genetics analysis in Julia."
+date-curated: "0000-00-00"
+date-updated: "2026-07-14"

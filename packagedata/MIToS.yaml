@@ -1,0 +1,15 @@
+title: "MIToS.jl"
+type: "package"
+message: "Works with protein multiple-sequence alignments and their evolutionary information."
+url: "https://github.com/diegozea/MIToS.jl"
+version: "3.11.0"
+date-released: "2026-10-07"
+registered: true
+uuid: "51bafb47-8a16-5ded-8b04-24ef4eede0b5"
+task:
+  - data-for-phylogenetics:
+    - read-alignments: "works with protein multiple-sequence alignments and their evolutionary information."
+  - phylogenetics-in-specific-fields:
+    - omics: "extracts evolutionary information from protein multiple-sequence alignments."
+date-curated: "0000-00-00"
+date-updated: "2026-10-07"
